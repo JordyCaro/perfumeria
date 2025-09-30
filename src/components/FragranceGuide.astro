@@ -1,0 +1,276 @@
+---
+// Datos de la guía de fragancias
+const fragranceFamilies = [
+  {
+    name: "Floral",
+    description: "Fragancias dominadas por el aroma de flores",
+    icon: "🌸",
+    notes: ["Rosa", "Jazmín", "Lirio", "Peonía"],
+    occasions: ["Día", "Oficina", "Romántico"],
+    examples: ["Lattafa Yara", "Lattafa Fakhar"],
+    color: "pink"
+  },
+  {
+    name: "Oriental",
+    description: "Fragancias cálidas y exóticas con especias y resinas",
+    icon: "🕌",
+    notes: ["Oud", "Ámbar", "Canela", "Vainilla"],
+    occasions: ["Noche", "Especial", "Invierno"],
+    examples: ["Lattafa Khamrah", "Lattafa Badee Al Oud"],
+    color: "red"
+  },
+  {
+    name: "Cítrico",
+    description: "Fragancias frescas y energizantes",
+    icon: "🍋",
+    notes: ["Limón", "Bergamota", "Naranja", "Pomelo"],
+    occasions: ["Día", "Verano", "Deportivo"],
+    examples: ["Lattafa Asad", "Lattafa Suqraat"],
+    color: "yellow"
+  },
+  {
+    name: "Amaderado",
+    description: "Fragancias cálidas y terrosas",
+    icon: "🌲",
+    notes: ["Sándalo", "Cedro", "Vetiver", "Pachulí"],
+    occasions: ["Otoño", "Formal", "Masculino"],
+    examples: ["Lattafa Pride", "Lattafa Oud"],
+    color: "amber"
+  },
+  {
+    name: "Gourmand",
+    description: "Fragancias dulces y comestibles",
+    icon: "🍯",
+    notes: ["Vainilla", "Caramelo", "Chocolate", "Miel"],
+    occasions: ["Casual", "Invierno", "Femenino"],
+    examples: ["Lattafa Yara Candy", "Lattafa Eclaire"],
+    color: "orange"
+  },
+  {
+    name: "Frutal",
+    description: "Fragancias jugosas y vibrantes",
+    icon: "🍑",
+    notes: ["Durazno", "Manzana", "Pera", "Bayas"],
+    occasions: ["Día", "Verano", "Juvenil"],
+    examples: ["Lattafa Yara", "Lattafa Teriaq"],
+    color: "green"
+  }
+];
+
+const occasions = [
+  {
+    name: "Día",
+    description: "Fragancias ligeras y frescas para el uso diario",
+    time: "6:00 AM - 6:00 PM",
+    intensity: "Ligera",
+    examples: ["Cítricos", "Florales ligeros", "Acuáticos"]
+  },
+  {
+    name: "Noche",
+    description: "Fragancias intensas y seductoras para ocasiones especiales",
+    time: "6:00 PM - 12:00 AM",
+    intensity: "Intensa",
+    examples: ["Orientales", "Amaderados", "Gourmands"]
+  },
+  {
+    name: "Oficina",
+    description: "Fragancias discretas y profesionales",
+    time: "8:00 AM - 6:00 PM",
+    intensity: "Moderada",
+    examples: ["Cítricos suaves", "Florales discretos", "Amaderados ligeros"]
+  },
+  {
+    name: "Romántico",
+    description: "Fragancias sensuales y atractivas",
+    time: "Cualquier momento",
+    intensity: "Moderada a Intensa",
+    examples: ["Florales intensos", "Orientales", "Gourmands"]
+  }
+];
+---
+
+<section id="guia-fragancias" class="section-padding bg-slate-900">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-yellow-600/30 rounded-full px-4 py-2 mb-6">
+        <span class="text-sm text-yellow-400 font-medium">Guía de Fragancias</span>
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-shadow mb-6">
+        <span class="text-gradient">Descubre</span> Tu Fragancia Perfecta
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Cada fragancia tiene su momento y ocasión. Aprende sobre las diferentes familias olfativas 
+        y encuentra la perfecta para cada situación de tu vida.
+      </p>
+    </div>
+
+    <!-- Fragrance Families -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-playfair font-bold text-center mb-12 text-slate-100">
+        Familias Olfativas
+      </h3>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {fragranceFamilies.map((family) => (
+          <div class="card-glass hover:border-yellow-600/50 transition-all duration-300 group">
+            <div class="text-center mb-6">
+              <div class="text-4xl mb-4">{family.icon}</div>
+              <h4 class="text-xl font-semibold text-slate-100 mb-2 group-hover:text-yellow-400 transition-colors duration-300">
+                {family.name}
+              </h4>
+              <p class="text-slate-400 text-sm">
+                {family.description}
+              </p>
+            </div>
+
+            <!-- Notes -->
+            <div class="mb-6">
+              <h5 class="text-sm font-medium text-slate-300 mb-3">Notas Principales:</h5>
+              <div class="flex flex-wrap gap-2">
+                {family.notes.map((note) => (
+                  <span class={`note-tag ${family.color}`}>
+                    {note}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <!-- Occasions -->
+            <div class="mb-6">
+              <h5 class="text-sm font-medium text-slate-300 mb-3">Ocasiones Ideales:</h5>
+              <div class="flex flex-wrap gap-2">
+                {family.occasions.map((occasion) => (
+                  <span class="text-xs bg-slate-700/50 text-slate-300 px-2 py-1 rounded-full">
+                    {occasion}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <!-- Examples -->
+            <div>
+              <h5 class="text-sm font-medium text-slate-300 mb-3">Ejemplos Lattafa:</h5>
+              <div class="space-y-1">
+                {family.examples.map((example) => (
+                  <p class="text-xs text-slate-400">{example}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Occasions Guide -->
+    <div>
+      <h3 class="text-3xl font-playfair font-bold text-center mb-12 text-slate-100">
+        Guía por Ocasiones
+      </h3>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        {occasions.map((occasion) => (
+          <div class="card-glass hover:border-yellow-600/50 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0">
+                <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center">
+                  <span class="text-2xl">
+                    {occasion.name === 'Día' ? '☀️' :
+                     occasion.name === 'Noche' ? '🌙' :
+                     occasion.name === 'Oficina' ? '💼' :
+                     '💕'}
+                  </span>
+                </div>
+              </div>
+              
+              <div class="flex-1">
+                <h4 class="text-xl font-semibold text-slate-100 mb-2">
+                  {occasion.name}
+                </h4>
+                <p class="text-slate-400 mb-4">
+                  {occasion.description}
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <span class="text-slate-300 font-medium">Horario:</span>
+                    <p class="text-slate-400">{occasion.time}</p>
+                  </div>
+                  <div>
+                    <span class="text-slate-300 font-medium">Intensidad:</span>
+                    <p class="text-slate-400">{occasion.intensity}</p>
+                  </div>
+                </div>
+                
+                <div class="mt-4">
+                  <span class="text-slate-300 font-medium text-sm">Recomendaciones:</span>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                    {occasion.examples.map((example) => (
+                      <span class="text-xs bg-slate-700/50 text-slate-300 px-2 py-1 rounded-full">
+                        {example}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Tips Section -->
+    <div class="mt-20 text-center">
+      <div class="card-glass max-w-4xl mx-auto">
+        <h3 class="text-2xl font-playfair font-bold text-slate-100 mb-6">
+          Consejos para Elegir tu Fragancia
+        </h3>
+        
+        <div class="grid md:grid-cols-2 gap-8 text-left">
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-slate-900 text-xs font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-slate-100 mb-1">Prueba en tu piel</h4>
+                <p class="text-sm text-slate-400">Las fragancias reaccionan diferente en cada persona</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-3">
+              <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-slate-900 text-xs font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-slate-100 mb-1">Considera la ocasión</h4>
+                <p class="text-sm text-slate-400">No todas las fragancias son para todos los momentos</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-slate-900 text-xs font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-slate-100 mb-1">Aplica correctamente</h4>
+                <p class="text-sm text-slate-400">Pulveriza en puntos de pulso para mejor fijación</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-3">
+              <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-slate-900 text-xs font-bold">4</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-slate-100 mb-1">Almacena bien</h4>
+                <p class="text-sm text-slate-400">Mantén tus fragancias en lugares frescos y secos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

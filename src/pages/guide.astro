@@ -1,0 +1,385 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Flower, TreePine, Zap, Citrus, Clock, Users, Star } from 'lucide-react';
+
+const fragranceFamilies = [
+  {
+    id: "floral",
+    name: "Floral",
+    icon: Flower,
+    description: "Aromas dulces y románticos de flores como rosas, jazmines y peonías.",
+    characteristics: "Femeninas, románticas, elegantes",
+    bestFor: "Día, primavera, ocasiones especiales",
+    notes: ["Rosa", "Jazmín", "Peonía", "Lirio", "Violeta"],
+    perfumes: ["Lattafa Yara", "Lattafa Ana Abiyedh", "Lattafa Bade'e Al Oud"]
+  },
+  {
+    id: "oriental",
+    name: "Oriental/Especiado",
+    icon: Zap,
+    description: "Aromas ricos y exóticos con especias, ámbar, vainilla y oud.",
+    characteristics: "Intensos, misteriosos, sofisticados",
+    bestFor: "Noche, invierno, ocasiones formales",
+    notes: ["Oud", "Ámbar", "Vainilla", "Canela", "Cardamomo"],
+    perfumes: ["Lattafa Khamrah", "Lattafa Raghba", "Lattafa Oud Mood"]
+  },
+  {
+    id: "amaderado",
+    name: "Amaderado",
+    icon: TreePine,
+    description: "Notas cálidas y terrosas de sándalo, cedro, vetiver y pachulí.",
+    characteristics: "Masculinos, elegantes, duraderos",
+    bestFor: "Otoño, invierno, uso profesional",
+    notes: ["Sándalo", "Cedro", "Vetiver", "Pachulí", "Musk"],
+    perfumes: ["Lattafa Asad", "Lattafa Fakhar Black", "Lattafa Qaa'ed"]
+  },
+  {
+    id: "fresco",
+    name: "Fresco/Cítrico",
+    icon: Citrus,
+    description: "Notas vibrantes de limón, bergamota, menta y notas acuáticas.",
+    characteristics: "Energéticos, refrescantes, juveniles",
+    bestFor: "Verano, día, uso diario",
+    notes: ["Limón", "Bergamota", "Menta", "Notas acuáticas", "Albahaca"],
+    perfumes: ["Lattafa Fakhar", "Lattafa Najdia", "Lattafa Ejaazi"]
+  }
+];
+
+const occasions = [
+  {
+    name: "Día",
+    icon: Clock,
+    description: "Fragancias ligeras y frescas para el uso diario",
+    recommendations: ["Floral", "Fresco/Cítrico"],
+    tips: "Elige fragancias con notas de salida suaves que no abrumen en espacios cerrados"
+  },
+  {
+    name: "Noche",
+    icon: Star,
+    description: "Fragancias intensas y seductoras para ocasiones especiales",
+    recommendations: ["Oriental", "Amaderado"],
+    tips: "Las fragancias orientales y amaderadas tienen mejor proyección en la noche"
+  },
+  {
+    name: "Formal",
+    icon: Users,
+    description: "Fragancias elegantes y sofisticadas para eventos importantes",
+    recommendations: ["Amaderado", "Oriental"],
+    tips: "Evita fragancias demasiado dulces o frutales en ambientes profesionales"
+  }
+];
+
+const seasons = [
+  {
+    name: "Primavera",
+    description: "Fragancias florales y frescas que despiertan con la naturaleza",
+    recommendations: ["Floral", "Fresco/Cítrico"],
+    colors: ["Rosa", "Verde", "Blanco"]
+  },
+  {
+    name: "Verano",
+    description: "Fragancias ligeras y refrescantes para combatir el calor",
+    recommendations: ["Fresco/Cítrico", "Floral ligero"],
+    colors: ["Azul", "Amarillo", "Blanco"]
+  },
+  {
+    name: "Otoño",
+    description: "Fragancias cálidas y especiadas que evocan nostalgia",
+    recommendations: ["Amaderado", "Oriental suave"],
+    colors: ["Naranja", "Marrón", "Dorado"]
+  },
+  {
+    name: "Invierno",
+    description: "Fragancias intensas y envolventes para abrigar el alma",
+    recommendations: ["Oriental", "Amaderado intenso"],
+    colors: ["Rojo", "Negro", "Dorado"]
+  }
+];
+---
+
+<Layout title="Guía de Fragancias - DAR Perfumes" description="Aprende sobre las familias olfativas, ocasiones y estaciones. Encuentra tu fragancia perfecta con nuestra guía experta de perfumes Lattafa.">
+  <Header />
+  
+  <main class="min-h-screen bg-slate-900 pt-20">
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-br from-slate-800 to-slate-900">
+      <div class="container-custom">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-yellow-600/30 rounded-full px-4 py-2 mb-6">
+            <span class="text-sm text-yellow-400 font-medium">Guía de Fragancias</span>
+          </div>
+          <h1 class="text-4xl lg:text-6xl font-playfair font-bold text-shadow mb-6">
+            <span class="text-gradient">Descubre</span> tu Fragancia Ideal
+          </h1>
+          <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+            Explora el fascinante mundo de las fragancias y aprende a elegir el perfume perfecto 
+            para cada momento, ocasión y personalidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fragrance Families -->
+    <section class="py-16">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-playfair font-bold text-slate-100 mb-6">
+            Familias Olfativas
+          </h2>
+          <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+            Cada fragancia pertenece a una familia olfativa que define su carácter y personalidad.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          {fragranceFamilies.map(family => (
+            <div class="card-glass group hover:scale-105 transition-transform duration-300">
+              <div class="flex items-start space-x-6">
+                <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <family.icon class="w-8 h-8 text-slate-900" />
+                </div>
+                
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold text-slate-100 mb-3">
+                    {family.name}
+                  </h3>
+                  <p class="text-slate-400 mb-4 leading-relaxed">
+                    {family.description}
+                  </p>
+                  
+                  <div class="space-y-3">
+                    <div>
+                      <span class="text-sm font-medium text-yellow-400">Características:</span>
+                      <p class="text-slate-300 text-sm">{family.characteristics}</p>
+                    </div>
+                    
+                    <div>
+                      <span class="text-sm font-medium text-yellow-400">Ideal para:</span>
+                      <p class="text-slate-300 text-sm">{family.bestFor}</p>
+                    </div>
+                    
+                    <div>
+                      <span class="text-sm font-medium text-yellow-400">Notas principales:</span>
+                      <div class="flex flex-wrap gap-2 mt-1">
+                        {family.notes.map(note => (
+                          <span class="px-2 py-1 bg-slate-800/50 text-xs text-slate-300 rounded-full">
+                            {note}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <span class="text-sm font-medium text-yellow-400">Perfumes Lattafa:</span>
+                      <p class="text-slate-300 text-sm">{family.perfumes.join(", ")}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Occasions -->
+    <section class="py-16 bg-slate-800/30">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-playfair font-bold text-slate-100 mb-6">
+            Para Cada Ocasión
+          </h2>
+          <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+            No todos los perfumes son adecuados para todas las situaciones. 
+            Aprende a elegir según el momento.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {occasions.map(occasion => (
+            <div class="card-glass text-center group hover:scale-105 transition-transform duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <occasion.icon class="w-8 h-8 text-slate-900" />
+              </div>
+              
+              <h3 class="text-xl font-semibold text-slate-100 mb-3">
+                {occasion.name}
+              </h3>
+              
+              <p class="text-slate-400 mb-4 leading-relaxed">
+                {occasion.description}
+              </p>
+              
+              <div class="space-y-3">
+                <div>
+                  <span class="text-sm font-medium text-yellow-400">Recomendadas:</span>
+                  <p class="text-slate-300 text-sm">{occasion.recommendations.join(", ")}</p>
+                </div>
+                
+                <div>
+                  <span class="text-sm font-medium text-yellow-400">Consejo:</span>
+                  <p class="text-slate-300 text-sm">{occasion.tips}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasons -->
+    <section class="py-16">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-playfair font-bold text-slate-100 mb-6">
+            Estaciones del Año
+          </h2>
+          <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+            Las estaciones influyen en cómo percibimos las fragancias. 
+            Adapta tu perfume al clima y la época del año.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {seasons.map(season => (
+            <div class="card-glass text-center group hover:scale-105 transition-transform duration-300">
+              <div class="mb-4">
+                <h3 class="text-lg font-semibold text-slate-100 mb-2">
+                  {season.name}
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                  {season.description}
+                </p>
+              </div>
+              
+              <div class="space-y-3">
+                <div>
+                  <span class="text-xs font-medium text-yellow-400">Recomendadas:</span>
+                  <p class="text-slate-300 text-xs">{season.recommendations.join(", ")}</p>
+                </div>
+                
+                <div>
+                  <span class="text-xs font-medium text-yellow-400">Colores:</span>
+                  <div class="flex justify-center space-x-1 mt-1">
+                    {season.colors.map(color => (
+                      <div class="w-3 h-3 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600"></div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-16 bg-slate-800/30">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-playfair font-bold text-slate-100 mb-6">
+            Consejos de Expertos
+          </h2>
+          <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+            Aprende los secretos de los perfumistas para sacar el máximo provecho de tus fragancias.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card-glass">
+            <h3 class="text-lg font-semibold text-slate-100 mb-3">
+              ¿Cómo aplicar el perfume?
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Aplica en puntos de pulso: muñecas, cuello, detrás de las orejas. 
+              No frotes, deja que se seque naturalmente.
+            </p>
+          </div>
+          
+          <div class="card-glass">
+            <h3 class="text-lg font-semibold text-slate-100 mb-3">
+              ¿Cuánto dura una fragancia?
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Las fragancias Lattafa tienen excelente duración (6-8 horas). 
+              Reaplica según sea necesario.
+            </p>
+          </div>
+          
+          <div class="card-glass">
+            <h3 class="text-lg font-semibold text-slate-100 mb-3">
+              ¿Cómo almacenar perfumes?
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Mantén en lugar fresco y seco, alejado de la luz directa. 
+              Evita cambios bruscos de temperatura.
+            </p>
+          </div>
+          
+          <div class="card-glass">
+            <h3 class="text-lg font-semibold text-slate-100 mb-3">
+              ¿Cuándo probar fragancias?
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Prueba en la mañana cuando tu olfato está más sensible. 
+              No pruebes más de 3 fragancias a la vez.
+            </p>
+          </div>
+          
+          <div class="card-glass">
+            <h3 class="text-lg font-semibold text-slate-100 mb-3">
+              ¿Fragancias para piel sensible?
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Elige fragancias con notas naturales. 
+              Evita alcohol en exceso y prueba en una pequeña área primero.
+            </p>
+          </div>
+          
+          <div class="card-glass">
+            <h3 class="text-lg font-semibold text-slate-100 mb-3">
+              ¿Cómo combinar fragancias?
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Combina familias complementarias: floral con oriental, 
+              amaderado con especiado. Evita mezclas muy contrastantes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16">
+      <div class="container-custom">
+        <div class="card-glass text-center">
+          <h2 class="text-3xl lg:text-4xl font-playfair font-bold text-slate-100 mb-6">
+            ¿Listo para Encontrar tu Fragancia Perfecta?
+          </h2>
+          <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
+            Explora nuestra colección completa de perfumes Lattafa y descubre 
+            la fragancia que mejor se adapte a tu personalidad y estilo de vida.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/perfumes"
+              class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 font-bold py-4 px-8 rounded-xl hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105"
+            >
+              Ver Catálogo Completo
+            </a>
+            <a
+              href="/contact"
+              class="bg-slate-800/50 border border-slate-600 text-slate-100 font-bold py-4 px-8 rounded-xl hover:border-yellow-500 hover:text-yellow-400 transition-all duration-300"
+            >
+              Solicitar Asesoría
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

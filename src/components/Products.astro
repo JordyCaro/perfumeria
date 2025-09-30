@@ -1,0 +1,256 @@
+---
+import { Star, Heart, ArrowRight, Filter, Search, Grid, List } from 'lucide-react';
+---
+
+<section id="fragancias" class="py-20 bg-slate-800/30">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl font-bold text-slate-100 mb-6">
+        Nuestras <span class="text-gradient">Fragancias</span>
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Descubre nuestra colección cuidadosamente seleccionada de fragancias orientales 
+        auténticas, importadas directamente desde Dubai.
+      </p>
+    </div>
+
+    <!-- Filters and Search -->
+    <div class="mb-12">
+      <div class="card-glass">
+        <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+          <!-- Search Bar -->
+          <div class="relative flex-1 max-w-md">
+            <Search class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+            <input 
+              type="text" 
+              placeholder="Buscar fragancias..." 
+              class="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20 transition-colors"
+            />
+          </div>
+          
+          <!-- Filters -->
+          <div class="flex flex-wrap gap-4">
+            <button class="btn-secondary flex items-center space-x-2">
+              <Filter class="w-4 h-4" />
+              <span>Filtrar</span>
+            </button>
+            <button class="btn-secondary flex items-center space-x-2">
+              <Grid class="w-4 h-4" />
+            </button>
+            <button class="btn-secondary flex items-center space-x-2">
+              <List class="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Perfumes -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- Perfume 1 -->
+      <div class="card-glass group hover:scale-105 transition-transform duration-300">
+        <div class="aspect-square bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <span class="text-6xl">🧴</span>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold text-slate-100">Oud Royal</h3>
+            <div class="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star class="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
+            </div>
+          </div>
+          <p class="text-slate-400 mb-4">Fragancia Oriental Masculina</p>
+          <p class="text-sm text-slate-300 mb-6">
+            Notas de oud auténtico, ámbar y especias orientales. 
+            Una fragancia intensa y sofisticada.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-yellow-400">$89.000</span>
+            <span class="text-sm text-slate-400">Duración: 8-12h</span>
+          </div>
+          <a href="/perfumes/oud-royal" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+            <span>Ver Detalles</span>
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Perfume 2 -->
+      <div class="card-glass group hover:scale-105 transition-transform duration-300">
+        <div class="aspect-square bg-gradient-to-br from-pink-600 to-pink-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <span class="text-6xl">🧴</span>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold text-slate-100">Rose Gold</h3>
+            <div class="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star class="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
+            </div>
+          </div>
+          <p class="text-slate-400 mb-4">Fragancia Oriental Femenina</p>
+          <p class="text-sm text-slate-300 mb-6">
+            Notas de rosa damascena, jazmín y ámbar. 
+            Una fragancia elegante y femenina.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-yellow-400">$95.000</span>
+            <span class="text-sm text-slate-400">Duración: 6-10h</span>
+          </div>
+          <a href="/perfumes/rose-gold" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+            <span>Ver Detalles</span>
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Perfume 3 -->
+      <div class="card-glass group hover:scale-105 transition-transform duration-300">
+        <div class="aspect-square bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <span class="text-6xl">🧴</span>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold text-slate-100">Spice Blend</h3>
+            <div class="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star class="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
+            </div>
+          </div>
+          <p class="text-slate-400 mb-4">Fragancia Oriental Unisex</p>
+          <p class="text-sm text-slate-300 mb-6">
+            Notas de especias orientales, madera de sándalo y cítricos. 
+            Una fragancia cálida y envolvente.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-yellow-400">$75.000</span>
+            <span class="text-sm text-slate-400">Duración: 7-11h</span>
+          </div>
+          <a href="/perfumes/spice-blend" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+            <span>Ver Detalles</span>
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Perfume 4 -->
+      <div class="card-glass group hover:scale-105 transition-transform duration-300">
+        <div class="aspect-square bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <span class="text-6xl">🧴</span>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold text-slate-100">Vanilla Dreams</h3>
+            <div class="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star class="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
+            </div>
+          </div>
+          <p class="text-slate-400 mb-4">Fragancia Oriental Femenina</p>
+          <p class="text-sm text-slate-300 mb-6">
+            Notas de vainilla bourbon, sándalo y especias dulces. 
+            Una fragancia cálida y acogedora.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-yellow-400">$82.000</span>
+            <span class="text-sm text-slate-400">Duración: 8-12h</span>
+          </div>
+          <a href="/perfumes/vanilla-dreams" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+            <span>Ver Detalles</span>
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Perfume 5 -->
+      <div class="card-glass group hover:scale-105 transition-transform duration-300">
+        <div class="aspect-square bg-gradient-to-br from-green-600 to-green-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <span class="text-6xl">🧴</span>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold text-slate-100">Jasmine Nights</h3>
+            <div class="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star class="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
+            </div>
+          </div>
+          <p class="text-slate-400 mb-4">Fragancia Oriental Femenina</p>
+          <p class="text-sm text-slate-300 mb-6">
+            Notas de jazmín sambac, rosa y ámbar gris. 
+            Una fragancia floral intensa.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-yellow-400">$78.000</span>
+            <span class="text-sm text-slate-400">Duración: 6-9h</span>
+          </div>
+          <a href="/perfumes/jasmine-nights" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+            <span>Ver Detalles</span>
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Perfume 6 -->
+      <div class="card-glass group hover:scale-105 transition-transform duration-300">
+        <div class="aspect-square bg-gradient-to-br from-red-600 to-red-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <span class="text-6xl">🧴</span>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold text-slate-100">Amber Luxe</h3>
+            <div class="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star class="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
+            </div>
+          </div>
+          <p class="text-slate-400 mb-4">Fragancia Oriental Unisex</p>
+          <p class="text-sm text-slate-300 mb-6">
+            Notas de ámbar gris, oud y especias orientales. 
+            Una fragancia lujosa y sofisticada.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-yellow-400">$120.000</span>
+            <span class="text-sm text-slate-400">Duración: 10-14h</span>
+          </div>
+          <a href="/perfumes/amber-luxe" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+            <span>Ver Detalles</span>
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="card-glass text-center">
+      <h3 class="text-3xl font-bold text-slate-100 mb-4">
+        ¿No Encuentras lo que Buscas?
+      </h3>
+      <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+        Nuestro catálogo se actualiza constantemente con nuevas fragancias. 
+        Contáctanos por WhatsApp para solicitar fragancias específicas.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/573001234567?text=Hola%20DAR,%20me%20interesa%20conocer%20más%20sobre%20sus%20fragancias" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="btn-primary inline-flex items-center justify-center space-x-2">
+          <span>Consultar por WhatsApp</span>
+          <Heart class="w-5 h-5" />
+        </a>
+        <a href="#contacto" class="btn-secondary inline-flex items-center justify-center space-x-2">
+          <span>Ver Más Información</span>
+          <Star class="w-5 h-5" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

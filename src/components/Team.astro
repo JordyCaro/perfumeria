@@ -1,0 +1,200 @@
+---
+import { Star, Heart, Award, Globe, Users, Sparkles } from 'lucide-react';
+---
+
+<section id="equipo" class="section-padding bg-slate-900/50">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-yellow-600/30 rounded-full px-4 py-2 mb-6">
+        <span class="text-sm text-yellow-400 font-medium">Nuestro Equipo</span>
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-shadow mb-6">
+        Expertos en <span class="text-gradient">Perfumería</span>
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Nuestro equipo combina pasión por las fragancias con conocimiento experto 
+        para ofrecerte la mejor experiencia en perfumería oriental.
+      </p>
+    </div>
+
+    <!-- Team Members -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- Team Member 1 -->
+      <div class="card-glass text-center group">
+        <div class="relative mb-6">
+          <div class="w-32 h-32 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+            <span class="text-4xl">👨‍💼</span>
+          </div>
+          <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <Award class="w-4 h-4 text-slate-900" />
+          </div>
+        </div>
+        
+        <h3 class="text-xl font-semibold text-slate-100 mb-2">Carlos Mendoza</h3>
+        <p class="text-yellow-400 font-medium mb-4">Fundador & CEO</p>
+        <p class="text-slate-400 text-sm mb-6">
+          Con más de 8 años en la industria de la perfumería, Carlos ha establecido 
+          conexiones directas con los mejores perfumistas de Dubai.
+        </p>
+        
+        <div class="space-y-2 text-sm text-slate-400">
+          <div class="flex items-center justify-center space-x-2">
+            <Star class="w-4 h-4 text-yellow-400" />
+            <span>Especialista en Fragancias Orientales</span>
+          </div>
+          <div class="flex items-center justify-center space-x-2">
+            <Globe class="w-4 h-4 text-yellow-400" />
+            <span>Conectado con Dubai</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="card-glass text-center group">
+        <div class="relative mb-6">
+          <div class="w-32 h-32 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+            <span class="text-4xl">👩‍💼</span>
+          </div>
+          <div class="absolute -top-2 -right-2 w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center">
+            <Heart class="w-4 h-4 text-slate-900" />
+          </div>
+        </div>
+        
+        <h3 class="text-xl font-semibold text-slate-100 mb-2">María González</h3>
+        <p class="text-pink-400 font-medium mb-4">Perfumista Senior</p>
+        <p class="text-slate-400 text-sm mb-6">
+          María es nuestra experta en notas olfativas y asesoría personalizada. 
+          Su olfato entrenado ayuda a cada cliente a encontrar su fragancia perfecta.
+        </p>
+        
+        <div class="space-y-2 text-sm text-slate-400">
+          <div class="flex items-center justify-center space-x-2">
+            <Heart class="w-4 h-4 text-pink-400" />
+            <span>Asesoría Personalizada</span>
+          </div>
+          <div class="flex items-center justify-center space-x-2">
+            <Sparkles class="w-4 h-4 text-pink-400" />
+            <span>Notas Olfativas Expert</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="card-glass text-center group">
+        <div class="relative mb-6">
+          <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+            <span class="text-4xl">👨‍🔬</span>
+          </div>
+          <div class="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center">
+            <Users class="w-4 h-4 text-slate-900" />
+          </div>
+        </div>
+        
+        <h3 class="text-xl font-semibold text-slate-100 mb-2">Ahmed Al-Rashid</h3>
+        <p class="text-blue-400 font-medium mb-4">Consultor de Dubai</p>
+        <p class="text-slate-400 text-sm mb-6">
+          Nuestro enlace directo en Dubai, Ahmed garantiza la autenticidad y calidad 
+          de cada fragancia que importamos.
+        </p>
+        
+        <div class="space-y-2 text-sm text-slate-400">
+          <div class="flex items-center justify-center space-x-2">
+            <Globe class="w-4 h-4 text-blue-400" />
+            <span>Conectado con Dubai</span>
+          </div>
+          <div class="flex items-center justify-center space-x-2">
+            <Award class="w-4 h-4 text-blue-400" />
+            <span>Certificación de Calidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Stats -->
+    <div class="card-glass mb-16">
+      <div class="text-center mb-8">
+        <h3 class="text-3xl font-playfair font-bold text-slate-100 mb-4">
+          Nuestro Impacto
+        </h3>
+        <p class="text-slate-300">
+          Números que reflejan nuestro compromiso con la excelencia en perfumería
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">500+</div>
+          <div class="text-slate-400">Fragancias Importadas</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">1000+</div>
+          <div class="text-slate-400">Clientes Satisfechos</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">3+</div>
+          <div class="text-slate-400">Años de Experiencia</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">100%</div>
+          <div class="text-slate-400">Autenticidad Garantizada</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Philosophy -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-3xl font-playfair font-bold text-slate-100 mb-6">
+          Nuestra Filosofía de Trabajo
+        </h3>
+        <div class="space-y-4 text-slate-300">
+          <p>
+            Creemos que cada fragancia cuenta una historia única y debe ser seleccionada 
+            con cuidado y conocimiento experto. Nuestro equipo combina pasión, 
+            experiencia y conexiones directas con Dubai.
+          </p>
+          <p>
+            Cada miembro de nuestro equipo está especializado en diferentes aspectos 
+            de la perfumería, desde la selección hasta la asesoría personalizada.
+          </p>
+          <p>
+            Trabajamos como una familia, compartiendo el mismo amor por las fragancias 
+            y el compromiso de ofrecer la mejor experiencia a nuestros clientes.
+          </p>
+        </div>
+      </div>
+      
+      <div class="relative">
+        <div class="aspect-square bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-8 flex items-center justify-center">
+          <div class="text-center">
+            <div class="w-24 h-24 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-3xl">🏆</span>
+            </div>
+            <h4 class="text-xl font-semibold text-slate-100 mb-2">Equipo DAR</h4>
+            <p class="text-slate-400 text-sm mb-4">
+              Expertos en Perfumería Oriental
+            </p>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <span class="text-yellow-400 font-bold">8+</span>
+                <p class="text-slate-400">Años Experiencia</p>
+              </div>
+              <div>
+                <span class="text-yellow-400 font-bold">3</span>
+                <p class="text-slate-400">Especialistas</p>
+              </div>
+              <div>
+                <span class="text-yellow-400 font-bold">100%</span>
+                <p class="text-slate-400">Dedicación</p>
+              </div>
+              <div>
+                <span class="text-yellow-400 font-bold">24/7</span>
+                <p class="text-slate-400">Disponibilidad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

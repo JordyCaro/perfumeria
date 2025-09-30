@@ -1,0 +1,263 @@
+---
+import { Star, Quote, Heart, Award } from 'lucide-react';
+---
+
+<section id="testimonios" class="section-padding bg-slate-800/30">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-yellow-600/30 rounded-full px-4 py-2 mb-6">
+        <span class="text-sm text-yellow-400 font-medium">Testimonios</span>
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-shadow mb-6">
+        Lo que dicen nuestros <span class="text-gradient">Clientes</span>
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Historias de éxito de quienes han confiado en nosotros para encontrar 
+        su fragancia perfecta y vivir experiencias olfativas únicas.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- Testimonial 1 -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center">
+            <span class="text-2xl">👨</span>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-slate-100">Andrés Gómez</h4>
+            <p class="text-slate-400 text-sm">Empresario</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star class="w-5 h-5 text-yellow-400 fill-current" />
+          ))}
+        </div>
+        
+        <Quote class="w-8 h-8 text-yellow-400 mb-4" />
+        <p class="text-slate-300 mb-6">
+          "La asesoría personalizada de DAR fue increíble. María me ayudó a encontrar 
+          la fragancia perfecta para mi personalidad. El Oud Royal que me recomendaron 
+          es exactamente lo que buscaba."
+        </p>
+        
+        <div class="flex items-center space-x-2 text-sm text-slate-400">
+          <Award class="w-4 h-4 text-yellow-400" />
+          <span>Fragancia: Oud Royal</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center">
+            <span class="text-2xl">👩</span>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-slate-100">María Rodríguez</h4>
+            <p class="text-slate-400 text-sm">Diseñadora</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star class="w-5 h-5 text-yellow-400 fill-current" />
+          ))}
+        </div>
+        
+        <Quote class="w-8 h-8 text-yellow-400 mb-4" />
+        <p class="text-slate-300 mb-6">
+          "Rose Gold es simplemente perfecta para mí. La duración es increíble y 
+          las notas florales son exquisitas. DAR me ayudó a descubrir mi fragancia 
+          signature."
+        </p>
+        
+        <div class="flex items-center space-x-2 text-sm text-slate-400">
+          <Heart class="w-4 h-4 text-pink-400" />
+          <span>Fragancia: Rose Gold</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+            <span class="text-2xl">👨</span>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-slate-100">Carlos Martínez</h4>
+            <p class="text-slate-400 text-sm">Consultor</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star class="w-5 h-5 text-yellow-400 fill-current" />
+          ))}
+        </div>
+        
+        <Quote class="w-8 h-8 text-yellow-400 mb-4" />
+        <p class="text-slate-300 mb-6">
+          "La calidad y autenticidad de los productos de DAR es excepcional. 
+          Cada fragancia que he comprado ha superado mis expectativas. 
+          Definitivamente mi lugar de confianza para perfumes."
+        </p>
+        
+        <div class="flex items-center space-x-2 text-sm text-slate-400">
+          <Star class="w-4 h-4 text-blue-400" />
+          <span>Cliente Frecuente</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center">
+            <span class="text-2xl">👩</span>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-slate-100">Ana López</h4>
+            <p class="text-slate-400 text-sm">Arquitecta</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star class="w-5 h-5 text-yellow-400 fill-current" />
+          ))}
+        </div>
+        
+        <Quote class="w-8 h-8 text-yellow-400 mb-4" />
+        <p class="text-slate-300 mb-6">
+          "Vanilla Dreams es mi fragancia favorita. La asesoría de DAR fue clave 
+          para encontrar algo que realmente me representa. El servicio al cliente 
+          es excepcional."
+        </p>
+        
+        <div class="flex items-center space-x-2 text-sm text-slate-400">
+          <Heart class="w-4 h-4 text-purple-400" />
+          <span>Fragancia: Vanilla Dreams</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+            <span class="text-2xl">👨</span>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-slate-100">Roberto Silva</h4>
+            <p class="text-slate-400 text-sm">Médico</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star class="w-5 h-5 text-yellow-400 fill-current" />
+          ))}
+        </div>
+        
+        <Quote class="w-8 h-8 text-yellow-400 mb-4" />
+        <p class="text-slate-300 mb-6">
+          "Spice Blend es perfecta para mi profesión. La duración es increíble 
+          y las notas de especias son sofisticadas. DAR me ayudó a encontrar 
+          mi fragancia profesional."
+        </p>
+        
+        <div class="flex items-center space-x-2 text-sm text-slate-400">
+          <Award class="w-4 h-4 text-green-400" />
+          <span>Fragancia: Spice Blend</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center">
+            <span class="text-2xl">👩</span>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-slate-100">Laura Torres</h4>
+            <p class="text-slate-400 text-sm">Artista</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star class="w-5 h-5 text-yellow-400 fill-current" />
+          ))}
+        </div>
+        
+        <Quote class="w-8 h-8 text-yellow-400 mb-4" />
+        <p class="text-slate-300 mb-6">
+          "La colección floral de DAR es simplemente perfecta. Cada fragancia 
+          es única y auténtica. El servicio de envío es rápido y seguro. 
+          Definitivamente recomiendo DAR."
+        </p>
+        
+        <div class="flex items-center space-x-2 text-sm text-slate-400">
+          <Heart class="w-4 h-4 text-red-400" />
+          <span>Colección Floral</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="card-glass mb-16">
+      <div class="text-center mb-8">
+        <h3 class="text-3xl font-playfair font-bold text-slate-100 mb-4">
+          Nuestros Números
+        </h3>
+        <p class="text-slate-300">
+          Resultados que reflejan la satisfacción de nuestros clientes
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">98%</div>
+          <div class="text-slate-400">Satisfacción del Cliente</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">1000+</div>
+          <div class="text-slate-400">Clientes Felices</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">4.9/5</div>
+          <div class="text-slate-400">Calificación Promedio</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">95%</div>
+          <div class="text-slate-400">Clientes Recurrentes</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="card-glass text-center">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-3xl font-playfair font-bold text-slate-100 mb-6">
+          ¿Listo para Vivir tu Experiencia Olfativa?
+        </h3>
+        <p class="text-xl text-slate-300 mb-8">
+          Únete a nuestros clientes satisfechos y descubre la fragancia perfecta 
+          que te conectará con tu esencia más auténtica.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="btn-primary">
+            <span>Iniciar Mi Experiencia</span>
+            <Star class="w-5 h-5" />
+          </button>
+          <button class="btn-secondary">
+            <span>Ver Más Testimonios</span>
+            <Heart class="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

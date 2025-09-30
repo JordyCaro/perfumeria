@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-slate-900 text-slate-100;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:from-yellow-400 hover:to-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-yellow-500 text-yellow-400 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 hover:text-slate-900 transition-all duration-300;
+  }
+  
+  .card-glass {
+    @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-yellow-500/50 hover:shadow-lg hover:shadow-yellow-500/10 transition-all duration-300;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent;
+  }
+  
+  .section-padding {
+    @apply py-20 px-6 sm:px-8 lg:px-12;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6;
+  }
+  
+  .fragrance-card {
+    @apply bg-slate-800/30 backdrop-blur-sm border border-slate-700/30 rounded-2xl p-6 hover:border-yellow-600/50 hover:bg-slate-800/50 transition-all duration-500 hover:transform hover:scale-105;
+  }
+  
+  .fragrance-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(212, 175, 55, 0.1);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, #1A202C 0%, #2A3441 50%, #1A202C 100%);
+  }
+  
+  .perfume-bottle-glow {
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+  }
+  
+  .note-tag {
+    @apply inline-block bg-slate-700/50 text-slate-300 px-3 py-1 rounded-full text-sm border border-slate-600/50;
+  }
+  
+  .note-tag.floral {
+    @apply bg-pink-900/30 text-pink-300 border-pink-700/50;
+  }
+  
+  .note-tag.woody {
+    @apply bg-amber-900/30 text-amber-300 border-amber-700/50;
+  }
+  
+  .note-tag.citrus {
+    @apply bg-yellow-900/30 text-yellow-300 border-yellow-700/50;
+  }
+  
+  .note-tag.oriental {
+    @apply bg-red-900/30 text-red-300 border-red-700/50;
+  }
+  
+  .note-tag.fruity {
+    @apply bg-green-900/30 text-green-300 border-green-700/50;
+  }
+  
+  .note-tag.gourmand {
+    @apply bg-orange-900/30 text-orange-300 border-orange-700/50;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .backdrop-blur-xs {
+    backdrop-filter: blur(2px);
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.6s ease-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.6s ease-out;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 641px) {
+  .hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .container-custom {
+    @apply px-4;
+  }
+  
+  .section-padding {
+    @apply py-12;
+  }
+  
+  .card-glass {
+    @apply p-4;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fragrance-card {
+    @apply p-4;
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD700;
+}

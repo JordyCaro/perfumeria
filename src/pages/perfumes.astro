@@ -1,0 +1,319 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Filter, Search, Grid, List, Star, Heart, ShoppingCart } from 'lucide-react';
+
+// Datos de perfumes Lattafa
+const perfumes = [
+  {
+    id: 1,
+    name: "Lattafa Yara",
+    gender: "femenino",
+    category: "floral",
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=400&fit=crop",
+    description: "Una fragancia dulce y tropical para mujer con notas de frutas exóticas y flores blancas.",
+    notes: ["Bergamota", "Frutas tropicales", "Jazmín", "Vainilla", "Ámbar"],
+    occasion: "día",
+    rating: 4.8,
+    stock: 15
+  },
+  {
+    id: 2,
+    name: "Lattafa Khamrah",
+    gender: "unisex",
+    category: "oriental",
+    price: 120000,
+    image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59cc5?w=400&h=400&fit=crop",
+    description: "Unisex, rico y sofisticado con notas especiadas y cálidas.",
+    notes: ["Canela", "Cardamomo", "Ámbar", "Vainilla", "Sándalo"],
+    occasion: "noche",
+    rating: 4.9,
+    stock: 8
+  },
+  {
+    id: 3,
+    name: "Lattafa Asad",
+    gender: "masculino",
+    category: "amaderado",
+    price: 95000,
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=400&fit=crop",
+    description: "Masculino, con toques frescos y amaderados perfectos para el hombre moderno.",
+    notes: ["Lavanda", "Pimienta negra", "Sándalo", "Vetiver", "Ámbar"],
+    occasion: "día",
+    rating: 4.7,
+    stock: 12
+  },
+  {
+    id: 4,
+    name: "Lattafa Raghba",
+    gender: "unisex",
+    category: "oriental",
+    price: 78000,
+    image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59cc5?w=400&h=400&fit=crop",
+    description: "Fragancia oriental intensa con notas de oud y especias exóticas.",
+    notes: ["Oud", "Rosa", "Ámbar", "Sándalo", "Vainilla"],
+    occasion: "noche",
+    rating: 4.6,
+    stock: 20
+  },
+  {
+    id: 5,
+    name: "Lattafa Fakhar",
+    gender: "masculino",
+    category: "fresco",
+    price: 65000,
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=400&fit=crop",
+    description: "Fresco y energético, ideal para el uso diario del hombre activo.",
+    notes: ["Limón", "Bergamota", "Lavanda", "Menta", "Musk"],
+    occasion: "día",
+    rating: 4.5,
+    stock: 18
+  },
+  {
+    id: 6,
+    name: "Lattafa Ana Abiyedh",
+    gender: "femenino",
+    category: "floral",
+    price: 72000,
+    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=400&fit=crop",
+    description: "Elegante y sofisticada, con notas florales y frutales delicadas.",
+    notes: ["Pera", "Fresia", "Jazmín", "Ámbar", "Musk"],
+    occasion: "día",
+    rating: 4.7,
+    stock: 14
+  }
+];
+
+const categories = [
+  { id: "todos", name: "Todos", count: perfumes.length },
+  { id: "masculino", name: "Masculino", count: perfumes.filter(p => p.gender === "masculino").length },
+  { id: "femenino", name: "Femenino", count: perfumes.filter(p => p.gender === "femenino").length },
+  { id: "unisex", name: "Unisex", count: perfumes.filter(p => p.gender === "unisex").length }
+];
+
+const fragranceFamilies = [
+  { id: "floral", name: "Floral", count: perfumes.filter(p => p.category === "floral").length },
+  { id: "oriental", name: "Oriental", count: perfumes.filter(p => p.category === "oriental").length },
+  { id: "amaderado", name: "Amaderado", count: perfumes.filter(p => p.category === "amaderado").length },
+  { id: "fresco", name: "Fresco", count: perfumes.filter(p => p.category === "fresco").length }
+];
+---
+
+<Layout title="Catálogo de Perfumes Lattafa - DAR Perfumes" description="Explora nuestra colección completa de perfumes Lattafa. Filtra por género, familia olfativa y ocasión. Envíos a todo Colombia.">
+  <Header />
+  
+  <main class="min-h-screen bg-slate-900 pt-20">
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-br from-slate-800 to-slate-900">
+      <div class="container-custom">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-yellow-600/30 rounded-full px-4 py-2 mb-6">
+            <span class="text-sm text-yellow-400 font-medium">Catálogo</span>
+          </div>
+          <h1 class="text-4xl lg:text-6xl font-playfair font-bold text-shadow mb-6">
+            <span class="text-gradient">Colección</span> Lattafa
+          </h1>
+          <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+            Descubre nuestra selección exclusiva de fragancias auténticas importadas directamente desde Dubai. 
+            Cada perfume cuenta una historia única.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="py-8 bg-slate-800/30">
+      <div class="container-custom">
+        <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+          <!-- Search Bar -->
+          <div class="relative flex-1 max-w-md">
+            <Search class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+            <input
+              type="text"
+              placeholder="Buscar perfumes..."
+              class="w-full pl-10 pr-4 py-3 bg-slate-800/50 border border-slate-600 rounded-xl text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+            />
+          </div>
+
+          <!-- View Toggle -->
+          <div class="flex items-center space-x-2">
+            <button class="p-2 bg-slate-800/50 border border-slate-600 rounded-lg text-slate-400 hover:text-yellow-400 hover:border-yellow-500 transition-all duration-300">
+              <Grid class="w-5 h-5" />
+            </button>
+            <button class="p-2 bg-slate-800/50 border border-slate-600 rounded-lg text-slate-400 hover:text-yellow-400 hover:border-yellow-500 transition-all duration-300">
+              <List class="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="mt-8">
+          <div class="flex flex-wrap gap-4 mb-6">
+            <button class="filter-tab active" data-filter="todos">
+              Todos ({perfumes.length})
+            </button>
+            {categories.slice(1).map(category => (
+              <button class="filter-tab" data-filter={category.id}>
+                {category.name} ({category.count})
+              </button>
+            ))}
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+            {fragranceFamilies.map(family => (
+              <button class="filter-tab" data-filter={family.id}>
+                {family.name} ({family.count})
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {perfumes.map(perfume => (
+            <div class="product-card group" data-gender={perfume.gender} data-category={perfume.category}>
+              <div class="relative overflow-hidden rounded-2xl mb-4">
+                <img
+                  src={perfume.image}
+                  alt={perfume.name}
+                  class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <p class="text-slate-200 text-sm mb-2">{perfume.description}</p>
+                    <div class="flex flex-wrap gap-1">
+                      {perfume.notes.slice(0, 3).map(note => (
+                        <span class="px-2 py-1 bg-slate-800/50 text-xs text-slate-300 rounded-full">
+                          {note}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Stock Badge -->
+                {perfume.stock < 10 && (
+                  <div class="absolute top-4 right-4 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+                    ¡Últimas unidades!
+                  </div>
+                )}
+              </div>
+
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-xl font-semibold text-slate-100 group-hover:text-yellow-400 transition-colors duration-300">
+                    {perfume.name}
+                  </h3>
+                  <div class="flex items-center space-x-1">
+                    <Star class="w-4 h-4 text-yellow-400 fill-current" />
+                    <span class="text-sm text-slate-400">{perfume.rating}</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-2xl font-bold text-yellow-400">
+                    ${perfume.price.toLocaleString()}
+                  </span>
+                  <div class="flex items-center space-x-2">
+                    <button class="p-2 bg-slate-800/50 border border-slate-600 rounded-lg text-slate-400 hover:text-red-400 hover:border-red-500 transition-all duration-300">
+                      <Heart class="w-4 h-4" />
+                    </button>
+                    <button class="p-2 bg-slate-800/50 border border-slate-600 rounded-lg text-slate-400 hover:text-yellow-400 hover:border-yellow-500 transition-all duration-300">
+                      <ShoppingCart class="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between text-sm text-slate-400">
+                  <span class="capitalize">{perfume.gender}</span>
+                  <span class="capitalize">{perfume.occasion}</span>
+                </div>
+
+                <a
+                  href={`/perfumes/${perfume.id}`}
+                  class="block w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 font-bold py-3 px-4 rounded-xl text-center hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105"
+                >
+                  Ver Detalles
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+
+  <style>
+    .filter-tab {
+      padding: 0.5rem 1rem;
+      background-color: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgb(71, 85, 105);
+      border-radius: 0.75rem;
+      color: rgb(203, 213, 225);
+      transition: all 0.3s;
+    }
+    
+    .filter-tab:hover {
+      background-color: rgba(51, 65, 85, 0.5);
+      border-color: rgba(234, 179, 8, 0.5);
+      color: rgb(250, 204, 21);
+    }
+    
+    .filter-tab.active {
+      background-color: rgba(234, 179, 8, 0.2);
+      border-color: rgb(234, 179, 8);
+      color: rgb(250, 204, 21);
+    }
+    
+    .product-card {
+      background-color: rgba(30, 41, 59, 0.3);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(51, 65, 85, 0.5);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: all 0.3s;
+    }
+    
+    .product-card:hover {
+      border-color: rgba(234, 179, 8, 0.3);
+    }
+  </style>
+
+  <script>
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const productCards = document.querySelectorAll('.product-card');
+
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Remove active class from all tabs
+          filterTabs.forEach(t => t.classList.remove('active'));
+          // Add active class to clicked tab
+          tab.classList.add('active');
+
+          const filter = tab.dataset.filter;
+
+          productCards.forEach(card => {
+            if (filter === 'todos' || 
+                card.dataset.gender === filter || 
+                card.dataset.category === filter) {
+              card.style.display = 'block';
+              card.style.animation = 'fadeIn 0.5s ease-in-out';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</Layout>

@@ -1,0 +1,192 @@
+---
+import { ShoppingBag, Heart, Shield, Truck, Users, Award, Globe, Star, Sparkles } from 'lucide-react';
+---
+
+<section id="servicios" class="section-padding bg-slate-900/50">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm border border-yellow-600/30 rounded-full px-4 py-2 mb-6">
+        <span class="text-sm text-yellow-400 font-medium">Nuestros Servicios</span>
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-playfair font-bold text-shadow mb-6">
+        Soluciones de <span class="text-gradient">Perfumería</span>
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Ofrecemos servicios especializados en perfumería oriental que transforman tu experiencia 
+        olfativa y conectan tu esencia con la elegancia de Dubai.
+      </p>
+    </div>
+
+    <!-- Featured Services -->
+    <div class="grid lg:grid-cols-2 gap-12 mb-20">
+      <!-- Importación Directa -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Globe class="w-8 h-8 text-slate-900" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-playfair font-bold text-slate-100">Importación Directa</h3>
+            <p class="text-slate-400">Desde Dubai hasta Colombia</p>
+          </div>
+        </div>
+        
+        <p class="text-slate-300 mb-6">
+          Conectamos directamente con los mejores perfumistas de Dubai para traerte 
+          las fragancias más exclusivas y auténticas. Sin intermediarios, garantizamos 
+          la originalidad y calidad de cada producto.
+        </p>
+        
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Importación directa desde Dubai</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Certificados de autenticidad</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Trazabilidad completa</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Precios competitivos</span>
+          </li>
+        </ul>
+        
+        <button class="btn-primary w-full">
+          <span>Conocer Más</span>
+          <Star class="w-5 h-5" />
+        </button>
+      </div>
+
+      <!-- Asesoría Personalizada -->
+      <div class="card-glass group">
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Users class="w-8 h-8 text-slate-900" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-playfair font-bold text-slate-100">Asesoría Personalizada</h3>
+            <p class="text-slate-400">Encuentra tu fragancia perfecta</p>
+          </div>
+        </div>
+        
+        <p class="text-slate-300 mb-6">
+          Nuestros expertos en perfumería te ayudan a encontrar la fragancia ideal según 
+          tu personalidad, estilo de vida y preferencias. Una experiencia personalizada 
+          que garantiza tu satisfacción.
+        </p>
+        
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Consulta personalizada</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Análisis de personalidad</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Muestras gratuitas</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-slate-300">Seguimiento post-venta</span>
+          </li>
+        </ul>
+        
+        <button class="btn-primary w-full">
+          <span>Solicitar Asesoría</span>
+          <Heart class="w-5 h-5" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Additional Services -->
+    <div class="mb-16">
+      <h3 class="text-3xl font-playfair font-bold text-center mb-12 text-slate-100">
+        Servicios Especializados
+      </h3>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Envío Seguro -->
+        <div class="card-glass text-center group">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Truck class="w-8 h-8 text-slate-900" />
+          </div>
+          <h4 class="text-xl font-semibold text-slate-100 mb-4">Envío Seguro</h4>
+          <p class="text-slate-400 mb-6">
+            Envío protegido a todo Colombia con empaque especializado 
+            para preservar la integridad de cada fragancia.
+          </p>
+          <ul class="text-sm text-slate-400 space-y-2">
+            <li>• Empaque especializado</li>
+            <li>• Seguro de envío incluido</li>
+            <li>• Rastreo en tiempo real</li>
+          </ul>
+        </div>
+        
+        <!-- Garantía de Calidad -->
+        <div class="card-glass text-center group">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Shield class="w-8 h-8 text-slate-900" />
+          </div>
+          <h4 class="text-xl font-semibold text-slate-100 mb-4">Garantía de Calidad</h4>
+          <p class="text-slate-400 mb-6">
+            Garantizamos la autenticidad y calidad de cada producto con 
+            certificados oficiales y garantía de satisfacción.
+          </p>
+          <ul class="text-sm text-slate-400 space-y-2">
+            <li>• Certificados de autenticidad</li>
+            <li>• Garantía de satisfacción</li>
+            <li>• Política de devolución</li>
+          </ul>
+        </div>
+        
+        <!-- Atención 24/7 -->
+        <div class="card-glass text-center group">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Award class="w-8 h-8 text-slate-900" />
+          </div>
+          <h4 class="text-xl font-semibold text-slate-100 mb-4">Atención Premium</h4>
+          <p class="text-slate-400 mb-6">
+            Servicio de atención al cliente especializado con expertos 
+            en perfumería disponible cuando lo necesites.
+          </p>
+          <ul class="text-sm text-slate-400 space-y-2">
+            <li>• Atención especializada</li>
+            <li>• Soporte técnico</li>
+            <li>• Consultas ilimitadas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="card-glass text-center">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-3xl font-playfair font-bold text-slate-100 mb-6">
+          ¿Listo para Descubrir tu Fragancia Perfecta?
+        </h3>
+        <p class="text-xl text-slate-300 mb-8">
+          Nuestros expertos están listos para ayudarte a encontrar la fragancia 
+          que mejor se adapte a tu personalidad y estilo de vida.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="btn-primary">
+            <span>Iniciar Consulta</span>
+            <Sparkles class="w-5 h-5" />
+          </button>
+          <button class="btn-secondary">
+            <span>Ver Catálogo</span>
+            <ShoppingBag class="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

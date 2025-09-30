@@ -1,0 +1,392 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { Star, Heart, ShoppingCart, Truck, Shield, RotateCcw, Share2 } from 'lucide-react';
+
+// Datos de perfumes (en un proyecto real, esto vendría de una base de datos)
+const perfumes = {
+  1: {
+    id: 1,
+    name: "Lattafa Yara",
+    gender: "femenino",
+    category: "floral",
+    price: 85000,
+    originalPrice: 120000,
+    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=600&fit=crop",
+    description: "Una fragancia dulce y tropical para mujer con notas de frutas exóticas y flores blancas. Perfecta para el día y ocasiones especiales.",
+    longDescription: "Lattafa Yara es una fragancia floral-frutal que captura la esencia de la feminidad moderna. Con notas de salida vibrantes de frutas tropicales y un corazón floral elegante, esta fragancia es ideal para la mujer que busca sofisticación y frescura en su día a día.",
+    notes: {
+      top: ["Bergamota", "Frutas tropicales", "Notas acuáticas"],
+      middle: ["Jazmín", "Rosa", "Fresia"],
+      base: ["Vainilla", "Ámbar", "Musk", "Sándalo"]
+    },
+    occasion: "día",
+    season: "primavera-verano",
+    rating: 4.8,
+    reviews: 127,
+    stock: 15,
+    size: "100ml",
+    concentration: "Eau de Parfum",
+    longevity: "6-8 horas",
+    projection: "Moderada",
+    sillage: "Suave",
+    ingredients: "Alcohol, Agua, Fragancia, Colorantes",
+    madeIn: "Dubai, UAE",
+    brand: "Lattafa Perfumes"
+  },
+  2: {
+    id: 2,
+    name: "Lattafa Khamrah",
+    gender: "unisex",
+    category: "oriental",
+    price: 120000,
+    originalPrice: 180000,
+    image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59cc5?w=600&h=600&fit=crop",
+    description: "Unisex, rico y sofisticado con notas especiadas y cálidas. Una fragancia oriental que despierta los sentidos.",
+    longDescription: "Lattafa Khamrah es una fragancia oriental unisex que combina la riqueza de las especias exóticas con la calidez del ámbar y la vainilla. Perfecta para ocasiones especiales y momentos íntimos.",
+    notes: {
+      top: ["Canela", "Cardamomo", "Pimienta rosa"],
+      middle: ["Ámbar", "Vainilla", "Tonka"],
+      base: ["Sándalo", "Musk", "Ámbar gris"]
+    },
+    occasion: "noche",
+    season: "otoño-invierno",
+    rating: 4.9,
+    reviews: 89,
+    stock: 8,
+    size: "100ml",
+    concentration: "Eau de Parfum",
+    longevity: "8-10 horas",
+    projection: "Alta",
+    sillage: "Moderada",
+    ingredients: "Alcohol, Agua, Fragancia, Colorantes",
+    madeIn: "Dubai, UAE",
+    brand: "Lattafa Perfumes"
+  }
+};
+
+export async function getStaticPaths() {
+  return [
+    { params: { id: "1" } },
+    { params: { id: "2" } }
+  ];
+}
+
+const { id } = Astro.params;
+const perfume = perfumes[id];
+---
+
+<Layout title={`${perfume.name} - DAR Perfumes`} description={perfume.description}>
+  <Header />
+  
+  <main class="min-h-screen bg-slate-900 pt-20">
+    <!-- Breadcrumb -->
+    <section class="py-4 bg-slate-800/30">
+      <div class="container-custom">
+        <nav class="text-sm text-slate-400">
+          <a href="/" class="hover:text-yellow-400 transition-colors duration-300">Inicio</a>
+          <span class="mx-2">/</span>
+          <a href="/perfumes" class="hover:text-yellow-400 transition-colors duration-300">Perfumes</a>
+          <span class="mx-2">/</span>
+          <span class="text-slate-300">{perfume.name}</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-12">
+      <div class="container-custom">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Product Image -->
+          <div class="space-y-4">
+            <div class="aspect-square bg-slate-800/50 rounded-2xl overflow-hidden">
+              <img
+                src={perfume.image}
+                alt={perfume.name}
+                class="w-full h-full object-cover"
+              />
+            </div>
+            
+            <!-- Additional Images (Placeholder) -->
+            <div class="grid grid-cols-4 gap-4">
+              <div class="aspect-square bg-slate-800/50 rounded-xl overflow-hidden">
+                <img
+                  src={perfume.image}
+                  alt={`${perfume.name} - Vista 2`}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="aspect-square bg-slate-800/50 rounded-xl overflow-hidden">
+                <img
+                  src={perfume.image}
+                  alt={`${perfume.name} - Vista 3`}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="aspect-square bg-slate-800/50 rounded-xl overflow-hidden">
+                <img
+                  src={perfume.image}
+                  alt={`${perfume.name} - Vista 4`}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="aspect-square bg-slate-800/50 rounded-xl overflow-hidden">
+                <img
+                  src={perfume.image}
+                  alt={`${perfume.name} - Vista 5`}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="space-y-6">
+            <div>
+              <h1 class="text-3xl lg:text-4xl font-playfair font-bold text-slate-100 mb-2">
+                {perfume.name}
+              </h1>
+              <p class="text-lg text-slate-400 mb-4">
+                {perfume.brand} • {perfume.size} • {perfume.concentration}
+              </p>
+              
+              <div class="flex items-center space-x-4 mb-4">
+                <div class="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star class={`w-5 h-5 ${i < Math.floor(perfume.rating) ? 'text-yellow-400 fill-current' : 'text-slate-600'}`} />
+                  ))}
+                </div>
+                <span class="text-slate-400">({perfume.reviews} reseñas)</span>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <p class="text-slate-300 leading-relaxed">
+                {perfume.longDescription}
+              </p>
+              
+              <div class="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <span class="text-slate-400">Género:</span>
+                  <span class="text-slate-300 ml-2 capitalize">{perfume.gender}</span>
+                </div>
+                <div>
+                  <span class="text-slate-400">Ocasión:</span>
+                  <span class="text-slate-300 ml-2 capitalize">{perfume.occasion}</span>
+                </div>
+                <div>
+                  <span class="text-slate-400">Estación:</span>
+                  <span class="text-slate-300 ml-2 capitalize">{perfume.season}</span>
+                </div>
+                <div>
+                  <span class="text-slate-400">Duración:</span>
+                  <span class="text-slate-300 ml-2">{perfume.longevity}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="space-y-2">
+              <div class="flex items-center space-x-4">
+                <span class="text-3xl font-bold text-yellow-400">
+                  ${perfume.price.toLocaleString()}
+                </span>
+                <span class="text-lg text-slate-500 line-through">
+                  ${perfume.originalPrice.toLocaleString()}
+                </span>
+                <span class="bg-red-500 text-white text-sm px-2 py-1 rounded-full">
+                  -{Math.round((1 - perfume.price / perfume.originalPrice) * 100)}%
+                </span>
+              </div>
+              <p class="text-sm text-slate-400">
+                Precio especial por tiempo limitado
+              </p>
+            </div>
+
+            <!-- Stock Status -->
+            <div class="flex items-center space-x-2">
+              {perfume.stock > 10 ? (
+                <span class="text-green-400 text-sm">✓ En stock</span>
+              ) : perfume.stock > 0 ? (
+                <span class="text-yellow-400 text-sm">⚠ Últimas {perfume.stock} unidades</span>
+              ) : (
+                <span class="text-red-400 text-sm">✗ Agotado</span>
+              )}
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="space-y-4">
+              <div class="flex space-x-4">
+                <button class="flex-1 bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 font-bold py-4 px-6 rounded-xl hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                  <ShoppingCart class="w-5 h-5" />
+                  <span>Agregar al Carrito</span>
+                </button>
+                <button class="p-4 bg-slate-800/50 border border-slate-600 rounded-xl text-slate-400 hover:text-red-400 hover:border-red-500 transition-all duration-300">
+                  <Heart class="w-5 h-5" />
+                </button>
+                <button class="p-4 bg-slate-800/50 border border-slate-600 rounded-xl text-slate-400 hover:text-yellow-400 hover:border-yellow-500 transition-all duration-300">
+                  <Share2 class="w-5 h-5" />
+                </button>
+              </div>
+              
+              <button class="w-full bg-slate-800/50 border border-slate-600 text-slate-100 font-bold py-4 px-6 rounded-xl hover:border-yellow-500 hover:text-yellow-400 transition-all duration-300">
+                Comprar Ahora
+              </button>
+            </div>
+
+            <!-- Features -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-700">
+              <div class="text-center">
+                <Truck class="w-6 h-6 text-yellow-400 mx-auto mb-2" />
+                <p class="text-xs text-slate-400">Envío Gratis</p>
+              </div>
+              <div class="text-center">
+                <Shield class="w-6 h-6 text-yellow-400 mx-auto mb-2" />
+                <p class="text-xs text-slate-400">100% Auténtico</p>
+              </div>
+              <div class="text-center">
+                <RotateCcw class="w-6 h-6 text-yellow-400 mx-auto mb-2" />
+                <p class="text-xs text-slate-400">Devolución</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fragrance Notes -->
+    <section class="py-16 bg-slate-800/30">
+      <div class="container-custom">
+        <h2 class="text-3xl font-playibold text-slate-100 mb-12 text-center">
+          Notas de la Fragancia
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="card-glass text-center">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-4">Notas de Salida</h3>
+            <div class="space-y-2">
+              {perfume.notes.top.map(note => (
+                <span class="block px-3 py-2 bg-slate-800/50 text-slate-300 rounded-lg">
+                  {note}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div class="card-glass text-center">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-4">Notas de Corazón</h3>
+            <div class="space-y-2">
+              {perfume.notes.middle.map(note => (
+                <span class="block px-3 py-2 bg-slate-800/50 text-slate-300 rounded-lg">
+                  {note}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div class="card-glass text-center">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-4">Notas de Fondo</h3>
+            <div class="space-y-2">
+              {perfume.notes.base.map(note => (
+                <span class="block px-3 py-2 bg-slate-800/50 text-slate-300 rounded-lg">
+                  {note}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-16">
+      <div class="container-custom">
+        <h2 class="text-3xl font-playfair font-bold text-slate-100 mb-12 text-center">
+          Detalles del Producto
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="card-glass">
+            <h3 class="text-xl font-semibold text-slate-100 mb-4">Especificaciones</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between">
+                <span class="text-slate-400">Marca:</span>
+                <span class="text-slate-300">{perfume.brand}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Tamaño:</span>
+                <span class="text-slate-300">{perfume.size}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Concentración:</span>
+                <span class="text-slate-300">{perfume.concentration}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Duración:</span>
+                <span class="text-slate-300">{perfume.longevity}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Proyección:</span>
+                <span class="text-slate-300">{perfume.projection}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Estela:</span>
+                <span class="text-slate-300">{perfume.sillage}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Hecho en:</span>
+                <span class="text-slate-300">{perfume.madeIn}</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-glass">
+            <h3 class="text-xl font-semibold text-slate-100 mb-4">Ingredientes</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              {perfume.ingredients}
+            </p>
+            <p class="text-slate-400 text-xs">
+              * Los ingredientes pueden variar ligeramente según el lote de producción.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-16 bg-slate-800/30">
+      <div class="container-custom">
+        <h2 class="text-3xl font-playfair font-bold text-slate-100 mb-12 text-center">
+          Productos Relacionados
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Placeholder for related products -->
+          <div class="card-glass text-center">
+            <div class="aspect-square bg-slate-700 rounded-xl mb-4"></div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Lattafa Ana Abiyedh</h3>
+            <p class="text-slate-400 text-sm mb-4">Fragancia floral elegante</p>
+            <span class="text-yellow-400 font-bold">$72,000</span>
+          </div>
+          
+          <div class="card-glass text-center">
+            <div class="aspect-square bg-slate-700 rounded-xl mb-4"></div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Lattafa Raghba</h3>
+            <p class="text-slate-400 text-sm mb-4">Oriental intenso con oud</p>
+            <span class="text-yellow-400 font-bold">$78,000</span>
+          </div>
+          
+          <div class="card-glass text-center">
+            <div class="aspect-square bg-slate-700 rounded-xl mb-4"></div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Lattafa Asad</h3>
+            <p class="text-slate-400 text-sm mb-4">Masculino amaderado</p>
+            <span class="text-yellow-400 font-bold">$95,000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

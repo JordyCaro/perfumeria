@@ -1,0 +1,155 @@
+---
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa importados desde Dubai para Colombia" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- SEO Meta Tags -->
+		<meta name="keywords" content="perfumes Lattafa, fragancias Dubai, perfumes importados Colombia, DAR perfumería, fragancias orientales, perfumes árabes, perfumes auténticos, fragancias unisex, perfumes hombre, perfumes mujer" />
+		<meta name="author" content="DAR - Casa de la Perfumería" />
+		<meta name="robots" content="index, follow" />
+		<meta name="geo.region" content="CO" />
+		<meta name="geo.country" content="Colombia" />
+		<meta name="language" content="Spanish" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://darperfumeria.com/" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/og-image.jpg" />
+		<meta property="og:locale" content="es_CO" />
+		<meta property="og:site_name" content="DAR Perfumes" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://darperfumeria.com/" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="/og-image.jpg" />
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "DAR Perfumes",
+				"description": "Importadores de perfumes Lattafa auténticos desde Dubai a Colombia",
+				"url": "https://darperfumeria.com",
+				"logo": "https://darperfumeria.com/logo-dar.svg",
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+57-300-123-4567",
+					"contactType": "customer service",
+					"areaServed": "CO",
+					"availableLanguage": "Spanish"
+				},
+				"address": {
+					"@type": "PostalAddress",
+					"addressCountry": "CO",
+					"addressRegion": "Colombia"
+				},
+				"sameAs": [
+					"https://facebook.com/darperfumes",
+					"https://instagram.com/darperfumes"
+				]
+			}
+		</script>
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		
+		<!-- Import global styles -->
+		<style>
+			@import '../styles/global.css';
+		</style>
+	</head>
+	<body class="bg-slate-900 text-slate-100 font-inter">
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--color-primary: #D4AF37; /* Gold */
+		--color-primary-dark: #B8941F; /* Darker Gold */
+		--color-primary-light: #F4E4BC; /* Light Gold */
+		--color-secondary: #2A3441; /* Dark Blue-Gray */
+		--color-secondary-dark: #1A202C; /* Darker Blue-Gray */
+		--color-accent: #8B4513; /* Bronze */
+		--color-text: #F7FAFC; /* Light Gray */
+		--color-text-muted: #A0AEC0; /* Muted Gray */
+	}
+	
+	.font-playfair {
+		font-family: 'Playfair Display', serif;
+	}
+	
+	.font-inter {
+		font-family: 'Inter', sans-serif;
+	}
+	
+	.bg-gradient-gold {
+		background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 100%);
+	}
+	
+	.bg-gradient-dark {
+		background: linear-gradient(135deg, #1A202C 0%, #2A3441 100%);
+	}
+	
+	.text-gradient-gold {
+		background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+	
+	.border-gradient-gold {
+		border: 1px solid transparent;
+		background: linear-gradient(135deg, #1A202C, #2A3441) padding-box,
+		            linear-gradient(135deg, #D4AF37, #F4E4BC) border-box;
+	}
+	
+	.glass-effect {
+		background: rgba(26, 32, 44, 0.8);
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(212, 175, 55, 0.2);
+	}
+	
+	.hover-glow:hover {
+		box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+		transition: box-shadow 0.3s ease;
+	}
+	
+	.animate-float {
+		animation: float 6s ease-in-out infinite;
+	}
+	
+	@keyframes float {
+		0%, 100% { transform: translateY(0px); }
+		50% { transform: translateY(-20px); }
+	}
+	
+	.animate-pulse-slow {
+		animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	}
+	
+	.scroll-smooth {
+		scroll-behavior: smooth;
+	}
+</style>
