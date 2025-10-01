@@ -27,72 +27,72 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
     </section>
 
     <!-- Filters Section -->
-    <section class="py-12 bg-slate-900/50">
-      <div class="max-w-7xl mx-auto px-6">
+    <section class="py-12 bg-slate-900/50 overflow-x-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
         <div class="card-glass">
-          <div class="flex flex-col lg:flex-row gap-6 items-center justify-between mb-6">
-            <!-- Search Bar -->
-            <div class="relative flex-1 max-w-md">
-              <Search class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+          <!-- Search Bar -->
+          <div class="mb-6">
+            <div class="relative w-full">
+              <Search class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
               <input 
                 type="text" 
                 placeholder="Buscar fragancias..." 
-                class="w-full pl-10 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20 transition-colors"
+                class="w-full pl-12 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors"
                 id="search-input"
               />
             </div>
-            
-            <!-- Compact Filters -->
-            <div class="flex flex-wrap gap-4">
-              <!-- Gender Filter -->
-              <select class="bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-3 py-2 focus:outline-none focus:border-yellow-500" id="gender-filter">
-                <option value="">Todos los géneros</option>
-                <option value="hombre">Hombres</option>
-                <option value="mujer">Mujeres</option>
-                <option value="unisex">Unisex</option>
-              </select>
+          </div>
+          
+          <!-- Filters Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Gender Filter -->
+            <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="gender-filter">
+              <option value="">Todos los géneros</option>
+              <option value="hombre">Hombres</option>
+              <option value="mujer">Mujeres</option>
+              <option value="unisex">Unisex</option>
+            </select>
 
-              <!-- Occasion Filter -->
-              <select class="bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-3 py-2 focus:outline-none focus:border-yellow-500" id="occasion-filter">
-                <option value="">Todas las ocasiones</option>
-                <option value="formal">Formal</option>
-                <option value="sport">Sport</option>
-                <option value="noche">Noche</option>
-                <option value="diario">Diario</option>
-              </select>
+            <!-- Occasion Filter -->
+            <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="occasion-filter">
+              <option value="">Todas las ocasiones</option>
+              <option value="formal">Formal</option>
+              <option value="sport">Sport</option>
+              <option value="noche">Noche</option>
+              <option value="diario">Diario</option>
+            </select>
 
-              <!-- Price Filter -->
-              <select class="bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-3 py-2 focus:outline-none focus:border-yellow-500" id="price-filter">
-                <option value="">Todos los precios</option>
-                <option value="0-50000">$0 - $50.000</option>
-                <option value="50000-100000">$50.000 - $100.000</option>
-                <option value="100000+">$100.000+</option>
-              </select>
+            <!-- Price Filter -->
+            <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="price-filter">
+              <option value="">Todos los precios</option>
+              <option value="0-50000">$0 - $50.000</option>
+              <option value="50000-100000">$50.000 - $100.000</option>
+              <option value="100000+">$100.000+</option>
+            </select>
 
-              <!-- Notes Filter -->
-              <select class="bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-3 py-2 focus:outline-none focus:border-yellow-500" id="notes-filter">
-                <option value="">Todas las notas</option>
-                <option value="oud">Oud</option>
-                <option value="floral">Floral</option>
-                <option value="citrico">Cítrico</option>
-                <option value="especias">Especias</option>
-              </select>
-            </div>
+            <!-- Notes Filter -->
+            <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="notes-filter">
+              <option value="">Todas las notas</option>
+              <option value="oud">Oud</option>
+              <option value="floral">Floral</option>
+              <option value="citrico">Cítrico</option>
+              <option value="especias">Especias</option>
+            </select>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Fragrances Grid -->
-    <section class="py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="flex justify-between items-center mb-8">
+    <section class="py-20 overflow-x-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
           <h2 class="text-2xl font-bold text-slate-100">
             <span id="fragrance-count">12</span> Fragancias Encontradas
           </h2>
-          <div class="flex items-center space-x-4">
-            <span class="text-slate-400">Ordenar por:</span>
-            <select class="bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-3 py-2 focus:outline-none focus:border-yellow-500">
+          <div class="flex items-center gap-3 w-full sm:w-auto">
+            <span class="text-slate-400 text-sm">Ordenar por:</span>
+            <select class="flex-1 sm:flex-none bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-2 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer">
               <option value="nombre">Nombre</option>
               <option value="precio-asc">Precio: Menor a Mayor</option>
               <option value="precio-desc">Precio: Mayor a Menor</option>
@@ -102,13 +102,13 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
         </div>
 
         <!-- Fragrances Grid -->
-        <div id="fragrances-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="fragrances-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <!-- Fragrance cards will be populated by JavaScript -->
         </div>
 
         <!-- Load More Button -->
         <div class="text-center mt-12">
-          <button class="btn-primary" id="load-more">
+          <button class="btn-primary inline-flex items-center space-x-2" id="load-more">
             <span>Cargar Más Fragancias</span>
             <ArrowRight class="w-5 h-5" />
           </button>
@@ -322,30 +322,39 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
     count.textContent = filteredFragrances.length;
 
     // Always use grid view
-    grid.className = 'grid md:grid-cols-2 lg:grid-cols-3 gap-8';
+    grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8';
 
     grid.innerHTML = filteredFragrances.map(fragrance => {
+      const stars = Array(fragrance.rating).fill(0).map(() => 
+        '<svg class="w-4 h-4 text-rose-gold fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'
+      ).join('');
+      
+      const genderText = fragrance.gender === 'hombre' ? 'Masculina' : fragrance.gender === 'mujer' ? 'Femenina' : 'Unisex';
+      const slug = fragrance.name.toLowerCase().replace(/\s+/g, '-');
+      
       return `
         <div class="card-glass group hover:scale-105 transition-transform duration-300">
-          <div class="aspect-square bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <div class="aspect-square bg-gradient-to-br from-rose-gold to-rose-gold-dark rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
             <span class="text-6xl">${fragrance.image}</span>
           </div>
           <div class="text-center">
             <div class="flex items-center justify-between mb-2">
               <h3 class="text-xl font-semibold text-slate-100">${fragrance.name}</h3>
               <div class="flex items-center space-x-1">
-                ${Array(fragrance.rating).fill(0).map(() => '<Star class="w-4 h-4 text-yellow-400 fill-current" />').join('')}
+                ${stars}
               </div>
             </div>
-            <p class="text-slate-400 mb-4">${fragrance.gender === 'hombre' ? 'Masculina' : fragrance.gender === 'mujer' ? 'Femenina' : 'Unisex'}</p>
+            <p class="text-slate-400 mb-4">${genderText}</p>
             <p class="text-sm text-slate-300 mb-6">${fragrance.description}</p>
             <div class="flex items-center justify-between mb-4">
-              <span class="text-2xl font-bold text-yellow-400">$${fragrance.price.toLocaleString()}</span>
+              <span class="text-2xl font-bold text-rose-gold">$${fragrance.price.toLocaleString()}</span>
               <span class="text-sm text-slate-400">${fragrance.duration}</span>
             </div>
-            <a href="/perfumes/${fragrance.name.toLowerCase().replace(/\s+/g, '-')}" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+            <a href="/perfumes/${slug}" class="w-full btn-primary flex items-center justify-center space-x-2 group">
               <span>Ver Detalles</span>
-              <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -360,6 +369,21 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
   document.getElementById('price-filter').addEventListener('change', filterFragrances);
   document.getElementById('notes-filter').addEventListener('change', filterFragrances);
 
+  // Check URL parameters on load
+  function initializeFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+    
+    if (filterParam) {
+      const genderFilter = document.getElementById('gender-filter');
+      if (genderFilter) {
+        genderFilter.value = filterParam;
+        filterFragrances();
+      }
+    }
+  }
+
   // Initialize
   updateFragranceGrid();
+  initializeFromURL();
 </script>

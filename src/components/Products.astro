@@ -2,14 +2,14 @@
 import { Star, Heart, ArrowRight, Filter, Search, Grid, List } from 'lucide-react';
 ---
 
-<section id="fragancias" class="py-20 bg-slate-800/30">
-  <div class="max-w-7xl mx-auto px-6">
+<section id="fragancias" class="py-20 bg-slate-800/30 overflow-x-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
     <!-- Header -->
     <div class="text-center mb-16">
-      <h2 class="text-4xl lg:text-5xl font-bold text-slate-100 mb-6">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-100 mb-6">
         Nuestras <span class="text-gradient">Fragancias</span>
       </h2>
-      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+      <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto">
         Descubre nuestra colección cuidadosamente seleccionada de fragancias orientales 
         auténticas, importadas directamente desde Dubai.
       </p>
@@ -47,7 +47,7 @@ import { Star, Heart, ArrowRight, Filter, Search, Grid, List } from 'lucide-reac
     </div>
 
     <!-- Featured Perfumes -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
       <!-- Perfume 1 -->
       <div class="card-glass group hover:scale-105 transition-transform duration-300">
         <div class="aspect-square bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
@@ -246,7 +246,7 @@ import { Star, Heart, ArrowRight, Filter, Search, Grid, List } from 'lucide-reac
           <span>Consultar por WhatsApp</span>
           <Heart class="w-5 h-5" />
         </a>
-        <a href="#contacto" class="btn-secondary inline-flex items-center justify-center space-x-2">
+        <a href="/contact" class="btn-secondary inline-flex items-center justify-center space-x-2">
           <span>Ver Más Información</span>
           <Star class="w-5 h-5" />
         </a>

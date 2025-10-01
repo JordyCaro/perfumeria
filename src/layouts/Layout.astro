@@ -79,19 +79,19 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 			@import '../styles/global.css';
 		</style>
 	</head>
-	<body class="bg-slate-900 text-slate-100 font-inter">
+	<body class="bg-slate-900 text-slate-100 font-inter overflow-x-hidden w-full max-w-full">
 		<slot />
 	</body>
 </html>
 
 <style is:global>
 	:root {
-		--color-primary: #D4AF37; /* Gold */
-		--color-primary-dark: #B8941F; /* Darker Gold */
-		--color-primary-light: #F4E4BC; /* Light Gold */
-		--color-secondary: #2A3441; /* Dark Blue-Gray */
-		--color-secondary-dark: #1A202C; /* Darker Blue-Gray */
-		--color-accent: #8B4513; /* Bronze */
+		--color-primary: #C19A6B; /* Rose Gold */
+		--color-primary-dark: #A37F5C; /* Darker Rose Gold */
+		--color-primary-light: #D4AF84; /* Light Rose Gold */
+		--color-secondary: #1a3a3a; /* Dark Teal */
+		--color-secondary-dark: #0f2626; /* Darker Teal */
+		--color-accent: #B8956A; /* Rose Gold Accent */
 		--color-text: #F7FAFC; /* Light Gray */
 		--color-text-muted: #A0AEC0; /* Muted Gray */
 	}
@@ -105,15 +105,15 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 	}
 	
 	.bg-gradient-gold {
-		background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 100%);
+		background: linear-gradient(135deg, #C19A6B 0%, #D4AF84 100%);
 	}
 	
 	.bg-gradient-dark {
-		background: linear-gradient(135deg, #1A202C 0%, #2A3441 100%);
+		background: linear-gradient(135deg, #0f2626 0%, #1a3a3a 100%);
 	}
 	
 	.text-gradient-gold {
-		background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 100%);
+		background: linear-gradient(135deg, #C19A6B 0%, #D4AF84 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -121,18 +121,18 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 	
 	.border-gradient-gold {
 		border: 1px solid transparent;
-		background: linear-gradient(135deg, #1A202C, #2A3441) padding-box,
-		            linear-gradient(135deg, #D4AF37, #F4E4BC) border-box;
+		background: linear-gradient(135deg, #0f2626, #1a3a3a) padding-box,
+		            linear-gradient(135deg, #C19A6B, #D4AF84) border-box;
 	}
 	
 	.glass-effect {
-		background: rgba(26, 32, 44, 0.8);
+		background: rgba(26, 58, 58, 0.8);
 		backdrop-filter: blur(10px);
-		border: 1px solid rgba(212, 175, 55, 0.2);
+		border: 1px solid rgba(193, 154, 107, 0.2);
 	}
 	
 	.hover-glow:hover {
-		box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+		box-shadow: 0 0 20px rgba(193, 154, 107, 0.3);
 		transition: box-shadow 0.3s ease;
 	}
 	

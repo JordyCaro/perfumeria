@@ -5,58 +5,76 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
     @apply bg-slate-900 text-slate-100;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    background: linear-gradient(135deg, #0f2626 0%, #1a3a3a 50%, #2d4f4f 100%);
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
   }
+  
+  /* Hide scrollbars but keep functionality */
+  * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  *::-webkit-scrollbar {
+    display: none; /* WebKit */
+  }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:from-yellow-400 hover:to-yellow-500 hover:shadow-lg hover:shadow-yellow-500/25;
+    @apply bg-gradient-to-r from-rose-gold to-rose-gold-dark text-slate-900 font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:from-rose-gold-light hover:to-rose-gold hover:shadow-lg hover:shadow-rose-gold/25;
   }
   
   .btn-secondary {
-    @apply border-2 border-yellow-500 text-yellow-400 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 hover:text-slate-900 transition-all duration-300;
+    @apply border-2 border-rose-gold text-rose-gold font-semibold px-6 py-3 rounded-lg hover:bg-rose-gold hover:text-slate-900 transition-all duration-300;
   }
   
   .card-glass {
-    @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-yellow-500/50 hover:shadow-lg hover:shadow-yellow-500/10 transition-all duration-300;
+    @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-rose-gold/50 hover:shadow-lg hover:shadow-rose-gold/10 transition-all duration-300;
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-rose-gold-light to-rose-gold-dark bg-clip-text text-transparent;
   }
   
   .section-padding {
-    @apply py-20 px-6 sm:px-8 lg:px-12;
+    @apply py-20 px-4 sm:px-6 lg:px-8 xl:px-12;
+    width: 100%;
+    max-width: 100vw;
   }
   
   .container-custom {
-    @apply max-w-7xl mx-auto px-6;
+    @apply max-w-7xl mx-auto px-4 sm:px-6;
+    width: 100%;
+    max-width: 100vw;
   }
   
   .fragrance-card {
-    @apply bg-slate-800/30 backdrop-blur-sm border border-slate-700/30 rounded-2xl p-6 hover:border-yellow-600/50 hover:bg-slate-800/50 transition-all duration-500 hover:transform hover:scale-105;
+    @apply bg-slate-800/30 backdrop-blur-sm border border-slate-700/30 rounded-2xl p-6 hover:border-rose-gold/50 hover:bg-slate-800/50 transition-all duration-500 hover:transform hover:scale-105;
   }
   
   .fragrance-card:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(193, 154, 107, 0.1);
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, #1A202C 0%, #2A3441 50%, #1A202C 100%);
+    background: linear-gradient(135deg, #0f2626 0%, #1a3a3a 50%, #2d4f4f 100%);
   }
   
   .perfume-bottle-glow {
-    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+    filter: drop-shadow(0 0 20px rgba(193, 154, 107, 0.3));
   }
   
   .note-tag {
@@ -108,6 +126,13 @@
   
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+  
+  /* Prevent horizontal overflow */
+  .no-overflow {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 }
 
@@ -198,14 +223,20 @@
 @media (max-width: 768px) {
   .container-custom {
     @apply px-4;
+    width: 100%;
+    max-width: 100vw;
   }
   
   .section-padding {
-    @apply py-12;
+    @apply py-12 px-4;
+    width: 100%;
+    max-width: 100vw;
   }
   
   .card-glass {
     @apply p-4;
+    width: 100%;
+    max-width: 100%;
   }
   
   .text-shadow {
@@ -214,6 +245,20 @@
   
   .fragrance-card {
     @apply p-4;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Ensure all elements fit within viewport */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Prevent horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 }
 
@@ -227,20 +272,7 @@ select:focus {
   outline-offset: 2px;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Hidden for clean look */
 ::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1e293b;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #D4AF37;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #FFD700;
+  display: none;
 }
