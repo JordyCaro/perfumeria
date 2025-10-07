@@ -1,4 +1,6 @@
 ---
+import logoDar from '../../assets/logos/dar/logo.png';
+
 export interface Props {
 	title: string;
 	description?: string;
@@ -13,7 +15,7 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href={logoDar.src} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		
@@ -49,7 +51,7 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 				"name": "DAR Perfumes",
 				"description": "Importadores de perfumes Lattafa auténticos desde Dubai a Colombia",
 				"url": "https://darperfumeria.com",
-				"logo": "https://darperfumeria.com/logo-dar.svg",
+				"logo": "https://darperfumeria.com" + logoDar.src,
 				"contactPoint": {
 					"@type": "ContactPoint",
 					"telephone": "+57-300-123-4567",

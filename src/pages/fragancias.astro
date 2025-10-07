@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
-import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-react';
+import { Search, ArrowRight } from 'lucide-react';
 ---
 
 <Layout title="Fragancias - DAR Casa de la Perfumería" description="Descubre nuestra colección completa de fragancias orientales para hombres y mujeres. Filtra por género, ocasión y estilo para encontrar tu fragancia perfecta.">
@@ -12,13 +12,16 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
   
   <main class="min-h-screen pt-16">
     <!-- Hero Section -->
-    <section class="py-20 bg-slate-800/30">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h1 class="text-4xl lg:text-5xl font-bold text-slate-100 mb-6">
+    <section class="py-12 bg-gradient-to-br from-dark-teal-dark via-dark-teal to-dark-teal-light relative">
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, rgba(193, 154, 107, 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
+      <div class="absolute top-1/4 -left-20 w-96 h-96 bg-rose-gold/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-rose-gold-light/5 rounded-full blur-3xl"></div>
+      <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
+        <div class="text-center mb-8">
+          <h1 class="text-3xl lg:text-4xl font-bold text-slate-100 mb-4">
             Nuestras <span class="text-gradient">Fragancias</span>
           </h1>
-          <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p class="text-lg text-slate-300 max-w-2xl mx-auto">
             Descubre nuestra colección completa de fragancias orientales auténticas, 
             importadas directamente desde Dubai. Filtra y encuentra tu fragancia perfecta.
           </p>
@@ -27,56 +30,28 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
     </section>
 
     <!-- Filters Section -->
-    <section class="py-12 bg-slate-900/50 overflow-x-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+    <section class="py-8 bg-gradient-to-br from-dark-teal to-dark-teal-light relative overflow-x-hidden">
+      <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, rgba(193, 154, 107, 0.1) 1px, transparent 0); background-size: 30px 30px;"></div>
+      <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 w-full relative z-10">
         <div class="card-glass">
-          <!-- Search Bar -->
-          <div class="mb-6">
+          <!-- Combined Filters -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Search Bar -->
             <div class="relative w-full">
-              <Search class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
               <input 
                 type="text" 
                 placeholder="Buscar fragancias..." 
-                class="w-full pl-12 pr-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors"
+                class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors"
                 id="search-input"
               />
             </div>
-          </div>
-          
-          <!-- Filters Grid -->
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
             <!-- Gender Filter -->
             <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="gender-filter">
-              <option value="">Todos los géneros</option>
+              <option value="">Todas</option>
               <option value="hombre">Hombres</option>
               <option value="mujer">Mujeres</option>
               <option value="unisex">Unisex</option>
-            </select>
-
-            <!-- Occasion Filter -->
-            <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="occasion-filter">
-              <option value="">Todas las ocasiones</option>
-              <option value="formal">Formal</option>
-              <option value="sport">Sport</option>
-              <option value="noche">Noche</option>
-              <option value="diario">Diario</option>
-            </select>
-
-            <!-- Price Filter -->
-            <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="price-filter">
-              <option value="">Todos los precios</option>
-              <option value="0-50000">$0 - $50.000</option>
-              <option value="50000-100000">$50.000 - $100.000</option>
-              <option value="100000+">$100.000+</option>
-            </select>
-
-            <!-- Notes Filter -->
-            <select class="w-full bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-3 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer" id="notes-filter">
-              <option value="">Todas las notas</option>
-              <option value="oud">Oud</option>
-              <option value="floral">Floral</option>
-              <option value="citrico">Cítrico</option>
-              <option value="especias">Especias</option>
             </select>
           </div>
         </div>
@@ -84,21 +59,13 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
     </section>
 
     <!-- Fragrances Grid -->
-    <section class="py-20 overflow-x-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
-        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
-          <h2 class="text-2xl font-bold text-slate-100">
-            <span id="fragrance-count">12</span> Fragancias Encontradas
+    <section class="py-12 bg-gradient-to-br from-dark-teal-light via-dark-teal to-dark-teal-dark relative overflow-x-hidden">
+      <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, rgba(193, 154, 107, 0.08) 1px, transparent 0); background-size: 25px 25px;"></div>
+      <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 w-full relative z-10">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-slate-100">
+            <span id="fragrance-count">30</span> Fragancias Encontradas
           </h2>
-          <div class="flex items-center gap-3 w-full sm:w-auto">
-            <span class="text-slate-400 text-sm">Ordenar por:</span>
-            <select class="flex-1 sm:flex-none bg-slate-700/50 border border-slate-600 rounded-lg text-slate-100 px-4 py-2 focus:outline-none focus:border-rose-gold focus:ring-2 focus:ring-rose-gold/20 transition-colors cursor-pointer">
-              <option value="nombre">Nombre</option>
-              <option value="precio-asc">Precio: Menor a Mayor</option>
-              <option value="precio-desc">Precio: Mayor a Menor</option>
-              <option value="popularidad">Popularidad</option>
-            </select>
-          </div>
         </div>
 
         <!-- Fragrances Grid -->
@@ -125,249 +92,445 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
   const fragrances = [
     {
       id: 1,
-      name: "Oud Royal",
-      gender: "hombre",
-      occasion: "formal",
-      price: 89000,
-      notes: ["oud", "especias"],
+      name: "SUTOR",
+      gender: "mujer",
+      notes: ["floral", "dulce"],
       image: "🧴",
-      description: "Fragancia oriental masculina con notas de oud auténtico, ámbar y especias orientales.",
+      description: "Fragancia femenina elegante con notas florales y dulces que evocan sofisticación y feminidad.",
       rating: 5,
-      duration: "8-12h"
+      duration: "6-8h"
     },
     {
       id: 2,
-      name: "Rose Gold",
+      name: "MUSAMAM WHITE",
       gender: "mujer",
-      occasion: "formal",
-      price: 95000,
       notes: ["floral", "citrico"],
       image: "🧴",
-      description: "Fragancia oriental femenina con notas de rosa damascena, jazmín y ámbar.",
+      description: "Fragancia femenina fresca con notas florales blancas y cítricas que transmiten pureza y elegancia.",
       rating: 5,
-      duration: "6-10h"
+      duration: "6-8h"
     },
     {
       id: 3,
-      name: "Spice Blend",
+      name: "AMTHYST (MORADA)",
       gender: "unisex",
-      occasion: "noche",
-      price: 75000,
-      notes: ["especias", "citrico"],
+      notes: ["floral", "especias"],
       image: "🧴",
-      description: "Fragancia oriental unisex con notas de especias orientales, madera de sándalo y cítricos.",
+      description: "Fragancia unisex con notas florales púrpuras y especias orientales que crean un aroma místico y envolvente.",
       rating: 5,
-      duration: "7-11h"
+      duration: "8-10h"
     },
     {
       id: 4,
-      name: "Vanilla Dreams",
+      name: "AJWAD",
       gender: "mujer",
-      occasion: "diario",
-      price: 82000,
-      notes: ["floral", "especias"],
+      notes: ["floral", "dulce"],
       image: "🧴",
-      description: "Fragancia oriental femenina con notas de vainilla bourbon, sándalo y especias dulces.",
+      description: "Fragancia femenina con notas florales dulces y orientales que evocan lujo y feminidad árabe.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 5,
+      name: "KHAMRAH",
+      gender: "unisex",
+      notes: ["dulce", "especias"],
+      image: "🧴",
+      description: "Fragancia unisex con notas dulces y especiadas que crean un aroma cálido y envolvente.",
       rating: 5,
       duration: "8-12h"
     },
     {
-      id: 5,
-      name: "Jasmine Nights",
-      gender: "mujer",
-      occasion: "noche",
-      price: 78000,
-      notes: ["floral", "oud"],
-      image: "🧴",
-      description: "Fragancia oriental femenina con notas de jazmín sambac, rosa y ámbar gris.",
-      rating: 5,
-      duration: "6-9h"
-    },
-    {
       id: 6,
-      name: "Amber Luxe",
+      name: "KHAMRAH QAWAH",
       gender: "unisex",
-      occasion: "formal",
-      price: 120000,
-      notes: ["oud", "especias"],
+      notes: ["dulce", "especias"],
       image: "🧴",
-      description: "Fragancia oriental unisex con notas de ámbar gris, oud y especias orientales.",
+      description: "Variación de Khamrah con notas de café árabe, creando un aroma más intenso y sofisticado.",
       rating: 5,
-      duration: "10-14h"
+      duration: "8-12h"
     },
     {
       id: 7,
-      name: "Sport Fresh",
-      gender: "hombre",
-      occasion: "sport",
-      price: 65000,
-      notes: ["citrico", "floral"],
+      name: "KHAMRAH SET GIFT SET",
+      gender: "unisex",
+      notes: ["dulce", "especias"],
       image: "🧴",
-      description: "Fragancia fresca para hombres activos con notas cítricas y marinas.",
-      rating: 4,
-      duration: "4-6h"
+      description: "Set de regalo de Khamrah con múltiples fragancias para una experiencia completa.",
+      rating: 5,
+      duration: "8-12h"
     },
     {
       id: 8,
-      name: "Evening Rose",
-      gender: "mujer",
-      occasion: "noche",
-      price: 88000,
-      notes: ["floral", "especias"],
+      name: "LIAM GREY",
+      gender: "hombre",
+      notes: ["madera", "especias"],
       image: "🧴",
-      description: "Fragancia femenina para la noche con notas de rosa y especias orientales.",
+      description: "Fragancia masculina con notas de madera gris y especias que transmiten elegancia y sofisticación.",
       rating: 5,
       duration: "8-10h"
     },
     {
       id: 9,
-      name: "Daily Citrus",
-      gender: "unisex",
-      occasion: "diario",
-      price: 55000,
-      notes: ["citrico", "floral"],
+      name: "SAKEENA",
+      gender: "mujer",
+      notes: ["floral", "dulce"],
       image: "🧴",
-      description: "Fragancia fresca para el día a día con notas cítricas y florales.",
-      rating: 4,
-      duration: "4-6h"
+      description: "Fragancia femenina con notas florales dulces que evocan ternura y feminidad.",
+      rating: 5,
+      duration: "6-8h"
     },
     {
       id: 10,
-      name: "Luxury Oud",
-      gender: "hombre",
-      occasion: "formal",
-      price: 150000,
+      name: "SHAHENN GOLD",
+      gender: "unisex",
       notes: ["oud", "especias"],
       image: "🧴",
-      description: "Fragancia de lujo para hombres con oud auténtico y especias exóticas.",
+      description: "Fragancia unisex de lujo con notas de oud y especias doradas que transmiten opulencia y elegancia.",
       rating: 5,
-      duration: "12-16h"
+      duration: "10-12h"
     },
     {
       id: 11,
-      name: "Sport Energy",
+      name: "YARA",
       gender: "mujer",
-      occasion: "sport",
-      price: 60000,
-      notes: ["citrico", "floral"],
+      notes: ["floral", "dulce"],
       image: "🧴",
-      description: "Fragancia energética para mujeres activas con notas cítricas y florales.",
-      rating: 4,
-      duration: "4-6h"
+      description: "Fragancia femenina con notas florales dulces que evocan juventud y frescura.",
+      rating: 5,
+      duration: "6-8h"
     },
     {
       id: 12,
-      name: "Midnight Spice",
-      gender: "unisex",
-      occasion: "noche",
-      price: 110000,
-      notes: ["especias", "oud"],
+      name: "KIT YARA",
+      gender: "mujer",
+      notes: ["floral", "dulce"],
       image: "🧴",
-      description: "Fragancia nocturna unisex con notas de especias orientales y oud.",
+      description: "Kit de Yara con múltiples presentaciones para una experiencia completa de la fragancia.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 13,
+      name: "GIFT SET YARA AND YARA CANDY",
+      gender: "mujer",
+      notes: ["floral", "dulce"],
+      image: "🧴",
+      description: "Set de regalo que incluye Yara y Yara Candy para una experiencia dulce y floral completa.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 14,
+      name: "ODYSSEY MANDARINE 60ML",
+      gender: "unisex",
+      notes: ["citrico", "floral"],
+      image: "🧴",
+      description: "Fragancia unisex con notas de mandarina y flores que evocan frescura y vitalidad.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 15,
+      name: "ODYSSEY MANDARINE 100ML",
+      gender: "unisex",
+      notes: ["citrico", "floral"],
+      image: "🧴",
+      description: "Presentación de 100ml de Odyssey Mandarine con notas cítricas y florales.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 16,
+      name: "OSYSSEY DUBAI CHOCOLATE 100ML",
+      gender: "unisex",
+      notes: ["dulce", "especias"],
+      image: "🧴",
+      description: "Fragancia unisex con notas de chocolate dubaití y especias que crean un aroma exótico y tentador.",
+      rating: 5,
+      duration: "8-10h"
+    },
+    {
+      id: 17,
+      name: "DELILAH",
+      gender: "mujer",
+      notes: ["floral", "dulce"],
+      image: "🧴",
+      description: "Fragancia femenina con notas florales dulces que evocan seducción y feminidad.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 18,
+      name: "KISMET WOWEN",
+      gender: "mujer",
+      notes: ["floral", "especias"],
+      image: "🧴",
+      description: "Fragancia femenina con notas florales y especiadas que evocan destino y fortuna.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 19,
+      name: "KISMET MEN",
+      gender: "hombre",
+      notes: ["madera", "especias"],
+      image: "🧴",
+      description: "Fragancia masculina con notas de madera y especias que evocan destino y fortuna.",
+      rating: 5,
+      duration: "8-10h"
+    },
+    {
+      id: 20,
+      name: "BHARARA KING",
+      gender: "unisex",
+      notes: ["oud", "especias"],
+      image: "🧴",
+      description: "Fragancia unisex real con notas de oud y especias que transmiten majestuosidad y poder.",
       rating: 5,
       duration: "10-12h"
+    },
+    {
+      id: 21,
+      name: "ALHARAMAIN LAVENTURE 100 ML",
+      gender: "hombre",
+      notes: ["madera", "especias"],
+      image: "🧴",
+      description: "Fragancia masculina con notas de madera y especias que evocan aventura y exploración.",
+      rating: 5,
+      duration: "8-10h"
+    },
+    {
+      id: 22,
+      name: "BHARARA ROME MEN",
+      gender: "hombre",
+      notes: ["madera", "especias"],
+      image: "🧴",
+      description: "Fragancia masculina con notas de madera y especias que evocan la grandeza de Roma.",
+      rating: 5,
+      duration: "8-10h"
+    },
+    {
+      id: 23,
+      name: "BHARARA ROME WOMWEN",
+      gender: "mujer",
+      notes: ["floral", "especias"],
+      image: "🧴",
+      description: "Fragancia femenina con notas florales y especiadas que evocan la elegancia de Roma.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 24,
+      name: "NOW BLACK",
+      gender: "hombre",
+      notes: ["madera", "especias"],
+      image: "🧴",
+      description: "Fragancia masculina con notas de madera negra y especias que transmiten misterio y elegancia.",
+      rating: 5,
+      duration: "8-10h"
+    },
+    {
+      id: 25,
+      name: "ART OF UNIVERSE",
+      gender: "unisex",
+      notes: ["oud", "especias"],
+      image: "🧴",
+      description: "Fragancia unisex con notas de oud y especias que evocan la inmensidad del universo.",
+      rating: 5,
+      duration: "10-12h"
+    },
+    {
+      id: 26,
+      name: "HAYAATI MALEKY MEN",
+      gender: "hombre",
+      notes: ["madera", "especias"],
+      image: "🧴",
+      description: "Fragancia masculina con notas de madera y especias que evocan vida real y majestuosidad.",
+      rating: 5,
+      duration: "8-10h"
+    },
+    {
+      id: 27,
+      name: "HAYAATI MALEKY WOMEN",
+      gender: "mujer",
+      notes: ["floral", "especias"],
+      image: "🧴",
+      description: "Fragancia femenina con notas florales y especiadas que evocan vida real y majestuosidad.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 28,
+      name: "ANSAAM SILVER",
+      gender: "unisex",
+      notes: ["oud", "especias"],
+      image: "🧴",
+      description: "Fragancia unisex con notas de oud y especias plateadas que transmiten lujo y sofisticación.",
+      rating: 5,
+      duration: "10-12h"
+    },
+    {
+      id: 29,
+      name: "MAYAR CHERRY",
+      gender: "unisex",
+      notes: ["dulce", "floral"],
+      image: "🧴",
+      description: "Fragancia unisex con notas de cereza dulce y flores que evocan frescura y dulzura.",
+      rating: 5,
+      duration: "6-8h"
+    },
+    {
+      id: 30,
+      name: "MALACHITE",
+      gender: "hombre",
+      notes: ["madera", "especias"],
+      image: "🧴",
+      description: "Fragancia masculina con notas de madera verde y especias que transmiten naturaleza y fuerza.",
+      rating: 5,
+      duration: "8-10h"
     }
   ];
 
-  let filteredFragrances = [...fragrances];
+  // Función para intercalar fragancias por género
+  function interleaveFragrances(fragrances) {
+    const mujeres = fragrances.filter(f => f.gender === 'mujer');
+    const hombres = fragrances.filter(f => f.gender === 'hombre');
+    const unisex = fragrances.filter(f => f.gender === 'unisex');
+    
+    const interleaved = [];
+    const maxLength = Math.max(mujeres.length, hombres.length, unisex.length);
+    
+    for (let i = 0; i < maxLength; i++) {
+      if (mujeres[i]) interleaved.push(mujeres[i]);
+      if (hombres[i]) interleaved.push(hombres[i]);
+      if (unisex[i]) interleaved.push(unisex[i]);
+    }
+    
+    return interleaved;
+  }
+
+  let filteredFragrances = interleaveFragrances(fragrances);
   let currentView = 'grid';
 
   // Filter functions
-  function filterFragrances() {
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
-    const genderFilter = document.getElementById('gender-filter').value;
-    const occasionFilter = document.getElementById('occasion-filter').value;
-    const priceFilter = document.getElementById('price-filter').value;
-    const notesFilter = document.getElementById('notes-filter').value;
+    function filterFragrances() {
+      const searchTerm = document.getElementById('search-input').value.toLowerCase();
+      const genderFilter = document.getElementById('gender-filter').value;
 
-    filteredFragrances = fragrances.filter(fragrance => {
-      // Search filter
-      if (searchTerm && !fragrance.name.toLowerCase().includes(searchTerm) && 
-          !fragrance.description.toLowerCase().includes(searchTerm)) {
-        return false;
+      let filtered = fragrances.filter(fragrance => {
+        // Search filter
+        if (searchTerm && !fragrance.name.toLowerCase().includes(searchTerm) && 
+            !fragrance.description.toLowerCase().includes(searchTerm)) {
+          return false;
+        }
+
+        // Gender filter
+        if (genderFilter && fragrance.gender !== genderFilter) {
+          return false;
+        }
+
+        return true;
+      });
+
+      // Si no hay filtros aplicados, usar orden intercalado
+      if (!searchTerm && !genderFilter) {
+        filteredFragrances = interleaveFragrances(filtered);
+      } else {
+        filteredFragrances = filtered;
       }
 
-      // Gender filter
-      if (genderFilter && fragrance.gender !== genderFilter) {
-        return false;
-      }
-
-      // Occasion filter
-      if (occasionFilter && fragrance.occasion !== occasionFilter) {
-        return false;
-      }
-
-      // Price filter
-      if (priceFilter) {
-        if (priceFilter === '0-50000' && fragrance.price > 50000) return false;
-        if (priceFilter === '50000-100000' && (fragrance.price <= 50000 || fragrance.price > 100000)) return false;
-        if (priceFilter === '100000+' && fragrance.price <= 100000) return false;
-      }
-
-      // Notes filter
-      if (notesFilter && !fragrance.notes.includes(notesFilter)) {
-        return false;
-      }
-
-      return true;
-    });
-
-    updateFragranceGrid();
-  }
+      updateFragranceGrid();
+    }
 
   function updateFragranceGrid() {
     const grid = document.getElementById('fragrances-grid');
     const count = document.getElementById('fragrance-count');
     
+    if (!grid || !count) {
+      console.error('Required DOM elements not found');
+      return;
+    }
+    
+    console.log('Updating grid with', filteredFragrances.length, 'fragrances');
     count.textContent = filteredFragrances.length;
 
     // Always use grid view
-    grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8';
+    grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10';
 
-    grid.innerHTML = filteredFragrances.map(fragrance => {
-      const stars = Array(fragrance.rating).fill(0).map(() => 
-        '<svg class="w-4 h-4 text-rose-gold fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'
-      ).join('');
-      
-      const genderText = fragrance.gender === 'hombre' ? 'Masculina' : fragrance.gender === 'mujer' ? 'Femenina' : 'Unisex';
-      const slug = fragrance.name.toLowerCase().replace(/\s+/g, '-');
-      
-      return `
-        <div class="card-glass group hover:scale-105 transition-transform duration-300">
-          <div class="aspect-square bg-gradient-to-br from-rose-gold to-rose-gold-dark rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
-            <span class="text-6xl">${fragrance.image}</span>
-          </div>
-          <div class="text-center">
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-xl font-semibold text-slate-100">${fragrance.name}</h3>
-              <div class="flex items-center space-x-1">
-                ${stars}
+      grid.innerHTML = filteredFragrances.map(fragrance => {
+        const genderText = fragrance.gender === 'hombre' ? 'Masculina' : fragrance.gender === 'mujer' ? 'Femenina' : 'Unisex';
+        // Mapeo de nombres a IDs correctos
+        const nameToId = {
+          'SUTOR': 'sutor',
+          'MUSAMAM WHITE': 'musamam-white',
+          'AMTHYST (MORADA)': 'amthyst-morada',
+          'AJWAD': 'ajwad',
+          'KHAMRAH': 'khamrah',
+          'KHAMRAH QAWAH': 'khamrah-qawah',
+          'KHAMRAH SET GIFT SET': 'khamrah-set-gift-set',
+          'LIAM GREY': 'liam-grey',
+          'SAKEENA': 'sakeena',
+          'SHAHENN GOLD': 'shahenn-gold',
+          'YARA': 'yara',
+          'KIT YARA': 'kit-yara',
+          'GIFT SET YARA AND YARA CANDY': 'gift-set-yara-and-yara-candy',
+          'ODYSSEY MANDARINE 60ML': 'odyssey-mandarine-60ml',
+          'ODYSSEY MANDARINE 100ML': 'odyssey-mandarine-100ml',
+          'OSYSSEY DUBAI CHOCOLATE 100ML': 'osyssey-dubai-chocolate-100ml',
+          'DELILAH': 'delilah',
+          'KISMET WOWEN': 'kismet-wowen',
+          'KISMET MEN': 'kismet-men',
+          'BHARARA KING': 'bharara-king',
+          'ALHARAMAIN LAVENTURE 100 ML': 'alharamain-laventure-100-ml',
+          'BHARARA ROME MEN': 'bharara-rome-men',
+          'BHARARA ROME WOMWEN': 'bharara-rome-womwen',
+          'NOW BLACK': 'now-black',
+          'ART OF UNIVERSE': 'art-of-universe',
+          'HAYAATI MALEKY MEN': 'hayaati-maleky-men',
+          'HAYAATI MALEKY WOMEN': 'hayaati-maleky-women',
+          'ANSAAM SILVER': 'ansaam-silver',
+          'MAYAR CHERRY': 'mayar-cherry',
+          'MALACHITE': 'malachite'
+        };
+        
+        const slug = nameToId[fragrance.name] || fragrance.name.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '').replace(/\s+/g, '-');
+        
+        return `
+          <div class="card-glass group hover:scale-105 transition-transform duration-300 h-full flex flex-col">
+            <a href="/perfumes/${slug}" class="block">
+              <div class="aspect-square bg-gradient-to-br from-rose-gold to-rose-gold-dark rounded-xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform cursor-pointer">
+                <span class="text-6xl">${fragrance.image}</span>
               </div>
-            </div>
-            <p class="text-slate-400 mb-4">${genderText}</p>
-            <p class="text-sm text-slate-300 mb-6">${fragrance.description}</p>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-2xl font-bold text-rose-gold">$${fragrance.price.toLocaleString()}</span>
-              <span class="text-sm text-slate-400">${fragrance.duration}</span>
-            </div>
-            <a href="/perfumes/${slug}" class="w-full btn-primary flex items-center justify-center space-x-2 group">
-              <span>Ver Detalles</span>
-              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-              </svg>
             </a>
+            <div class="text-center flex-1 flex flex-col">
+              <a href="/perfumes/${slug}" class="block cursor-pointer">
+                <h3 class="text-xl font-semibold text-slate-100 mb-2">${fragrance.name}</h3>
+              </a>
+              <p class="text-slate-400 mb-4">${genderText}</p>
+              <p class="text-sm text-slate-300 mb-6 flex-1">${fragrance.description}</p>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-2xl font-bold text-rose-gold">Consultar Precio</span>
+                <span class="text-sm text-slate-400">${fragrance.duration}</span>
+              </div>
+              <a href="/perfumes/${slug}" class="w-full btn-primary flex items-center justify-center space-x-2 group">
+                <span>Ver Detalles</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
-      `;
-    }).join('');
+        `;
+      }).join('');
   }
 
-  // Event listeners
-  document.getElementById('search-input').addEventListener('input', filterFragrances);
-  document.getElementById('gender-filter').addEventListener('change', filterFragrances);
-  document.getElementById('occasion-filter').addEventListener('change', filterFragrances);
-  document.getElementById('price-filter').addEventListener('change', filterFragrances);
-  document.getElementById('notes-filter').addEventListener('change', filterFragrances);
+    // Event listeners
+    const searchInput = document.getElementById('search-input');
+    const genderFilter = document.getElementById('gender-filter');
+    
+    if (searchInput) searchInput.addEventListener('input', filterFragrances);
+    if (genderFilter) genderFilter.addEventListener('change', filterFragrances);
 
   // Check URL parameters on load
   function initializeFromURL() {
@@ -383,7 +546,11 @@ import { Filter, Search, Grid, List, Star, Heart, ArrowRight, X } from 'lucide-r
     }
   }
 
-  // Initialize
-  updateFragranceGrid();
-  initializeFromURL();
+  // Initialize when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing fragancias page');
+    console.log('Filtered fragrances:', filteredFragrances.length);
+    updateFragranceGrid();
+    initializeFromURL();
+  });
 </script>

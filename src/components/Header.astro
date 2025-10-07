@@ -1,27 +1,25 @@
 ---
 import { Menu, X } from 'lucide-react';
+import logoDar from '../../assets/logos/dar/logo.png';
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-slate-900 border-b border-rose-gold/20 shadow-lg">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+<header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-dark-teal-dark via-dark-teal to-dark-teal-light border-b border-rose-gold/20 shadow-lg backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 w-full">
     <nav class="flex items-center justify-between h-16 relative">
       <!-- Logo -->
       <a href="/" class="flex items-center hover:opacity-80 transition-opacity relative z-50">
-        <div>
-          <h1 class="text-xl sm:text-2xl font-bold text-slate-100 tracking-tight">DAR</h1>
-          <p class="text-[10px] sm:text-xs text-rose-gold leading-tight tracking-wide">Casa de la Perfumería</p>
-        </div>
+        <img src={logoDar.src} alt="DAR Casa de la Perfumería" class="h-12 w-auto" />
       </a>
 
       <!-- Desktop Navigation -->
       <div class="hidden lg:flex items-center space-x-8">
-        <a href="/" class="text-slate-300 hover:text-rose-gold transition-colors font-medium">
+        <a href="/" class="text-slate-300 hover:text-rose-gold transition-colors font-medium text-lg">
           Inicio
         </a>
-        <a href="/fragancias" class="text-slate-300 hover:text-rose-gold transition-colors font-medium">
+        <a href="/fragancias" class="text-slate-300 hover:text-rose-gold transition-colors font-medium text-lg">
           Fragancias
         </a>
-        <a href="/contact" class="text-slate-300 hover:text-rose-gold transition-colors font-medium">
+        <a href="/contact" class="text-slate-300 hover:text-rose-gold transition-colors font-medium text-lg">
           Contacto
         </a>
       </div>
