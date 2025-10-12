@@ -41,10 +41,10 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-17-ajwad",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-17-ajwad",
     "images": [
-      "WhatsApp Image 2025-10-10 at 12.15.43 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.43 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.43 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.44 PM.jpeg"
+      "ajwad-01.jpeg",
+      "ajwad-02.jpeg",
+      "ajwad-03.jpeg",
+      "ajwad-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -106,9 +106,9 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-1-alharamain-laventure",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-1-alharamain-laventure",
     "images": [
-      "WhatsApp Image 2025-10-10 at 2.38.43 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 2.38.44 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.38.44 PM.jpeg"
+      "alharamain-laventure-01.jpeg",
+      "alharamain-laventure-02.jpeg",
+      "alharamain-laventure-03.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -170,9 +170,9 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-28-amethyste",
     "imagePath": "/assets/images/fragancias/unisex/fraganciaz-28-amethyste",
     "images": [
-      "WhatsApp Image 2025-10-10 at 12.15.42 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.42 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.42 PM.jpeg"
+      "amethyste-01.jpeg",
+      "amethyste-02.jpeg",
+      "amethyste-03.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -234,11 +234,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-3-art-of-universe",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-3-art-of-universe",
     "images": [
-      "WhatsApp Image 2025-10-10 at 3.13.02 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 3.20.12 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.20.12 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 3.20.13 PM (4).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.20.13 PM (5).jpeg"
+      "art-of-universe-01.jpeg",
+      "art-of-universe-02.jpeg",
+      "art-of-universe-03.jpeg",
+      "art-of-universe-04.jpeg",
+      "art-of-universe-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -300,11 +300,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-4-bharara-king",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-4-bharara-king",
     "images": [
-      "WhatsApp Image 2025-10-10 at 2.15.00 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.15.00 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.15.00 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 2.15.01 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.15.01 PM.jpeg"
+      "bharara-king-01.jpeg",
+      "bharara-king-02.jpeg",
+      "bharara-king-03.jpeg",
+      "bharara-king-04.jpeg",
+      "bharara-king-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -366,11 +366,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-5-bharara-rome",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-5-bharara-rome",
     "images": [
-      "WhatsApp Image 2025-10-10 at 3.12.53 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.53 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.53 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.54 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.54 PM.jpeg"
+      "bharara-rome-01.jpeg",
+      "bharara-rome-02.jpeg",
+      "bharara-rome-03.jpeg",
+      "bharara-rome-04.jpeg",
+      "bharara-rome-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -432,10 +432,10 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-18-bharara-rome-women",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-18-bharara-rome-women",
     "images": [
-      "WhatsApp Image 2025-10-10 at 3.12.52 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.52 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.52 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.52 PM.jpeg"
+      "bharara-rome-women-01.jpeg",
+      "bharara-rome-women-02.jpeg",
+      "bharara-rome-women-03.jpeg",
+      "bharara-rome-women-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -497,9 +497,9 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-19-delilah",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-19-delilah",
     "images": [
-      "WhatsApp Image 2025-10-10 at 1.51.22 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.51.22 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.51.23 PM.jpeg"
+      "delilah-01.jpeg",
+      "delilah-02.jpeg",
+      "delilah-03.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -561,12 +561,12 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-20-hayaati-florence",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-20-hayaati-florence",
     "images": [
-      "WhatsApp Image 2025-10-10 at 4.04.01 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.04.01 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.04.01 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 4.04.02 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.04.02 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.04.02 PM.jpeg"
+      "hayaati-florence-01.jpeg",
+      "hayaati-florence-02.jpeg",
+      "hayaati-florence-03.jpeg",
+      "hayaati-florence-04.jpeg",
+      "hayaati-florence-05.jpeg",
+      "hayaati-florence-06.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -628,13 +628,13 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-6-hayaati-maleky-men",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-6-hayaati-maleky-men",
     "images": [
-      "WhatsApp Image 2025-10-10 at 3.27.29 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.27.29 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.27.29 PM (4).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.27.29 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 3.27.30 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.27.30 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.27.30 PM.jpeg"
+      "hayaati-maleky-men-01.jpeg",
+      "hayaati-maleky-men-02.jpeg",
+      "hayaati-maleky-men-03.jpeg",
+      "hayaati-maleky-men-04.jpeg",
+      "hayaati-maleky-men-05.jpeg",
+      "hayaati-maleky-men-06.jpeg",
+      "hayaati-maleky-men-07.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -696,10 +696,10 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-7-khamrah",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-7-khamrah",
     "images": [
-      "WhatsApp Image 2025-10-10 at 12.15.44 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.45 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.46 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.46 PM (2).jpeg"
+      "khamrah-01.jpeg",
+      "khamrah-02.jpeg",
+      "khamrah-03.jpeg",
+      "khamrah-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -761,9 +761,9 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-8-khamrah-qawah",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-8-khamrah-qawah",
     "images": [
-      "WhatsApp Image 2025-10-10 at 12.15.47 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.47 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.48 PM.jpeg"
+      "khamrah-qawah-01.jpeg",
+      "khamrah-qawah-02.jpeg",
+      "khamrah-qawah-03.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -825,14 +825,14 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-9-kismet-men",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-9-kismet-men",
     "images": [
-      "WhatsApp Image 2025-10-10 at 2.05.04 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.05.04 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 2.05.05 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.05.05 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.05.05 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.05.05 PM (4).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.05.05 PM (5).jpeg",
-      "WhatsApp Image 2025-10-10 at 2.05.05 PM.jpeg"
+      "kismet-men-01.jpeg",
+      "kismet-men-02.jpeg",
+      "kismet-men-03.jpeg",
+      "kismet-men-04.jpeg",
+      "kismet-men-05.jpeg",
+      "kismet-men-06.jpeg",
+      "kismet-men-07.jpeg",
+      "kismet-men-08.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -894,11 +894,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-22-kit-yara-and-yara-candy",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-22-kit-yara-and-yara-candy",
     "images": [
-      "1_e5d108d7-783c-41ec-b986-264235b6141e.webp",
-      "OIP (15).jpg",
-      "OIP (17).jpg",
-      "c2052bf7-362d-4c81-9611-c2bcdb5da4dd-yara-candy-lattafa-eau-de-parfum-perfume-feminino-100ml.webp",
-      "yara-candy-4.jpg"
+      "kit-yara-and-yara-candy-01.jpeg",
+      "kit-yara-and-yara-candy-02.jpeg",
+      "kit-yara-and-yara-candy-03.jpeg",
+      "kit-yara-and-yara-candy-04.jpeg",
+      "kit-yara-and-yara-candy-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -960,10 +960,10 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-10-liam-grey",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-10-liam-grey",
     "images": [
-      "WhatsApp Image 2025-10-10 at 12.15.48 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.49 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.49 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.50 PM.jpeg"
+      "liam-grey-01.jpeg",
+      "liam-grey-02.jpeg",
+      "liam-grey-03.jpeg",
+      "liam-grey-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1025,11 +1025,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-11-malachite",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-11-malachite",
     "images": [
-      "WhatsApp Image 2025-10-10 at 4.23.32 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.23.32 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.23.32 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 4.23.33 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.23.33 PM.jpeg"
+      "malachite-01.jpeg",
+      "malachite-02.jpeg",
+      "malachite-03.jpeg",
+      "malachite-04.jpeg",
+      "malachite-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1091,11 +1091,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-12-mayar-cherry",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-12-mayar-cherry",
     "images": [
-      "WhatsApp Image 2025-10-10 at 4.56.39 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 4.57.31 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.57.31 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.57.31 PM (4).jpeg",
-      "WhatsApp Image 2025-10-10 at 4.57.31 PM.jpeg"
+      "mayar-cherry-01.jpeg",
+      "mayar-cherry-02.jpeg",
+      "mayar-cherry-03.jpeg",
+      "mayar-cherry-04.jpeg",
+      "mayar-cherry-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1157,11 +1157,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-24-musaman-white",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-24-musaman-white",
     "images": [
-      "WhatsApp Image 2025-10-10 at 1.12.23 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.24 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.40 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.41 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.41 PM.jpeg"
+      "musaman-white-01.jpeg",
+      "musaman-white-02.jpeg",
+      "musaman-white-03.jpeg",
+      "musaman-white-04.jpeg",
+      "musaman-white-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1223,12 +1223,12 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-13-now-black",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-13-now-black",
     "images": [
-      "WhatsApp Image 2025-10-10 at 3.12.54 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.54 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.55 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.55 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.55 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 3.12.55 PM.jpeg"
+      "now-black-01.jpeg",
+      "now-black-02.jpeg",
+      "now-black-03.jpeg",
+      "now-black-04.jpeg",
+      "now-black-05.jpeg",
+      "now-black-06.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1290,11 +1290,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-14-odissey-dubau-chocolate",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-14-odissey-dubau-chocolate",
     "images": [
-      "WhatsApp Image 2025-10-10 at 1.40.14 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.40.14 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 1.51.20 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.51.20 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.51.21 PM.jpeg"
+      "odissey-dubau-chocolate-01.jpeg",
+      "odissey-dubau-chocolate-02.jpeg",
+      "odissey-dubau-chocolate-03.jpeg",
+      "odissey-dubau-chocolate-04.jpeg",
+      "odissey-dubau-chocolate-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1356,8 +1356,8 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-15-odyssey-mandarine",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-15-odyssey-mandarine",
     "images": [
-      "WhatsApp Image 2025-10-10 at 1.12.25 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.25 PM.jpeg"
+      "odyssey-mandarine-01.jpeg",
+      "odyssey-mandarine-02.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1419,8 +1419,8 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-25-sakeena",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-25-sakeena",
     "images": [
-      "WhatsApp Image 2025-10-10 at 12.15.50 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.50 PM (3).jpeg"
+      "sakeena-01.jpeg",
+      "sakeena-02.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1482,11 +1482,11 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-16-shadenn-gold",
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-16-shadenn-gold",
     "images": [
-      "WhatsApp Image 2025-10-10 at 1.12.20 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.20 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.21 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.21 PM.jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.22 PM.jpeg"
+      "shadenn-gold-01.jpeg",
+      "shadenn-gold-02.jpeg",
+      "shadenn-gold-03.jpeg",
+      "shadenn-gold-04.jpeg",
+      "shadenn-gold-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1548,9 +1548,9 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-26-sutor",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-26-sutor",
     "images": [
-      "WhatsApp Image 2025-10-10 at 12.15.39 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.40 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 12.15.40 PM.jpeg"
+      "sutor-01.jpeg",
+      "sutor-02.jpeg",
+      "sutor-03.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -1612,10 +1612,10 @@ export const fragrances: Fragrance[] = [
     "fraganciazId": "fraganciaz-27-yara",
     "imagePath": "/assets/images/fragancias/mujer/fraganciaz-27-yara",
     "images": [
-      "WhatsApp Image 2025-10-10 at 1.12.22 PM (2).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.22 PM (3).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.23 PM (1).jpeg",
-      "WhatsApp Image 2025-10-10 at 1.12.23 PM (2).jpeg"
+      "yara-01.jpeg",
+      "yara-02.jpeg",
+      "yara-03.jpeg",
+      "yara-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,

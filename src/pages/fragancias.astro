@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
-import { Search, ArrowRight } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { fragrances, getFirstImage, getCatalogImage } from '../data/fragrances';
 ---
 
@@ -111,13 +111,6 @@ import { fragrances, getFirstImage, getCatalogImage } from '../data/fragrances';
           })}
         </div>
 
-        <!-- Load More Button -->
-        <div class="text-center mt-12">
-          <button class="btn-primary inline-flex items-center space-x-2" id="load-more">
-            <span>Cargar Más Fragancias</span>
-            <ArrowRight className="w-5 h-5" />
-          </button>
-        </div>
       </div>
     </section>
   </main>
