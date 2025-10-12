@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import FragrancePreview from '../../components/FragrancePreview.astro';
+
+const fragrance = {
+  id: 'hayaati-florence',
+  name: 'Hayaati Florence',
+  displayName: 'Hayaati Florence',
+  gender: 'femenino',
+  category: 'oriental',
+  fraganciazId: 'fraganciaz-20-hayaati-florence',
+  imagePath: '/assets/images/fragancias/mujer/fraganciaz-20-hayaati-florence',
+  images: ["WhatsApp Image 2025-10-10 at 4.04.01 PM (1).jpeg","WhatsApp Image 2025-10-10 at 4.04.01 PM (2).jpeg","WhatsApp Image 2025-10-10 at 4.04.01 PM.jpeg","WhatsApp Image 2025-10-10 at 4.04.02 PM (1).jpeg","WhatsApp Image 2025-10-10 at 4.04.02 PM (2).jpeg","WhatsApp Image 2025-10-10 at 4.04.02 PM.jpeg"],
+  notesImages: [],
+  hasImages: true
+};
+---
+
+<Layout title={`${fragrance.displayName} - DAR Casa de la Perfumería`} description={`Descubre ${fragrance.displayName}, una fragancia ${fragrance.category} ${fragrance.gender}. Importada directamente desde Dubai.`}>
+  <Header />
+  <WhatsAppButton />
+
+  <main>
+    <FragrancePreview fragrance={fragrance} />
+  </main>
+
+  <Footer />
+</Layout>

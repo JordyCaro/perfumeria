@@ -1,0 +1,84 @@
+---
+export interface Props {
+  fragrance: {
+    id: string;
+    name: string;
+    imagePath: string;
+    images: string[];
+  };
+}
+
+const { fragrance } = Astro.props;
+const firstImage = fragrance.images && fragrance.images.length > 0 ? fragrance.images[0] : null;
+---
+
+<div class="space-y-6">
+  <!-- Main Image Display -->
+  <div class="aspect-square bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl overflow-hidden flex items-center justify-center">
+    {firstImage ? (
+      <img
+        id="main-fragrance-image"
+        src={`${fragrance.imagePath}/${firstImage}`}
+        alt={fragrance.name}
+        class="w-full h-full object-cover transition-opacity duration-300"
+      />
+    ) : (
+      <span class="text-8xl">🧴</span>
+    )}
+  </div>
+
+  <!-- Thumbnail Gallery -->
+  {fragrance.images && fragrance.images.length > 0 && (
+    <div class="flex flex-wrap gap-4">
+      {fragrance.images.map((img, index) => (
+        <button
+          class={`aspect-square bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform border-2 w-20 h-20 ${
+            index === 0 ? 'border-yellow-400' : 'border-transparent'
+          }`}
+          data-image-src={`${fragrance.imagePath}/${img}`}
+          data-image-alt={fragrance.name}
+          onclick="changeMainImage(this)"
+          aria-label={`Ver imagen ${index + 1} de ${fragrance.name}`}
+        >
+          <img
+            src={`${fragrance.imagePath}/${img}`}
+            alt={fragrance.name}
+            class="w-full h-full object-cover"
+          />
+        </button>
+      ))}
+    </div>
+  )}
+</div>
+
+<script is:inline>
+  function changeMainImage(clickedThumbnail) {
+    const mainImage = document.getElementById('main-fragrance-image');
+    const imageSrc = clickedThumbnail.getAttribute('data-image-src');
+    const imageAlt = clickedThumbnail.getAttribute('data-image-alt');
+
+    if (mainImage && imageSrc && imageAlt) {
+      // Update main image with smooth transition
+      mainImage.style.opacity = '0';
+
+      setTimeout(() => {
+        mainImage.src = imageSrc;
+        mainImage.alt = imageAlt;
+        mainImage.style.opacity = '1';
+      }, 150);
+
+      // Update active thumbnail border
+      const allThumbnails = document.querySelectorAll('[data-image-src]');
+      allThumbnails.forEach(thumb => {
+        thumb.classList.remove('border-yellow-400');
+        thumb.classList.add('border-transparent');
+      });
+
+      clickedThumbnail.classList.remove('border-transparent');
+      clickedThumbnail.classList.add('border-yellow-400');
+    }
+  }
+
+  // Make function globally available
+  window.changeMainImage = changeMainImage;
+</script>

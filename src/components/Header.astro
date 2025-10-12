@@ -1,15 +1,17 @@
 ---
 import { Menu, X } from 'lucide-react';
-import logoDar from '../../assets/logos/dar/logo.png';
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-dark-teal-dark via-dark-teal to-dark-teal-light border-b border-rose-gold/20 shadow-lg backdrop-blur-sm">
   <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 w-full">
-    <nav class="flex items-center justify-between h-16 relative">
+    <nav class="flex items-center justify-between h-20 relative">
       <!-- Logo -->
-      <a href="/" class="flex items-center hover:opacity-80 transition-opacity relative z-50">
-        <img src={logoDar.src} alt="DAR Casa de la Perfumería" class="h-12 w-auto" />
-      </a>
+      <div class="flex items-center h-full">
+        <a href="/" class="logo-container hover:opacity-80 transition-opacity relative z-50">
+          <img src="/assets/logos/dar/solo_logo_dar-sinfondo.png?v=12" alt="DAR" class="logo-main" style="height: 120px !important; width: 120px !important; min-height: 120px !important; min-width: 120px !important; max-height: 120px !important; max-width: 120px !important; margin-bottom: -18px !important;" />
+          <img src="/assets/logos/dar/slogan_dar-removebg-preview.png?v=12" alt="Casa de la Perfumería" class="logo-slogan" style="height: 150px !important; width: auto !important; min-height: 150px !important; max-width: 300px !important; object-position: right center !important; margin-left: -35px !important;" />
+        </a>
+      </div>
 
       <!-- Desktop Navigation -->
       <div class="hidden lg:flex items-center space-x-8">
@@ -38,7 +40,7 @@ import logoDar from '../../assets/logos/dar/logo.png';
   </div>
 
   <!-- Mobile Menu - Dropdown Style like Nemco-Net -->
-  <div id="mobile-menu" class="lg:hidden fixed top-16 left-0 right-0 bg-gradient-to-b from-slate-900 to-slate-800 border-b border-rose-gold/30 shadow-2xl transform -translate-y-full opacity-0 transition-all duration-300 ease-out overflow-hidden z-40">
+  <div id="mobile-menu" class="lg:hidden fixed top-20 left-0 right-0 bg-gradient-to-b from-slate-900 to-slate-800 border-b border-rose-gold/30 shadow-2xl transform -translate-y-full opacity-0 transition-all duration-300 ease-out overflow-hidden z-40">
     <nav class="px-6 py-6 space-y-2">
       <a href="/" class="block text-slate-200 hover:text-rose-gold hover:bg-slate-700/60 transition-all font-medium py-4 px-5 rounded-xl text-base">
         Inicio
@@ -141,5 +143,88 @@ import logoDar from '../../assets/logos/dar/logo.png';
   /* Hamburger menu animation */
   #line-1, #line-2, #line-3 {
     transform-origin: center;
+  }
+  
+  /* Logo container styles */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  
+  /* Main logo (DAR) - FORCED SIZES */
+  .logo-main {
+    height: 120px !important;
+    width: 120px !important;
+    min-height: 120px !important;
+    min-width: 120px !important;
+    max-height: 120px !important;
+    max-width: 120px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+  }
+  
+  /* Slogan logo - FORCED SIZES */
+  .logo-slogan {
+    height: 80px !important;
+    width: auto !important;
+    min-height: 80px !important;
+    max-width: 250px !important;
+    object-fit: contain !important;
+    object-position: right center !important;
+    display: block !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .logo-main {
+      height: 75px;
+      width: 75px;
+    }
+    
+    .logo-slogan {
+      height: 48px;
+      max-width: 150px;
+    }
+    
+    .logo-container {
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-main {
+      height: 60px;
+      width: 60px;
+    }
+    
+    .logo-slogan {
+      height: 38px;
+      max-width: 120px;
+    }
+    
+    .logo-container {
+      gap: 4px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-main {
+      height: 50px;
+      width: 50px;
+    }
+    
+    .logo-slogan {
+      height: 32px;
+      max-width: 100px;
+    }
+    
+    .logo-container {
+      gap: 3px;
+    }
   }
 </style>

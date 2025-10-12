@@ -2,7 +2,7 @@
 import { ArrowRight, Crown, Award } from 'lucide-react';
 ---
 
-<section id="inicio" class="relative min-h-screen flex items-center justify-center pt-16 overflow-x-hidden">
+<section id="inicio" class="relative min-h-screen flex items-center justify-center pt-32 overflow-x-hidden py-16">
   <!-- Elegant Background -->
   <div class="absolute inset-0 bg-gradient-to-br from-dark-teal-dark via-dark-teal to-dark-teal-light">
     <!-- Subtle Pattern Overlay -->
@@ -18,10 +18,9 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Text Content -->
       <div class="text-center lg:text-left space-y-8">
-        <!-- Premium Badge -->
-        <div class="inline-flex items-center space-x-3 bg-gradient-to-r from-rose-gold/20 to-rose-gold-dark/20 backdrop-blur-sm border border-rose-gold/40 rounded-full px-6 py-3">
-          <Crown class="w-5 h-5 text-rose-gold" />
-          <span class="text-sm font-semibold text-rose-gold-light tracking-wider uppercase">Colección Premium Dubai</span>
+        <!-- Crown Icon -->
+        <div class="flex justify-center mb-4">
+          <Crown className="w-12 h-12 text-rose-gold" />
         </div>
 
         <!-- Main Heading -->
@@ -44,7 +43,7 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <a href="/fragancias" class="group relative inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-rose-gold to-rose-gold-dark text-slate-900 font-semibold px-8 py-4 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-rose-gold/50">
             <span class="relative z-10">Explorar Colección</span>
-            <ArrowRight class="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
             <div class="absolute inset-0 bg-gradient-to-r from-rose-gold-light to-rose-gold opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </a>
           
@@ -53,7 +52,7 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
              rel="noopener noreferrer"
              class="group inline-flex items-center justify-center space-x-2 border-2 border-rose-gold text-rose-gold-light font-semibold px-8 py-4 rounded-lg hover:bg-rose-gold/10 transition-all duration-300">
             <span>Asesoría Exclusiva</span>
-            <Award class="w-5 h-5 group-hover:rotate-12 transition-transform" />
+            <Award className="w-5 h-5 group-hover:rotate-12 transition-transform" />
           </a>
         </div>
 
@@ -77,7 +76,7 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
       <!-- Elegant Perfume Showcase -->
       <div class="relative hidden lg:flex items-center justify-center">
         <!-- Main Container with Elegant Shadow -->
-        <div class="relative w-96 h-[500px]">
+        <div class="relative w-80 h-[420px]">
           <!-- Elegant Frame -->
           <div class="absolute inset-0 bg-gradient-to-br from-rose-gold/20 to-transparent rounded-3xl backdrop-blur-sm border border-rose-gold/30 shadow-2xl shadow-rose-gold/20"></div>
           
@@ -85,21 +84,21 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
           <div class="absolute inset-8 flex items-center justify-center">
             <!-- Central Bottle -->
             <div class="relative z-20 transform hover:scale-105 transition-transform duration-500">
-              <div class="w-32 h-64 bg-gradient-to-b from-rose-gold-light via-rose-gold to-rose-gold-dark rounded-2xl shadow-2xl relative overflow-hidden">
+              <div class="w-28 h-56 bg-gradient-to-b from-rose-gold-light via-rose-gold to-rose-gold-dark rounded-2xl shadow-2xl relative overflow-hidden">
                 <!-- Glass Effect -->
                 <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"></div>
                 <!-- Cap -->
                 <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-12 bg-gradient-to-b from-slate-800 to-slate-900 rounded-t-xl border-4 border-rose-gold shadow-xl"></div>
                 <!-- Label Area -->
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border-2 border-white/30 rounded-lg flex items-center justify-center">
-                  <Crown class="w-10 h-10 text-white/50" />
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border-2 border-white/30 rounded-lg flex items-center justify-center">
+                  <Crown className="w-8 h-8 text-white/50" />
                 </div>
               </div>
             </div>
             
             <!-- Left Bottle (Smaller) -->
             <div class="absolute left-4 top-20 z-10 transform hover:scale-105 transition-transform duration-500 opacity-60 hover:opacity-100">
-              <div class="w-24 h-48 bg-gradient-to-b from-rose-gold to-rose-gold-dark rounded-xl shadow-xl">
+              <div class="w-20 h-40 bg-gradient-to-b from-rose-gold to-rose-gold-dark rounded-xl shadow-xl">
                 <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-xl"></div>
                 <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-14 h-8 bg-slate-800 rounded-t-lg border-2 border-rose-gold"></div>
               </div>
@@ -107,7 +106,7 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
             
             <!-- Right Bottle (Smaller) -->
             <div class="absolute right-4 top-32 z-10 transform hover:scale-105 transition-transform duration-500 opacity-60 hover:opacity-100">
-              <div class="w-24 h-48 bg-gradient-to-b from-rose-gold-light to-rose-gold rounded-xl shadow-xl">
+              <div class="w-20 h-40 bg-gradient-to-b from-rose-gold-light to-rose-gold rounded-xl shadow-xl">
                 <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-xl"></div>
                 <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-14 h-8 bg-slate-800 rounded-t-lg border-2 border-rose-gold-light"></div>
               </div>

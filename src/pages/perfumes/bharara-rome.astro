@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import FragrancePreview from '../../components/FragrancePreview.astro';
+
+const fragrance = {
+  id: 'bharara-rome',
+  name: 'Bharara Rome',
+  displayName: 'Bharara Rome',
+  gender: 'masculino',
+  category: 'oriental',
+  fraganciazId: 'fraganciaz-5-bharara-rome',
+  imagePath: '/assets/images/fragancias/hombre/fraganciaz-5-bharara-rome',
+  images: ["WhatsApp Image 2025-10-10 at 3.12.53 PM (1).jpeg","WhatsApp Image 2025-10-10 at 3.12.53 PM (2).jpeg","WhatsApp Image 2025-10-10 at 3.12.53 PM (3).jpeg","WhatsApp Image 2025-10-10 at 3.12.54 PM (1).jpeg","WhatsApp Image 2025-10-10 at 3.12.54 PM.jpeg"],
+  notesImages: [],
+  hasImages: true
+};
+---
+
+<Layout title={`${fragrance.displayName} - DAR Casa de la Perfumería`} description={`Descubre ${fragrance.displayName}, una fragancia ${fragrance.category} ${fragrance.gender}. Importada directamente desde Dubai.`}>
+  <Header />
+  <WhatsAppButton />
+
+  <main>
+    <FragrancePreview fragrance={fragrance} />
+  </main>
+
+  <Footer />
+</Layout>

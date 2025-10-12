@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import FragrancePreview from '../../components/FragrancePreview.astro';
+
+const fragrance = {
+  id: 'amethyste',
+  name: 'Amethyste',
+  displayName: 'Amethyste',
+  gender: 'unisex',
+  category: 'oriental',
+  fraganciazId: 'fraganciaz-28-amethyste',
+  imagePath: '/assets/images/fragancias/unisex/fraganciaz-28-amethyste',
+  images: ["WhatsApp Image 2025-10-10 at 12.15.42 PM (1).jpeg","WhatsApp Image 2025-10-10 at 12.15.42 PM (2).jpeg","WhatsApp Image 2025-10-10 at 12.15.42 PM.jpeg"],
+  notesImages: [],
+  hasImages: true
+};
+---
+
+<Layout title={`${fragrance.displayName} - DAR Casa de la Perfumería`} description={`Descubre ${fragrance.displayName}, una fragancia ${fragrance.category} ${fragrance.gender}. Importada directamente desde Dubai.`}>
+  <Header />
+  <WhatsAppButton />
+
+  <main>
+    <FragrancePreview fragrance={fragrance} />
+  </main>
+
+  <Footer />
+</Layout>
