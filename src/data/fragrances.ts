@@ -191,7 +191,6 @@ export const fragrances: Fragrance[] = [
       "ansaam-silver-01.jpeg",
       "ansaam-silver-02.jpeg",
       "ansaam-silver-03.jpeg",
-      "ansaam-silver-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -757,13 +756,11 @@ export const fragrances: Fragrance[] = [
     "imagePath": "/assets/images/fragancias/hombre/fraganciaz-kismet-men",
     "images": [
       "kismet-men-01.jpeg",
-      "kismet-men-02.jpeg",
       "kismet-men-03.jpeg",
       "kismet-men-04.jpeg",
       "kismet-men-05.jpeg",
       "kismet-men-06.jpeg",
       "kismet-men-07.jpeg",
-      "kismet-men-08.jpeg",
       "kismet-men-09.jpeg"
     ],
     "notesImages": [],
@@ -993,7 +990,6 @@ export const fragrances: Fragrance[] = [
       "mayar-cherry-03.jpeg",
       "mayar-cherry-04.jpeg",
       "mayar-cherry-05.jpeg",
-      "mayar-cherry-06.jpeg",
       "mayar-cherry-07.jpeg"
     ],
     "notesImages": [],
@@ -1033,7 +1029,6 @@ export const fragrances: Fragrance[] = [
       "mayar-cherry-03.jpeg",
       "mayar-cherry-04.jpeg",
       "mayar-cherry-05.jpeg",
-      "mayar-cherry-06.jpeg",
       "mayar-cherry-07.jpeg"
     ],
     "notesImages": [],
@@ -1071,7 +1066,6 @@ export const fragrances: Fragrance[] = [
       "musaman-white-01.jpeg",
       "musaman-white-02.jpeg",
       "musaman-white-03.jpeg",
-      "musaman-white-04.jpeg",
       "musaman-white-05.jpeg",
       "musaman-white-06.jpeg",
       "musaman-white-07.jpeg"
