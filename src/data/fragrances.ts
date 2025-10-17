@@ -599,23 +599,23 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "khamrah-qahwa-lattafa",
-    "name": "Khamrah Qahwa Lattafa",
-    "displayName": "Khamrah Qahwa Lattafa",
+    "id": "khamrah-qahwa",
+    "name": "Khamrah Qahwa",
+    "displayName": "Khamrah Qahwa",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-khamrah-qahwa-lattafa",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah-qahwa-lattafa",
+    "fraganciazId": "fraganciaz-khamrah-qahwa",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah-qahwa",
     "images": [
-      "khamrah-qahwa-lattafa-01.jpeg",
-      "khamrah-qahwa-lattafa-02.jpeg",
-      "khamrah-qahwa-lattafa-03.jpeg",
-      "khamrah-qahwa-lattafa-04.jpeg",
-      "khamrah-qahwa-lattafa-05.jpeg"
+      "khamrah-qahwa-01.jpeg",
+      "khamrah-qahwa-02.jpeg",
+      "khamrah-qahwa-03.jpeg",
+      "khamrah-qahwa-04.jpeg",
+      "khamrah-qahwa-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Khamrah Qahwa Lattafa es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
+    "description": "Khamrah Qahwa es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
       "top": ["Vainilla","Canela"],
       "heart": ["Nuez Moscada"],
@@ -637,22 +637,22 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "khamrah-qahwa-lattafa-unisex",
-    "name": "Khamrah Qahwa Lattafa",
-    "displayName": "Khamrah Qahwa Lattafa",
+    "id": "khamrah-qahwa-unisex",
+    "name": "Khamrah Qahwa",
+    "displayName": "Khamrah Qahwa",
     "gender": "unisex",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-khamrah-qahwa-lattafa-unisex",
-    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-khamrah-qahwa-lattafa-unisex",
+    "fraganciazId": "fraganciaz-khamrah-qahwa-unisex",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-khamrah-qahwa-unisex",
     "images": [
-      "khamrah-qahwa-lattafa-unisex-01.jpeg",
-      "khamrah-qahwa-lattafa-unisex-02.jpeg",
-      "khamrah-qahwa-lattafa-unisex-03.jpeg",
-      "khamrah-qahwa-lattafa-unisex-04.jpeg"
+      "khamrah-qahwa-unisex-01.jpeg",
+      "khamrah-qahwa-unisex-02.jpeg",
+      "khamrah-qahwa-unisex-03.jpeg",
+      "khamrah-qahwa-unisex-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Khamrah Qahwa Lattafa es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "description": "Khamrah Qahwa es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
     "notes": {
       "top": [],
       "heart": [],
