@@ -1560,13 +1560,13 @@ export const fragrances: Fragrance[] = [
 
 export function getFirstImage(fragrance: Fragrance): string {
   return fragrance.images && fragrance.images.length > 0 
-    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=12` 
+    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=13` 
     : '/assets/images/placeholder.jpg';
 }
 
 export function getCatalogImage(fragrance: Fragrance): string {
   return fragrance.images && fragrance.images.length > 0 
-    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=12` 
+    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=13` 
     : '/assets/images/placeholder.jpg';
 }
 

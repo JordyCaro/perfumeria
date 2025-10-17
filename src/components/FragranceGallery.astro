@@ -18,7 +18,7 @@ const firstImage = fragrance.images && fragrance.images.length > 0 ? fragrance.i
     {firstImage ? (
       <img
         id="main-fragrance-image"
-        src={`${fragrance.imagePath}/${firstImage}`}
+        src={`${fragrance.imagePath}/${firstImage}?v=13`}
         alt={fragrance.name}
         class="w-full h-full object-cover transition-opacity duration-300"
       />
@@ -35,13 +35,13 @@ const firstImage = fragrance.images && fragrance.images.length > 0 ? fragrance.i
           class={`aspect-square bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform border-2 w-20 h-20 ${
             index === 0 ? 'border-yellow-400' : 'border-transparent'
           }`}
-          data-image-src={`${fragrance.imagePath}/${img}`}
+          data-image-src={`${fragrance.imagePath}/${img}?v=13`}
           data-image-alt={fragrance.name}
           onclick="changeMainImage(this)"
           aria-label={`Ver imagen ${index + 1} de ${fragrance.name}`}
         >
           <img
-            src={`${fragrance.imagePath}/${img}`}
+            src={`${fragrance.imagePath}/${img}?v=13`}
             alt={fragrance.name}
             class="w-full h-full object-cover"
           />
