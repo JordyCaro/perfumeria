@@ -255,13 +255,13 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "art-of-universe",
+    "id": "art-of-universe-unisex",
     "name": "Art of universe",
     "displayName": "Art of universe",
     "gender": "unisex",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-art-of-universe",
-    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-art-of-universe",
+    "fraganciazId": "fraganciaz-art-of-universe-unisex",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-art-of-universe-unisex",
     "images": [
       "art-of-universe-01.jpeg",
       "art-of-universe-02.jpeg",
@@ -370,13 +370,13 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "bharara-king",
+    "id": "bharara-king-unisex",
     "name": "Bharara king",
     "displayName": "Bharara king",
     "gender": "unisex",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-bharara-king",
-    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-bharara-king",
+    "fraganciazId": "fraganciaz-bharara-king-unisex",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-bharara-king-unisex",
     "images": [
       "bharara-king-01.jpeg",
       "bharara-king-02.jpeg",
@@ -599,23 +599,23 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "khamrah-qahwa",
+    "id": "Khamrah-Qahwa",
     "name": "Khamrah Qahwa",
     "displayName": "Khamrah Qahwa",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-khamrah-qahwa",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah-qahwa",
+    "fraganciazId": "fraganciaz-khamrah",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah",
     "images": [
-      "khamrah-qahwa-01.jpeg",
-      "khamrah-qahwa-02.jpeg",
-      "khamrah-qahwa-03.jpeg",
-      "khamrah-qahwa-04.jpeg",
-      "khamrah-qahwa-05.jpeg"
+      "khamrah-01.jpeg",
+      "khamrah-02.jpeg",
+      "khamrah-03.jpeg",
+      "khamrah-04.jpeg",
+      "khamrah-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Khamrah Qahwa es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
+    "description": "Khamrah es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
       "top": ["Vainilla","Canela"],
       "heart": ["Nuez Moscada"],
@@ -637,18 +637,19 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "khamrah-qahwa-unisex",
+    "id": "Khamrah-Qahwa-unisex",
     "name": "Khamrah Qahwa",
     "displayName": "Khamrah Qahwa",
     "gender": "unisex",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-khamrah-qahwa-unisex",
-    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-khamrah-qahwa-unisex",
+    "fraganciazId": "fraganciaz-khamrah-unisex",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah",
     "images": [
-      "khamrah-qahwa-unisex-01.jpeg",
-      "khamrah-qahwa-unisex-02.jpeg",
-      "khamrah-qahwa-unisex-03.jpeg",
-      "khamrah-qahwa-unisex-04.jpeg"
+      "khamrah-01.jpeg",
+      "khamrah-02.jpeg",
+      "khamrah-03.jpeg",
+      "khamrah-04.jpeg",
+      "khamrah-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
@@ -674,21 +675,21 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "khamrah-qawah",
-    "name": "Khamrah qawah",
-    "displayName": "Khamrah qawah",
+    "id": "khamrah",
+    "name": "Khamrah",
+    "displayName": "Khamrah",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-khamrah-qawah",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah-qawah",
+    "fraganciazId": "fraganciaz-khamrah",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah-qahwa",
     "images": [
-      "khamrah-qawah-01.jpeg",
-      "khamrah-qawah-02.jpeg",
-      "khamrah-qawah-03.jpeg"
+      "khamrah-qahwa-01.jpeg",
+      "khamrah-qahwa-02.jpeg",
+      "khamrah-qahwa-03.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Khamrah qawah es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
+    "description": "Khamrah es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
       "top": ["Café","Canela","Vainilla"],
       "heart": ["Cálido Especiado","Dulce"],
@@ -710,22 +711,22 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "khamrah-qawah",
-    "name": "Khamrah qawah",
-    "displayName": "Khamrah qawah",
+    "id": "khamrah-unisex",
+    "name": "Khamrah",
+    "displayName": "Khamrah",
     "gender": "unisex",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-khamrah-qawah",
-    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-khamrah-qawah",
+    "fraganciazId": "fraganciaz-khamrah-unisex",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-khamrah-qahwa-unisex",
     "images": [
-      "khamrah-qawah-01.jpeg",
-      "khamrah-qawah-02.jpeg",
-      "khamrah-qawah-03.jpeg",
-      "khamrah-qawah-04.jpeg"
+      "khamrah-qahwa-unisex-01.jpeg",
+      "khamrah-qahwa-unisex-02.jpeg",
+      "khamrah-qahwa-unisex-03.jpeg",
+      "khamrah-qahwa-unisex-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Khamrah qawah es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "description": "Khamrah es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
     "notes": {
       "top": [],
       "heart": [],
@@ -1019,13 +1020,13 @@ export const fragrances: Fragrance[] = [
     }
   },
   {
-    "id": "mayar-cherry",
+    "id": "mayar-cherry-unisex",
     "name": "Mayar cherry",
     "displayName": "Mayar cherry",
     "gender": "unisex",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-mayar-cherry",
-    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-mayar-cherry",
+    "fraganciazId": "fraganciaz-mayar-cherry-unisex",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-mayar-cherry-unisex",
     "images": [
       "mayar-cherry-01.jpeg",
       "mayar-cherry-02.jpeg",
