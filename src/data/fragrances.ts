@@ -38,8 +38,8 @@ export const fragrances: Fragrance[] = [
     "displayName": "Ajwad",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-17-ajwad",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-17-ajwad",
+    "fraganciazId": "fraganciaz-ajwad",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-ajwad",
     "images": [
       "ajwad-01.jpeg",
       "ajwad-02.jpeg",
@@ -48,63 +48,35 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Ajwad es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Bergamota","Mandarina","Limón"],
+      "heart": ["Jazmín","Rosa","Ylang-Ylang"],
+      "base": ["Sándalo","Ámbar","Musk"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "alharamain-laventure",
-    "name": "Alharamain Laventure",
-    "displayName": "Alharamain Laventure",
+    "name": "Alharamain laventure",
+    "displayName": "Alharamain laventure",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-1-alharamain-laventure",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-1-alharamain-laventure",
+    "fraganciazId": "fraganciaz-alharamain-laventure",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-alharamain-laventure",
     "images": [
       "alharamain-laventure-01.jpeg",
       "alharamain-laventure-02.jpeg",
@@ -112,53 +84,62 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Alharamain laventure es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Limón","Bergamota","Elemi"],
+      "heart": ["Notas Amaderadas","Jazmín","Lirio de los Valles"],
+      "base": ["Almizcle","Pachulí","Ámbar"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "amethyst",
+    "name": "Amethyst",
+    "displayName": "Amethyst",
+    "gender": "femenino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-amethyst",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-amethyst",
+    "images": [
+      "amethyst-01.jpeg",
+      "amethyst-02.jpeg",
+      "amethyst-03.jpeg",
+      "amethyst-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Amethyst es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Bade'e Al Oud", "Amethyst"],
+      "heart": ["Floral", "Oriental"],
+      "base": ["Amaderado", "Ámbar"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
@@ -167,72 +148,82 @@ export const fragrances: Fragrance[] = [
     "displayName": "Amethyste",
     "gender": "unisex",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-28-amethyste",
-    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-28-amethyste",
+    "fraganciazId": "fraganciaz-amethyste",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-amethyste",
     "images": [
       "amethyste-01.jpeg",
       "amethyste-02.jpeg",
-      "amethyste-03.jpeg"
+      "amethyste-03.jpeg",
+      "amethyste-04.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia unisex versátil y refinada con notas orientales únicas.",
+    "description": "Amethyste es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cítrico","Fresco Especiado"],
+      "heart": ["Rosas","Florales","Floral Blanco","Especiado Suave"],
+      "base": ["Oud","Ámbar","Avainillado"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "ansaam-silver",
+    "name": "Ansaam silver",
+    "displayName": "Ansaam silver",
+    "gender": "masculino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-ansaam-silver",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-ansaam-silver",
+    "images": [
+      "ansaam-silver-01.jpeg",
+      "ansaam-silver-02.jpeg",
+      "ansaam-silver-03.jpeg",
+      "ansaam-silver-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Ansaam silver es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Aromático", "Cítrico"],
+      "heart": ["Atalcado", "Avainillado", "Balsámico", "Fresco Especiado"],
+      "base": ["Cálido Especiado", "Lavanda", "Pachulí", "Ámbar"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "art-of-universe",
-    "name": "Art Of Universe",
-    "displayName": "Art Of Universe",
+    "name": "Art of universe",
+    "displayName": "Art of universe",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-3-art-of-universe",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-3-art-of-universe",
+    "fraganciazId": "fraganciaz-art-of-universe",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-art-of-universe",
     "images": [
       "art-of-universe-01.jpeg",
       "art-of-universe-02.jpeg",
@@ -242,63 +233,112 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Art of universe es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Aromático","Cítrico"],
+      "heart": ["Afrutados","Dulce","Fresco","Fresco Especiado"],
+      "base": ["Almizclado","Atalcado","Floral Blanco","Verde"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "art-of-universe",
+    "name": "Art of universe",
+    "displayName": "Art of universe",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-art-of-universe",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-art-of-universe",
+    "images": [
+      "art-of-universe-01.jpeg",
+      "art-of-universe-02.jpeg",
+      "art-of-universe-03.jpeg",
+      "art-of-universe-04.jpeg",
+      "art-of-universe-05.jpeg",
+      "art-of-universe-06.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Art of universe es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "assam-silver",
+    "name": "Assam silver",
+    "displayName": "Assam silver",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-assam-silver",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-assam-silver",
+    "images": [
+      "assam-silver-01.jpeg",
+      "assam-silver-02.jpeg",
+      "assam-silver-03.jpeg",
+      "assam-silver-04.jpeg",
+      "assam-silver-05.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Assam silver es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Aromático","Cítrico"],
+      "heart": ["Atalcado","Avainillado","Balsámico","Fresco Especiado"],
+      "base": ["Cálido Especiado","Lavanda","Pachulí","Ámbar"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "bharara-king",
-    "name": "Bharara King",
-    "displayName": "Bharara King",
+    "name": "Bharara king",
+    "displayName": "Bharara king",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-4-bharara-king",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-4-bharara-king",
+    "fraganciazId": "fraganciaz-bharara-king",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-bharara-king",
     "images": [
       "bharara-king-01.jpeg",
       "bharara-king-02.jpeg",
@@ -308,129 +348,112 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Bharara king es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cítrico","Dulce"],
+      "heart": ["Afrutados","Avainillado"],
+      "base": ["Almizclado","Atalcado","Ámbar","Fresco Especiado"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "bharara-king",
+    "name": "Bharara king",
+    "displayName": "Bharara king",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-bharara-king",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-bharara-king",
+    "images": [
+      "bharara-king-01.jpeg",
+      "bharara-king-02.jpeg",
+      "bharara-king-03.jpeg",
+      "bharara-king-04.jpeg",
+      "bharara-king-05.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Bharara king es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "bharara-rome",
-    "name": "Bharara Rome",
-    "displayName": "Bharara Rome",
+    "name": "Bharara rome",
+    "displayName": "Bharara rome",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-5-bharara-rome",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-5-bharara-rome",
+    "fraganciazId": "fraganciaz-bharara-rome",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-bharara-rome",
     "images": [
-      "bharara-rome-01.jpeg",
       "bharara-rome-02.jpeg",
+      "bharara-rome-01.jpeg",
       "bharara-rome-03.jpeg",
       "bharara-rome-04.jpeg",
-      "bharara-rome-05.jpeg"
+      "bharara-rome-05.jpeg",
+      "bharara-rome-06.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Bharara rome es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Lavanda"],
+      "heart": ["Vainilla"],
+      "base": ["Vetiver"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "bharara-rome-women",
-    "name": "Bharara Rome Women",
-    "displayName": "Bharara Rome Women",
+    "name": "Bharara rome women",
+    "displayName": "Bharara rome women",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-18-bharara-rome-women",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-18-bharara-rome-women",
+    "fraganciazId": "fraganciaz-bharara-rome-women",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-bharara-rome-women",
     "images": [
       "bharara-rome-women-01.jpeg",
       "bharara-rome-women-02.jpeg",
@@ -439,53 +462,25 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Bharara rome women es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Rome Pour Femme", "Bharara"],
+      "heart": ["Floral", "Oriental"],
+      "base": ["Amaderado", "Ámbar"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
@@ -494,8 +489,8 @@ export const fragrances: Fragrance[] = [
     "displayName": "Delilah",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-19-delilah",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-19-delilah",
+    "fraganciazId": "fraganciaz-delilah",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-delilah",
     "images": [
       "delilah-01.jpeg",
       "delilah-02.jpeg",
@@ -503,63 +498,35 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Delilah es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Frutal","Cítrico"],
+      "heart": ["Floral","Dulce"],
+      "base": ["Amaderado","Musk"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "hayaati-florence",
-    "name": "Hayaati Florence",
-    "displayName": "Hayaati Florence",
+    "name": "Hayaati florence",
+    "displayName": "Hayaati florence",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-20-hayaati-florence",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-20-hayaati-florence",
+    "fraganciazId": "fraganciaz-hayaati-florence",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-hayaati-florence",
     "images": [
       "hayaati-florence-01.jpeg",
       "hayaati-florence-02.jpeg",
@@ -570,63 +537,35 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Hayaati florence es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Bergamota","Limón"],
+      "heart": ["Rosa","Jazmín"],
+      "base": ["Sándalo","Musk"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "hayaati-maleky-men",
-    "name": "Hayaati Maleky Men",
-    "displayName": "Hayaati Maleky Men",
+    "name": "Hayaati maleky men",
+    "displayName": "Hayaati maleky men",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-6-hayaati-maleky-men",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-6-hayaati-maleky-men",
+    "fraganciazId": "fraganciaz-hayaati-maleky-men",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-hayaati-maleky-men",
     "images": [
       "hayaati-maleky-men-01.jpeg",
       "hayaati-maleky-men-02.jpeg",
@@ -638,53 +577,25 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Hayaati maleky men es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Ámbar","Fresco Especiado"],
+      "heart": ["Almizclado","Amaderado","Atalcado"],
+      "base": ["Cítrico","Animálico","Especiado Suave","Balsámico"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
@@ -693,8 +604,46 @@ export const fragrances: Fragrance[] = [
     "displayName": "Khamrah",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-7-khamrah",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-7-khamrah",
+    "fraganciazId": "fraganciaz-khamrah",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah",
+    "images": [
+      "khamrah-01.jpeg",
+      "khamrah-02.jpeg",
+      "khamrah-03.jpeg",
+      "khamrah-04.jpeg",
+      "khamrah-05.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Khamrah es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Vainilla","Canela"],
+      "heart": ["Nuez Moscada"],
+      "base": ["Amaderadas"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "khamrah",
+    "name": "Khamrah",
+    "displayName": "Khamrah",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-khamrah",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-khamrah",
     "images": [
       "khamrah-01.jpeg",
       "khamrah-02.jpeg",
@@ -703,63 +652,35 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Khamrah es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": [],
+      "heart": [],
+      "base": []
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "khamrah-qawah",
-    "name": "Khamrah Qawah",
-    "displayName": "Khamrah Qawah",
+    "name": "Khamrah qawah",
+    "displayName": "Khamrah qawah",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-8-khamrah-qawah",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-8-khamrah-qawah",
+    "fraganciazId": "fraganciaz-khamrah-qawah",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-khamrah-qawah",
     "images": [
       "khamrah-qawah-01.jpeg",
       "khamrah-qawah-02.jpeg",
@@ -767,63 +688,72 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Khamrah qawah es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Café","Canela","Vainilla"],
+      "heart": ["Cálido Especiado","Dulce"],
+      "base": ["Praliné","Haba Tonka","Cardamomo"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "khamrah-qawah",
+    "name": "Khamrah qawah",
+    "displayName": "Khamrah qawah",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-khamrah-qawah",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-khamrah-qawah",
+    "images": [
+      "khamrah-qawah-01.jpeg",
+      "khamrah-qawah-02.jpeg",
+      "khamrah-qawah-03.jpeg",
+      "khamrah-qawah-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Khamrah qawah es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": [],
+      "heart": [],
+      "base": []
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "kismet-men",
-    "name": "Kismet Men",
-    "displayName": "Kismet Men",
+    "name": "Kismet men",
+    "displayName": "Kismet men",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-9-kismet-men",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-9-kismet-men",
+    "fraganciazId": "fraganciaz-kismet-men",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-kismet-men",
     "images": [
       "kismet-men-01.jpeg",
       "kismet-men-02.jpeg",
@@ -832,188 +762,182 @@ export const fragrances: Fragrance[] = [
       "kismet-men-05.jpeg",
       "kismet-men-06.jpeg",
       "kismet-men-07.jpeg",
-      "kismet-men-08.jpeg"
+      "kismet-men-08.jpeg",
+      "kismet-men-09.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Kismet men es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Amaderado","Cálido Especiado"],
+      "heart": ["Pachulí","Vainilla","Fresco Especiado"],
+      "base": ["Terroso","Atalcado","Balsámico"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "kismet-womwen",
+    "name": "Kismet womwen",
+    "displayName": "Kismet womwen",
+    "gender": "femenino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-kismet-womwen",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-kismet-womwen",
+    "images": [
+      "kismet-womwen-01.jpeg",
+      "kismet-womwen-02.jpeg",
+      "kismet-womwen-03.jpeg",
+      "kismet-womwen-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Kismet womwen es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Frutal","Cítrico"],
+      "heart": ["Floral","Oriental"],
+      "base": ["Amaderado","Ámbar"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "kit-yara-and-yara-candy",
-    "name": "Kit Yara And Yara Candy",
-    "displayName": "Kit Yara And Yara Candy",
+    "name": "Kit yara and yara candy",
+    "displayName": "Kit yara and yara candy",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-22-kit-yara-and-yara-candy",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-22-kit-yara-and-yara-candy",
+    "fraganciazId": "fraganciaz-kit-yara-and-yara-candy",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-kit-yara-and-yara-candy",
     "images": [
-      "kit-yara-and-yara-candy-01.jpeg",
-      "kit-yara-and-yara-candy-02.jpeg",
-      "kit-yara-and-yara-candy-03.jpeg",
+      "kit-yara-and-yara-candy-01.webp",
+      "kit-yara-and-yara-candy-02.jpg",
+      "kit-yara-and-yara-candy-03.jpg",
       "kit-yara-and-yara-candy-04.jpeg",
-      "kit-yara-and-yara-candy-05.jpeg"
+      "kit-yara-and-yara-candy-05.webp",
+      "kit-yara-and-yara-candy-06.jpg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Kit yara and yara candy es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Dulce","Avainillado","Atalcado"],
+      "heart": ["Tropical","Afrutados","Almizclado"],
+      "base": ["Florales","Cítrico"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "kit-yara-splash",
+    "name": "Kit yara splash",
+    "displayName": "Kit yara splash",
+    "gender": "femenino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-kit-yara-splash",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-kit-yara-splash",
+    "images": [
+      "kit-yara-splash-01.jpeg",
+      "kit-yara-splash-02.jpeg",
+      "kit-yara-splash-03.jpeg",
+      "kit-yara-splash-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Kit yara splash es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Dulce", "Avainillado", "Atalcado"],
+      "heart": ["Tropical", "Afrutados", "Almizclado"],
+      "base": ["Florales", "Cítrico"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "liam-grey",
-    "name": "Liam Grey",
-    "displayName": "Liam Grey",
+    "name": "Liam grey",
+    "displayName": "Liam grey",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-10-liam-grey",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-10-liam-grey",
+    "fraganciazId": "fraganciaz-liam-grey",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-liam-grey",
     "images": [
       "liam-grey-01.jpeg",
       "liam-grey-02.jpeg",
       "liam-grey-03.jpeg",
-      "liam-grey-04.jpeg"
+      "liam-grey-04.jpeg",
+      "liam-grey-05.jpeg",
+      "liam-grey-06.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Liam grey es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Iris","Vetiver","Té Dorado"],
+      "heart": ["Haba Tonka","Cardamomo","Sándalo"],
+      "base": ["Vainilla","Menta","Higos","Jazmín"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
@@ -1022,8 +946,8 @@ export const fragrances: Fragrance[] = [
     "displayName": "Malachite",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-11-malachite",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-11-malachite",
+    "fraganciazId": "fraganciaz-malachite",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-malachite",
     "images": [
       "malachite-01.jpeg",
       "malachite-02.jpeg",
@@ -1033,195 +957,155 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Malachite es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cítrico","Aromático"],
+      "heart": ["Amaderado","Afrutados","Fresco Especiado"],
+      "base": ["Almizclado","Ámbar","Especiado Suave","Verde","Florales"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "mayar-cherry",
-    "name": "Mayar Cherry",
-    "displayName": "Mayar Cherry",
-    "gender": "masculino",
+    "name": "Mayar cherry",
+    "displayName": "Mayar cherry",
+    "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-12-mayar-cherry",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-12-mayar-cherry",
+    "fraganciazId": "fraganciaz-mayar-cherry",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-mayar-cherry",
     "images": [
       "mayar-cherry-01.jpeg",
       "mayar-cherry-02.jpeg",
       "mayar-cherry-03.jpeg",
       "mayar-cherry-04.jpeg",
-      "mayar-cherry-05.jpeg"
+      "mayar-cherry-05.jpeg",
+      "mayar-cherry-06.jpeg",
+      "mayar-cherry-07.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Mayar cherry es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cacao","Dulce","Afrutados"],
+      "heart": ["Cálido Especiado","Avainillado","Ámbar"],
+      "base": ["Atalcado","Pachulí"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "mayar-cherry",
+    "name": "Mayar cherry",
+    "displayName": "Mayar cherry",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-mayar-cherry",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-mayar-cherry",
+    "images": [
+      "mayar-cherry-01.jpeg",
+      "mayar-cherry-02.jpeg",
+      "mayar-cherry-03.jpeg",
+      "mayar-cherry-04.jpeg",
+      "mayar-cherry-05.jpeg",
+      "mayar-cherry-06.jpeg",
+      "mayar-cherry-07.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Mayar cherry es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Cacao", "Dulce"],
+      "heart": ["Afrutados", "Cálido Especiado", "Avainillado"],
+      "base": ["Ámbar", "Atalcado", "Pachulí"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "musaman-white",
-    "name": "Musaman White",
-    "displayName": "Musaman White",
+    "name": "Musaman white",
+    "displayName": "Musaman white",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-24-musaman-white",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-24-musaman-white",
+    "fraganciazId": "fraganciaz-musaman-white",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-musaman-white",
     "images": [
       "musaman-white-01.jpeg",
       "musaman-white-02.jpeg",
       "musaman-white-03.jpeg",
       "musaman-white-04.jpeg",
-      "musaman-white-05.jpeg"
+      "musaman-white-05.jpeg",
+      "musaman-white-06.jpeg",
+      "musaman-white-07.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Musaman white es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cítrico","Frutal"],
+      "heart": ["Floral","Oriental"],
+      "base": ["Amaderado","Musk"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "now-black",
-    "name": "Now Black",
-    "displayName": "Now Black",
+    "name": "Now black",
+    "displayName": "Now black",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-13-now-black",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-13-now-black",
+    "fraganciazId": "fraganciaz-now-black",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-now-black",
     "images": [
       "now-black-01.jpeg",
       "now-black-02.jpeg",
@@ -1232,182 +1116,220 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Now black es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Afrutados","Dulce"],
+      "heart": ["Tropical","Fresco"],
+      "base": ["Almizclado","Atalcado","Amaderado"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "odissey-dubau-chocolate",
-    "name": "Odissey Dubau Chocolate",
-    "displayName": "Odissey Dubau Chocolate",
+    "name": "Odissey dubau chocolate",
+    "displayName": "Odissey dubau chocolate",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-14-odissey-dubau-chocolate",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-14-odissey-dubau-chocolate",
+    "fraganciazId": "fraganciaz-odissey-dubau-chocolate",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-odissey-dubau-chocolate",
     "images": [
       "odissey-dubau-chocolate-01.jpeg",
       "odissey-dubau-chocolate-02.jpeg",
       "odissey-dubau-chocolate-03.jpeg",
       "odissey-dubau-chocolate-04.jpeg",
-      "odissey-dubau-chocolate-05.jpeg"
+      "odissey-dubau-chocolate-05.jpeg",
+      "odissey-dubau-chocolate-06.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Odissey dubau chocolate es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Café","Pistacho","Praliné","Avellana","Knafeh"],
+      "heart": ["Vainilla","Chocolate","Cardamomo"],
+      "base": ["Caramelo","Haba Tonka","Amaderadas"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "odyssey-bubau-chocolate",
+    "name": "Odyssey bubau chocolate",
+    "displayName": "Odyssey bubau chocolate",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-odyssey-bubau-chocolate",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-odyssey-bubau-chocolate",
+    "images": [
+      "odyssey-bubau-chocolate-01.jpeg",
+      "odyssey-bubau-chocolate-02.jpeg",
+      "odyssey-bubau-chocolate-03.jpeg",
+      "odyssey-bubau-chocolate-04.jpeg",
+      "odyssey-bubau-chocolate-05.jpeg",
+      "odyssey-bubau-chocolate-06.jpeg",
+      "odyssey-bubau-chocolate-07.jpeg",
+      "odyssey-bubau-chocolate-08.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Odyssey bubau chocolate es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Café", "Pistacho", "Praliné", "Avellana", "Knafeh"],
+      "heart": ["Vainilla", "Chocolate", "Cardamomo"],
+      "base": ["Caramelo", "Haba Tonka", "Amaderadas"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "odyssey-candee",
+    "name": "Odyssey candee",
+    "displayName": "Odyssey candee",
+    "gender": "femenino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-odyssey-candee",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-odyssey-candee",
+    "images": [
+      "odyssey-candee-01.jpeg",
+      "odyssey-candee-02.jpeg",
+      "odyssey-candee-03.jpeg",
+      "odyssey-candee-04.jpeg",
+      "odyssey-candee-05.jpeg",
+      "odyssey-candee-06.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Odyssey candee es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Dulce","Frutal"],
+      "heart": ["Floral","Oriental"],
+      "base": ["Amaderado","Ámbar"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "odyssey-mandarine",
-    "name": "Odyssey Mandarine",
-    "displayName": "Odyssey Mandarine",
+    "name": "Odyssey mandarine",
+    "displayName": "Odyssey mandarine",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-15-odyssey-mandarine",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-15-odyssey-mandarine",
+    "fraganciazId": "fraganciaz-odyssey-mandarine",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-odyssey-mandarine",
     "images": [
       "odyssey-mandarine-01.jpeg",
-      "odyssey-mandarine-02.jpeg"
+      "odyssey-mandarine-02.jpeg",
+      "odyssey-mandarine-03.jpeg",
+      "odyssey-mandarine-04.jpeg",
+      "odyssey-mandarine-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Odyssey mandarine es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cítrico","Caramelo"],
+      "heart": ["Dulce","Ámbar"],
+      "base": ["Aromático","Avainillado","Amaderado","Cálido Especiado"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "odyssey-mandarine",
+    "name": "Odyssey mandarine",
+    "displayName": "Odyssey mandarine",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-odyssey-mandarine",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-odyssey-mandarine",
+    "images": [
+      "odyssey-mandarine-01.jpeg",
+      "odyssey-mandarine-02.jpeg",
+      "odyssey-mandarine-03.jpeg",
+      "odyssey-mandarine-04.jpeg",
+      "odyssey-mandarine-05.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Odyssey mandarine es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Cítrico", "Caramelo"],
+      "heart": ["Dulce", "Ámbar"],
+      "base": ["Aromático", "Avainillado", "Amaderado", "Cálido Especiado"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
@@ -1416,71 +1338,82 @@ export const fragrances: Fragrance[] = [
     "displayName": "Sakeena",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-25-sakeena",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-25-sakeena",
+    "fraganciazId": "fraganciaz-sakeena",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-sakeena",
     "images": [
       "sakeena-01.jpeg",
-      "sakeena-02.jpeg"
+      "sakeena-02.jpeg",
+      "sakeena-03.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Sakeena es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cítrico","Frutal"],
+      "heart": ["Floral","Dulce"],
+      "base": ["Amaderado","Musk"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "shaden-gold",
+    "name": "Shaden gold",
+    "displayName": "Shaden gold",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-shaden-gold",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-shaden-gold",
+    "images": [
+      "shaden-gold-01.jpeg",
+      "shaden-gold-02.jpeg",
+      "shaden-gold-03.jpeg",
+      "shaden-gold-04.jpeg",
+      "shaden-gold-05.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Shaden gold es una fragancia unisex que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Vainilla", "Piña"],
+      "heart": ["Toronja"],
+      "base": ["Hojas Verdes"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   },
   {
     "id": "shadenn-gold",
-    "name": "Shadenn Gold",
-    "displayName": "Shadenn Gold",
+    "name": "Shadenn gold",
+    "displayName": "Shadenn gold",
     "gender": "masculino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-16-shadenn-gold",
-    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-16-shadenn-gold",
+    "fraganciazId": "fraganciaz-shadenn-gold",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-shadenn-gold",
     "images": [
       "shadenn-gold-01.jpeg",
       "shadenn-gold-02.jpeg",
@@ -1490,53 +1423,25 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia masculina intensa y seductora con notas orientales premium.",
+    "description": "Shadenn gold es una fragancia masculino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Vainilla", "Piña"],
+      "heart": ["Toronja"],
+      "base": ["Hojas Verdes"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
@@ -1545,8 +1450,8 @@ export const fragrances: Fragrance[] = [
     "displayName": "Sutor",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-26-sutor",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-26-sutor",
+    "fraganciazId": "fraganciaz-sutor",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-sutor",
     "images": [
       "sutor-01.jpeg",
       "sutor-02.jpeg",
@@ -1554,53 +1459,25 @@ export const fragrances: Fragrance[] = [
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Sutor es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Cítrico","Frutal"],
+      "heart": ["Floral","Oriental"],
+      "base": ["Amaderado","Ámbar"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
     }
   },
   {
@@ -1609,80 +1486,90 @@ export const fragrances: Fragrance[] = [
     "displayName": "Yara",
     "gender": "femenino",
     "category": "oriental",
-    "fraganciazId": "fraganciaz-27-yara",
-    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-27-yara",
+    "fraganciazId": "fraganciaz-yara",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-yara",
     "images": [
       "yara-01.jpeg",
       "yara-02.jpeg",
       "yara-03.jpeg",
-      "yara-04.jpeg"
+      "yara-04.jpeg",
+      "yara-05.jpeg"
     ],
     "notesImages": [],
     "hasImages": true,
-    "description": "Una fragancia femenina elegante y sofisticada con notas orientales exquisitas.",
+    "description": "Yara es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
     "notes": {
-      "top": [
-        "Bergamota",
-        "Limón",
-        "Pimienta"
-      ],
-      "heart": [
-        "Lavanda",
-        "Geranio",
-        "Jazmín"
-      ],
-      "base": [
-        "Ámbar",
-        "Musk",
-        "Sándalo"
-      ]
+      "top": ["Dulce","Avainillado","Atalcado"],
+      "heart": ["Tropical","Afrutados","Almizclado"],
+      "base": ["Florales","Cítrico"]
     },
     "characteristics": {
-      "duration": "6-8 horas",
+      "duration": "8-12h",
       "projection": "Moderada",
       "intensity": "Media",
-      "season": "Todo el año"
+      "season": "todo el año"
     },
     "usage": {
-      "occasions": [
-        "Día a día",
-        "Eventos especiales",
-        "Ocasiones formales"
-      ],
-      "apply": [
-        "Aplicar en puntos de pulso",
-        "2-3 sprays",
-        "Aplicar 15 minutos antes"
-      ]
+      "occasions": [],
+      "apply": []
     },
     "materials": {
-      "ingredients": [
-        "Aceites esenciales premium",
-        "Extractos naturales",
-        "Materias primas de Dubai"
-      ],
-      "quality": [
-        "100% auténtico",
-        "Certificado de autenticidad",
-        "Empaque original"
-      ]
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "yum-yum",
+    "name": "Yum yum",
+    "displayName": "Yum yum",
+    "gender": "femenino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-yum-yum",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-yum-yum",
+    "images": [
+      "yum-yum-01.jpeg",
+      "yum-yum-02.jpeg",
+      "yum-yum-03.jpeg",
+      "yum-yum-04.jpeg",
+      "yum-yum-05.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Yum yum es una fragancia femenino que ofrece una experiencia olfativa única e intensa.",
+    "notes": {
+      "top": ["Dulce","Frutal"],
+      "heart": ["Floral","Oriental"],
+      "base": ["Amaderado","Musk"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
     }
   }
 ];
 
-// Helper functions
 export function getFirstImage(fragrance: Fragrance): string {
   return fragrance.images && fragrance.images.length > 0 
-    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=11` 
+    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=12` 
     : '/assets/images/placeholder.jpg';
 }
 
 export function getCatalogImage(fragrance: Fragrance): string {
   return fragrance.images && fragrance.images.length > 0 
-    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=11` 
+    ? `${fragrance.imagePath}/${fragrance.images[0]}?v=12` 
     : '/assets/images/placeholder.jpg';
 }
 
 export function getFragranceById(id: string): Fragrance | undefined {
-  return fragrances.find(fragrance => fragrance.id === id);
+  return fragrances.find(f => f.id === id);
 }

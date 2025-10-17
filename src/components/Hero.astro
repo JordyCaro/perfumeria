@@ -1,5 +1,6 @@
 ---
 import { ArrowRight, Crown, Award } from 'lucide-react';
+import fraganciasImage from '../../assets/images/hero/fragancias.jpeg';
 ---
 
 <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-32 overflow-x-hidden py-16">
@@ -47,7 +48,7 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
             <div class="absolute inset-0 bg-gradient-to-r from-rose-gold-light to-rose-gold opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </a>
           
-          <a href="https://wa.me/573001234567?text=Hola%20DAR,%20me%20interesa%20conocer%20más%20sobre%20sus%20fragancias" 
+            <a href="https://wa.me/573143799537?text=Hola%20DAR,%20me%20interesa%20conocer%20más%20sobre%20sus%20fragancias"
              target="_blank" 
              rel="noopener noreferrer"
              class="group inline-flex items-center justify-center space-x-2 border-2 border-rose-gold text-rose-gold-light font-semibold px-8 py-4 rounded-lg hover:bg-rose-gold/10 transition-all duration-300">
@@ -80,37 +81,13 @@ import { ArrowRight, Crown, Award } from 'lucide-react';
           <!-- Elegant Frame -->
           <div class="absolute inset-0 bg-gradient-to-br from-rose-gold/20 to-transparent rounded-3xl backdrop-blur-sm border border-rose-gold/30 shadow-2xl shadow-rose-gold/20"></div>
           
-          <!-- Perfume Bottles Composition -->
+          <!-- Fragancias Image -->
           <div class="absolute inset-8 flex items-center justify-center">
-            <!-- Central Bottle -->
-            <div class="relative z-20 transform hover:scale-105 transition-transform duration-500">
-              <div class="w-28 h-56 bg-gradient-to-b from-rose-gold-light via-rose-gold to-rose-gold-dark rounded-2xl shadow-2xl relative overflow-hidden">
-                <!-- Glass Effect -->
-                <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"></div>
-                <!-- Cap -->
-                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-12 bg-gradient-to-b from-slate-800 to-slate-900 rounded-t-xl border-4 border-rose-gold shadow-xl"></div>
-                <!-- Label Area -->
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border-2 border-white/30 rounded-lg flex items-center justify-center">
-                  <Crown className="w-8 h-8 text-white/50" />
-                </div>
-              </div>
-            </div>
-            
-            <!-- Left Bottle (Smaller) -->
-            <div class="absolute left-4 top-20 z-10 transform hover:scale-105 transition-transform duration-500 opacity-60 hover:opacity-100">
-              <div class="w-20 h-40 bg-gradient-to-b from-rose-gold to-rose-gold-dark rounded-xl shadow-xl">
-                <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-xl"></div>
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-14 h-8 bg-slate-800 rounded-t-lg border-2 border-rose-gold"></div>
-              </div>
-            </div>
-            
-            <!-- Right Bottle (Smaller) -->
-            <div class="absolute right-4 top-32 z-10 transform hover:scale-105 transition-transform duration-500 opacity-60 hover:opacity-100">
-              <div class="w-20 h-40 bg-gradient-to-b from-rose-gold-light to-rose-gold rounded-xl shadow-xl">
-                <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-xl"></div>
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-14 h-8 bg-slate-800 rounded-t-lg border-2 border-rose-gold-light"></div>
-              </div>
-            </div>
+            <img 
+              src={fraganciasImage.src} 
+              alt="Fragancias Orientales de Lujo" 
+              class="w-full h-full object-contain rounded-2xl transform hover:scale-105 transition-transform duration-500"
+            />
           </div>
           
           <!-- Floating Sparkles -->

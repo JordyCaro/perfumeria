@@ -4,7 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 import FragranceGallery from '../components/FragranceGallery.astro';
-import { Heart, Clock, Droplets, Sparkles, MessageCircle, BookOpen } from 'lucide-react';
+import { Heart, Clock, Droplets, Sparkles, MessageCircle } from 'lucide-react';
+import whatsappIcon from '../../assets/icons/whatsapp.png';
 
 export interface Props {
   fragrance: {
@@ -18,9 +19,10 @@ export interface Props {
     notesImages: string[];
     hasImages: boolean;
   };
+  currentFilter?: string;
 }
 
-const { fragrance } = Astro.props;
+const { fragrance, currentFilter } = Astro.props;
 const genderText = fragrance.gender === 'masculino' ? 'Masculina' : fragrance.gender === 'femenino' ? 'Femenina' : 'Unisex';
 ---
 
@@ -50,13 +52,17 @@ const genderText = fragrance.gender === 'masculino' ? 'Masculina' : fragrance.ge
 
             <!-- Consultar Precio Button -->
             <a
-              href={`https://wa.me/573001234567?text=Hola%20DAR,%20me%20interesa%20saber%20el%20precio%20de%20${fragrance.displayName}`}
+              href={`https://wa.me/573143799537?text=Hola%20DAR,%20me%20interesa%20saber%20el%20precio%20de%20${fragrance.displayName}`}
               target="_blank"
               rel="noopener noreferrer"
-              class="btn-primary bg-gradient-to-br from-rose-gold to-rose-gold-dark text-slate-900 hover:from-rose-gold-dark hover:to-rose-gold-darker transition-all duration-300 inline-flex items-center justify-center space-x-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg text-lg sm:text-xl font-bold"
+              class="btn-primary bg-gradient-to-br from-rose-gold to-rose-gold-dark text-slate-900 hover:from-rose-gold hover:to-rose-gold-dark hover:scale-105 hover:shadow-2xl hover:shadow-rose-gold/25 transition-all duration-300 inline-flex items-center justify-center space-x-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg text-lg sm:text-xl font-bold"
             >
               <span>Consultar Precio</span>
-                    <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
+              <img 
+                src={whatsappIcon.src} 
+                alt="WhatsApp" 
+                class="w-5 h-5 sm:w-6 sm:h-6 object-contain"
+              />
             </a>
           </div>
 
@@ -71,45 +77,27 @@ const genderText = fragrance.gender === 'masculino' ? 'Masculina' : fragrance.ge
               </p>
             </div>
 
+            
+
             <!-- Notes -->
             <div class="mb-6 lg:mb-8">
               <h3 class="text-lg sm:text-xl font-semibold text-slate-100 mb-3 sm:mb-4 text-center lg:text-left">Notas Olfativas</h3>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="card-glass text-center p-4">
-                  <h4 class="font-semibold text-slate-100 mb-2">Salida</h4>
-                  <p class="text-sm text-slate-300">Consultar</p>
-                </div>
-                <div class="card-glass text-center p-4">
-                  <h4 class="font-semibold text-slate-100 mb-2">Corazón</h4>
-                  <p class="text-sm text-slate-300">Consultar</p>
-                </div>
-                <div class="card-glass text-center p-4">
-                  <h4 class="font-semibold text-slate-100 mb-2">Fondo</h4>
-                  <p class="text-sm text-slate-300">Consultar</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Characteristics -->
-            <div class="mb-6 lg:mb-8">
-              <h3 class="text-lg sm:text-xl font-semibold text-slate-100 mb-3 sm:mb-4 text-center lg:text-left">Características</h3>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div class="flex items-center justify-center lg:justify-start space-x-3">
-                  <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
-                  <span class="text-sm sm:text-base text-slate-300">Duración: 8-12 horas</span>
-                </div>
-                <div class="flex items-center justify-center lg:justify-start space-x-3">
-                  <Droplets className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
-                  <span class="text-sm sm:text-base text-slate-300">Proyección: Alta</span>
-                </div>
-                <div class="flex items-center justify-center lg:justify-start space-x-3">
-                  <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
-                  <span class="text-sm sm:text-base text-slate-300">Intensidad: Fuerte</span>
-                </div>
-                <div class="flex items-center justify-center lg:justify-start space-x-3">
-                  <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
-                  <span class="text-sm sm:text-base text-slate-300">Estación: Todo el año</span>
-                </div>
+              <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
+                {fragrance.notes.top && fragrance.notes.top.map((note, index) => (
+                  <span class="px-3 py-1 rounded-full text-sm bg-transparent border border-rose-gold text-white hover:bg-rose-gold/10 transition-all duration-300">
+                    {note}
+                  </span>
+                ))}
+                {fragrance.notes.heart && fragrance.notes.heart.map((note, index) => (
+                  <span class="px-3 py-1 rounded-full text-sm bg-transparent border border-rose-gold text-white hover:bg-rose-gold/10 transition-all duration-300">
+                    {note}
+                  </span>
+                ))}
+                {fragrance.notes.base && fragrance.notes.base.map((note, index) => (
+                  <span class="px-3 py-1 rounded-full text-sm bg-transparent border border-rose-gold text-white hover:bg-rose-gold/10 transition-all duration-300">
+                    {note}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -119,63 +107,112 @@ const genderText = fragrance.gender === 'masculino' ? 'Masculina' : fragrance.ge
   </section>
 
   <!-- Detailed Information -->
-  <section class="section-padding bg-slate-800/30">
+  <section class="py-12 bg-slate-800/30">
     <div class="container-custom px-4 sm:px-6">
-      <div class="grid lg:grid-cols-2 gap-8 lg:gap-16">
-        <!-- Usage Recommendations -->
-        <div class="card-glass p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl font-bold text-slate-100 mb-6 sm:mb-8 text-center">
-            Recomendaciones de Uso
-          </h3>
-          <div class="space-y-6 sm:space-y-8">
-            <div>
-              <h4 class="text-base sm:text-lg font-semibold text-slate-100 mb-3 sm:mb-4 text-center">Ocasiones Ideales</h4>
-              <ul class="space-y-2 sm:space-y-3 text-slate-300 list-disc pl-5 text-center sm:text-left">
-                <li>Eventos formales y ceremonias</li>
-                <li>Uso diario profesional</li>
-                <li>Reuniones de negocios</li>
-                <li>Ocasiones especiales</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="text-base sm:text-lg font-semibold text-slate-100 mb-3 sm:mb-4 text-center">Cómo Aplicar</h4>
-              <ul class="space-y-2 sm:space-y-3 text-slate-300 list-disc pl-5 text-center sm:text-left">
-                <li>Aplicar en puntos de pulso (muñecas, cuello)</li>
-                <li>2-3 sprays son suficientes</li>
-                <li>Aplicar 15 minutos antes de salir</li>
-                <li>Evitar frotar las zonas aplicadas</li>
-              </ul>
+      <!-- Individual Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Occasions Cards -->
+        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-rose-gold/30 transition-all duration-300 hover:scale-[1.02]">
+          <div class="absolute inset-0 bg-gradient-to-br from-rose-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-6 text-center">
+            <h4 class="text-base font-semibold text-rose-gold uppercase tracking-wide mb-4">Ocasiones Ideales</h4>
+            <div class="space-y-2">
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Eventos formales y ceremonias</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Uso diario profesional</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Reuniones de negocios</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Ocasiones especiales</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Materials & Quality -->
-        <div class="card-glass p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl font-bold text-slate-100 mb-6 sm:mb-8 text-center">
-            Materiales y Calidad
-          </h3>
-          <div class="space-y-6 sm:space-y-8">
-            <div>
-              <h4 class="text-base sm:text-lg font-semibold text-slate-100 mb-3 sm:mb-4 text-center">Ingredientes Premium</h4>
-              <ul class="space-y-2 sm:space-y-3 text-slate-300 list-disc pl-5 text-center sm:text-left">
-                <li>Aceites esenciales de alta calidad</li>
-                <li>Esencias naturales</li>
-                <li>Fijadores premium</li>
-                <li>Concentración del 20-25%</li>
-              </ul>
+        <!-- Application Card -->
+        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-rose-gold/30 transition-all duration-300 hover:scale-[1.02]">
+          <div class="absolute inset-0 bg-gradient-to-br from-rose-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-6 text-center">
+            <h4 class="text-base font-semibold text-rose-gold uppercase tracking-wide mb-4">Cómo Aplicar</h4>
+            <div class="space-y-2">
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Aplicar en puntos de pulso</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">2-3 sprays son suficientes</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Aplicar 15 minutos antes</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Evitar frotar las zonas</span>
+              </div>
             </div>
-            <div>
-              <h4 class="text-base sm:text-lg font-semibold text-slate-100 mb-3 sm:mb-4 text-center">Garantía de Calidad</h4>
-              <ul class="space-y-2 sm:space-y-3 text-slate-300 list-disc pl-5 text-center sm:text-left">
-                <li>100% auténtico, importado desde Dubai</li>
-                <li>Certificado de autenticidad incluido</li>
-                <li>Empaque original y sellado</li>
-                <li>Garantía de satisfacción</li>
-              </ul>
+          </div>
+        </div>
+
+        <!-- Ingredients Card -->
+        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-rose-gold/30 transition-all duration-300 hover:scale-[1.02]">
+          <div class="absolute inset-0 bg-gradient-to-br from-rose-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-6 text-center">
+            <h4 class="text-base font-semibold text-rose-gold uppercase tracking-wide mb-4">Ingredientes Premium</h4>
+            <div class="space-y-2">
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Aceites esenciales de alta calidad</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Esencias naturales</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Fijadores premium</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Concentración del 20-25%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quality Guarantee Card -->
+        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-rose-gold/30 transition-all duration-300 hover:scale-[1.02]">
+          <div class="absolute inset-0 bg-gradient-to-br from-rose-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative p-6 text-center">
+            <h4 class="text-base font-semibold text-rose-gold uppercase tracking-wide mb-4">Garantía de Calidad</h4>
+            <div class="space-y-2">
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">100% auténtico desde Dubai</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Certificado de autenticidad</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Empaque original sellado</span>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-800/30 hover:bg-slate-700/40 transition-colors">
+                <span class="text-sm text-slate-300">Garantía de satisfacción</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
+      <!-- Volver a Fragancias Button -->
+      <div class="mt-12 text-center">
+        <a 
+          href={currentFilter ? `/fragancias?filter=${currentFilter}` : '/fragancias'}
+          class="inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-lg bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-white transition-all duration-300 border border-slate-600/50 hover:border-rose-gold/50"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          <span>Volver a las Fragancias</span>
+        </a>
+      </div>
     </div>
   </section>
 </main>
+

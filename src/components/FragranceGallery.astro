@@ -29,7 +29,7 @@ const firstImage = fragrance.images && fragrance.images.length > 0 ? fragrance.i
 
   <!-- Thumbnail Gallery -->
   {fragrance.images && fragrance.images.length > 0 && (
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap gap-4 justify-center">
       {fragrance.images.map((img, index) => (
         <button
           class={`aspect-square bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform border-2 w-20 h-20 ${

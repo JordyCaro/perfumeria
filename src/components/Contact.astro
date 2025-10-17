@@ -1,5 +1,6 @@
 ---
 import { Mail, Phone, MapPin, Clock, MessageCircle, Star, Sparkles, Heart } from 'lucide-react';
+import whatsappIcon from '../../assets/icons/whatsapp.png';
 ---
 
 <section id="contacto" class="py-16 bg-gradient-to-br from-dark-teal-dark via-dark-teal to-dark-teal-light overflow-x-hidden">
@@ -30,7 +31,11 @@ import { Mail, Phone, MapPin, Clock, MessageCircle, Star, Sparkles, Heart } from
           <div class="relative z-10">
             <div class="flex items-center space-x-4 mb-6">
               <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                <MessageCircle className="w-8 h-8" />
+                <img 
+                  src={whatsappIcon.src} 
+                  alt="WhatsApp" 
+                  class="w-10 h-10 object-contain"
+                />
               </div>
               <div>
                 <h3 class="text-2xl font-bold">WhatsApp</h3>
@@ -43,7 +48,7 @@ import { Mail, Phone, MapPin, Clock, MessageCircle, Star, Sparkles, Heart } from
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/573001234567?text=Hola%20DAR,%20me%20interesa%20conocer%20más%20sobre%20sus%20fragancias" 
+              <a href="https://wa.me/573143799537?text=Hola%20DAR,%20me%20interesa%20conocer%20más%20sobre%20sus%20fragancias" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  class="bg-white text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-green-50 transition-colors flex items-center justify-center space-x-2 group">
@@ -51,7 +56,7 @@ import { Mail, Phone, MapPin, Clock, MessageCircle, Star, Sparkles, Heart } from
                 <span>Chat Ahora</span>
               </a>
               
-              <a href="https://wa.me/573001234567?text=Hola%20DAR,%20me%20interesa%20solicitar%20asesoría%20personalizada" 
+              <a href="https://wa.me/573143799537?text=Hola%20DAR,%20me%20interesa%20solicitar%20asesoría%20personalizada" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  class="border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors flex items-center justify-center space-x-2 group">
@@ -95,16 +100,16 @@ import { Mail, Phone, MapPin, Clock, MessageCircle, Star, Sparkles, Heart } from
     </div>
 
     <!-- Contact Info Cards -->
-    <div class="grid md:grid-cols-3 gap-6 mt-8">
-      <!-- Email Card -->
-      <div class="card-glass p-6 text-center group hover:scale-105 transition-transform">
+    <div class="grid md:grid-cols-2 gap-6 mt-8">
+      <!-- TODO: Implementar cuando se tenga correo configurado -->
+      <!-- <div class="card-glass p-6 text-center group hover:scale-105 transition-transform">
         <div class="w-12 h-12 bg-rose-gold/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-gold/30 transition-colors">
           <Mail className="w-6 h-6 text-rose-gold" />
         </div>
         <h4 class="text-lg font-semibold text-slate-100 mb-2">Email</h4>
         <p class="text-slate-300 text-sm mb-2">info@darcasadelaperfumeria.com</p>
         <p class="text-slate-400 text-xs">Respuesta en 24h</p>
-      </div>
+      </div> -->
 
       <!-- Location Card -->
       <div class="card-glass p-6 text-center group hover:scale-105 transition-transform">
