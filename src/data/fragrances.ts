@@ -1550,6 +1550,304 @@ export const fragrances: Fragrance[] = [
       "ingredients": [],
       "quality": []
     }
+  },
+  {
+    "id": "club-de-nuit-max",
+    "name": "Club de Nuit Max",
+    "displayName": "Club de Nuit Max",
+    "gender": "masculino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-club-de-nuit-max",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-club-de-nuit-max",
+    "images": [
+      "club-de-nuit-max-01.jpeg",
+      "club-de-nuit-max-02.jpeg",
+      "club-de-nuit-max-03.jpeg",
+      "club-de-nuit-max-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Club de Nuit Max es una fragancia masculina que ofrece una experiencia olfativa intensa y sofisticada.",
+    "notes": {
+      "top": ["Cítrico","Fresco"],
+      "heart": ["Especiado","Oriental"],
+      "base": ["Amaderado","Musk"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Alta",
+      "intensity": "Alta",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "club-de-nuit-urban-max-elixir",
+    "name": "Club de Nuit Urban Max Elixir",
+    "displayName": "Club de Nuit Urban Max Elixir",
+    "gender": "masculino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-club-de-nuit-urban-max-elixir",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-club-de-nuit-urban-max-elixir",
+    "images": [
+      "club-de-nuit-urban-max-elixir-01.jpeg",
+      "club-de-nuit-urban-max-elixir-02.jpeg",
+      "club-de-nuit-urban-max-elixir-03.jpeg",
+      "club-de-nuit-urban-max-elixir-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Club de Nuit Urban Max Elixir es una fragancia masculina urbana con un toque moderno y sofisticado.",
+    "notes": {
+      "top": ["Cítrico","Fresco Especiado","Verde","Lavanda"],
+      "heart": ["Aromático","Cálido Especiado","Pachulí"],
+      "base": ["Amaderado","Terrosos","Atalcado"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Alta",
+      "intensity": "Alta",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "club-de-nuit",
+    "name": "Club de Nuit",
+    "displayName": "Club de Nuit",
+    "gender": "femenino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-club-de-nuit",
+    "imagePath": "/assets/images/fragancias/mujer/fraganciaz-club-de-nuit",
+    "images": [
+      "club-de-nuit-01.jpeg",
+      "club-de-nuit-02.jpeg",
+      "club-de-nuit-03.jpeg",
+      "club-de-nuit-04.jpeg",
+      "club-de-nuit-05.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Club de Nuit es una fragancia femenina que combina elegancia y sofisticación con un toque moderno.",
+    "notes": {
+      "top": ["Cítrico","Fresco Especiado"],
+      "heart": ["Aromático","Cálido Especiado","Pachulí","Rosas"],
+      "base": ["Amaderado","Terrosos","Atalcado","Almizclado"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Moderada",
+      "intensity": "Media",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "emeer",
+    "name": "Emeer",
+    "displayName": "Emeer",
+    "gender": "masculino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-emeer",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-emeer",
+    "images": [
+      "emeer-01.jpeg",
+      "emeer-02.jpeg",
+      "emeer-03.jpeg",
+      "emeer-04.jpeg",
+      "emeer-05.jpeg",
+      "emeer-06.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Emeer es una fragancia masculina que ofrece una experiencia olfativa rica y compleja.",
+    "notes": {
+      "top": ["Aromático","Cítrico","Verde"],
+      "heart": ["Ámbar","Fresco Especiado","Cálido Especiado"],
+      "base": ["Amaderado","Atalcado","Animálico","Balsámico"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Alta",
+      "intensity": "Alta",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "emeer-unisex",
+    "name": "Emeer",
+    "displayName": "Emeer",
+    "gender": "unisex",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-emeer",
+    "imagePath": "/assets/images/fragancias/unisex/fraganciaz-emeer",
+    "images": [
+      "emeer-unisex-01.jpeg",
+      "emeer-unisex-02.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Emeer es una fragancia unisex que ofrece una experiencia olfativa rica y compleja.",
+    "notes": {
+      "top": ["Aromático","Cítrico","Verde"],
+      "heart": ["Ámbar","Fresco Especiado","Cálido Especiado"],
+      "base": ["Amaderado","Atalcado","Animálico","Balsámico"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Alta",
+      "intensity": "Alta",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "jean-lowe",
+    "name": "Jean Lowe",
+    "displayName": "Jean Lowe",
+    "gender": "masculino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-jean-lowe",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-jean-lowe",
+    "images": [
+      "jean-lowe-01.jpeg",
+      "jean-lowe-02.jpeg",
+      "jean-lowe-03.jpeg",
+      "jean-lowe-04.jpeg",
+      "jean-lowe-05.jpeg",
+      "jean-lowe-06.jpeg",
+      "jean-lowe-07.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Jean Lowe es una fragancia masculina que combina elegancia y sofisticación con un toque moderno.",
+    "notes": {
+      "top": ["Cálido Especiado","Cuero","Ahumado"],
+      "heart": ["Oud","Cacao","Rosas","Pachulí"],
+      "base": ["Ámbar","Amaderado","Balsámico"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Alta",
+      "intensity": "Alta",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "asad",
+    "name": "Asad",
+    "displayName": "Asad",
+    "gender": "masculino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-asad",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-asad",
+    "images": [
+      "asad-01.jpeg",
+      "asad-02.jpeg",
+      "asad-03.jpeg",
+      "asad-04.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Asad es una fragancia masculina que ofrece una experiencia olfativa intensa y sofisticada.",
+    "notes": {
+      "top": ["Ámbar","Fresco Especiado","Avainillado"],
+      "heart": ["Amaderado","Cálido Especiado","Dulce"],
+      "base": ["Tabaco","Atalcado","Pachulí","Balsámico"]
+    },
+    "characteristics": {
+      "duration": "8-12h",
+      "projection": "Alta",
+      "intensity": "Alta",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
+  },
+  {
+    "id": "fakhar-extrait",
+    "name": "Fakhar Extrait",
+    "displayName": "Fakhar Extrait",
+    "gender": "masculino",
+    "category": "oriental",
+    "fraganciazId": "fraganciaz-fakhar-extrait",
+    "imagePath": "/assets/images/fragancias/hombre/fraganciaz-fakhar-extrait",
+    "images": [
+      "fakhar-extrait-01.jpeg",
+      "fakhar-extrait-02.jpeg"
+    ],
+    "notesImages": [],
+    "hasImages": true,
+    "description": "Fakhar Extrait es una fragancia masculina concentrada que ofrece una experiencia olfativa intensa y duradera.",
+    "notes": {
+      "top": ["Ámbar","Nardos","Floral Blanco"],
+      "heart": ["Animálico","Almizclado","Cítrico","Aromático"],
+      "base": ["Cálido Especiado","Amaderado","Cuero"]
+    },
+    "characteristics": {
+      "duration": "12-16h",
+      "projection": "Muy Alta",
+      "intensity": "Muy Alta",
+      "season": "todo el año"
+    },
+    "usage": {
+      "occasions": [],
+      "apply": []
+    },
+    "materials": {
+      "ingredients": [],
+      "quality": []
+    }
   }
 ];
 
