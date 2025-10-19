@@ -20,12 +20,19 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 		<title>{title}</title>
 		
 		<!-- SEO Meta Tags -->
-		<meta name="keywords" content="perfumes Lattafa, fragancias Dubai, perfumes importados Colombia, DAR perfumería, fragancias orientales, perfumes árabes, perfumes auténticos, fragancias unisex, perfumes hombre, perfumes mujer" />
+		<meta name="keywords" content="perfumes Lattafa, fragancias Dubai, perfumes importados Colombia, DAR perfumería, fragancias orientales, perfumes árabes, perfumes auténticos, fragancias unisex, perfumes hombre, perfumes mujer, Club de Nuit, Emeer, Jean Lowe, Asad, Fakhar, fragancias masculinas, fragancias femeninas, perfumes de lujo, fragancias exclusivas" />
 		<meta name="author" content="DAR - Casa de la Perfumería" />
 		<meta name="robots" content="index, follow" />
 		<meta name="geo.region" content="CO" />
 		<meta name="geo.country" content="Colombia" />
 		<meta name="language" content="Spanish" />
+		<meta name="revisit-after" content="7 days" />
+		<meta name="distribution" content="global" />
+		<meta name="rating" content="general" />
+		<meta name="theme-color" content="#C19A6B" />
+		<meta name="msapplication-TileColor" content="#C19A6B" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
@@ -49,9 +56,11 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 				"@context": "https://schema.org",
 				"@type": "Organization",
 				"name": "DAR Perfumes",
-				"description": "Importadores de perfumes Lattafa auténticos desde Dubai a Colombia",
+				"alternateName": "DAR Casa de la Perfumería",
+				"description": "Importadores de perfumes Lattafa auténticos desde Dubai a Colombia. Especialistas en fragancias orientales, perfumes árabes y fragancias de lujo.",
 				"url": "https://darperfumeria.com",
 				"logo": "https://darperfumeria.com" + logoDar.src,
+				"image": "https://darperfumeria.com/og-image.jpg",
 				"contactPoint": {
 					"@type": "ContactPoint",
 					"telephone": "+57-300-123-4567",
@@ -67,7 +76,23 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 				"sameAs": [
 					"https://facebook.com/darperfumes",
 					"https://instagram.com/darperfumes"
-				]
+				],
+				"foundingDate": "2024",
+				"knowsAbout": [
+					"Perfumes Lattafa",
+					"Fragancias Orientales",
+					"Perfumes Árabes",
+					"Fragancias Unisex",
+					"Perfumes de Lujo"
+				],
+				"makesOffer": {
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Product",
+						"name": "Perfumes Lattafa",
+						"description": "Fragancias auténticas importadas desde Dubai"
+					}
+				}
 			}
 		</script>
 		
@@ -75,6 +100,14 @@ const { title, description = "DAR - Casa de la Perfumería. Perfumes Lattafa imp
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		
+		<!-- Preload critical resources -->
+		<link rel="preload" href="/assets/logos/dar/logo.png" as="image" type="image/png">
+		<link rel="preload" href="/og-image.jpg" as="image" type="image/jpeg">
+		
+		<!-- DNS Prefetch for external resources -->
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="//fonts.gstatic.com">
 		
 		<!-- Import global styles -->
 		<style>

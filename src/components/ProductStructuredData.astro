@@ -1,0 +1,68 @@
+---
+import { fragrances } from '../data/fragrances.ts';
+
+export interface Props {
+  fragranceId?: string;
+}
+
+const { fragranceId } = Astro.props;
+
+if (fragranceId) {
+  const fragrance = fragrances.find(f => f.id === fragranceId);
+  
+  if (fragrance) {
+    const productSchema = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": fragrance.displayName,
+      "description": fragrance.description,
+      "image": fragrance.images.map(img => `https://darperfumeria.com${fragrance.imagePath}/${img}`),
+      "brand": {
+        "@type": "Brand",
+        "name": "Lattafa"
+      },
+      "category": "Perfume",
+      "gender": fragrance.gender,
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "price": "Consultar precio",
+        "priceCurrency": "COP",
+        "seller": {
+          "@type": "Organization",
+          "name": "DAR Perfumes"
+        }
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Notas de Salida",
+          "value": fragrance.notes.top.join(", ")
+        },
+        {
+          "@type": "PropertyValue", 
+          "name": "Notas de Corazón",
+          "value": fragrance.notes.heart.join(", ")
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Notas de Fondo", 
+          "value": fragrance.notes.base.join(", ")
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Duración",
+          "value": fragrance.characteristics.duration
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Proyección",
+          "value": fragrance.characteristics.projection
+        }
+      ]
+    };
+---
+<script type="application/ld+json" set:html={JSON.stringify(productSchema)}></script>
+---
+  }
+}
