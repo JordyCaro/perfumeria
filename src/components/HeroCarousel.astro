@@ -1,0 +1,457 @@
+---
+const slides = [
+  {
+    id: 'tendencias',
+    tag: 'NOVEDADES',
+    title: 'Siempre las últimas tendencias',
+    description: 'Llegamos con las fragancias más recientes. Novedades constantes desde Dubai para que estés al día.',
+    ctaText: 'Ver novedades',
+    ctaHref: '/fragancias',
+    image: 'https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=1920&auto=format&fit=crop',
+    position: 'left',
+  },
+  {
+    id: 'showroom',
+    tag: 'VISÍTANOS',
+    title: 'Ven a degustar los aromas',
+    description: 'Showroom acogedor donde puedes probar cada fragancia con calma y elegir la ideal.',
+    ctaText: 'Visitar showroom',
+    ctaHref: 'https://wa.me/573143799537?text=Hola%20DAR,%20quiero%20visitar%20el%20showroom',
+    ctaExternal: true,
+    image: 'https://images.unsplash.com/photo-1662748716967-88fea581d239?q=80&w=1920&auto=format&fit=crop',
+    position: 'right',
+  },
+  {
+    id: 'personalizado',
+    tag: 'ASEGURATE',
+    title: 'Muestra personalizada',
+    description: 'Te preparamos una selección a tu medida para que tomes la mejor decisión antes de comprar.',
+    ctaText: 'Asesoría exclusiva',
+    ctaHref: 'https://wa.me/573143799537?text=Hola%20DAR,%20me%20interesa%20asesoría%20personalizada',
+    ctaExternal: true,
+    image: 'https://images.unsplash.com/photo-1622952826417-6212791163ab?q=80&w=1920&auto=format&fit=crop',
+    position: 'top-left',
+  },
+  {
+    id: 'populares',
+    tag: 'LOS MÁS PEDIDOS',
+    title: 'Fragancias populares',
+    description: 'Los favoritos de nuestros clientes. Los más vendidos que nunca fallan.',
+    ctaText: 'Explorar colección',
+    ctaHref: '/fragancias',
+    image: 'https://images.unsplash.com/photo-1621814374283-57cc5d0d39c2?q=80&w=1920&auto=format&fit=crop',
+    position: 'bottom-right',
+  },
+  {
+    id: 'unicas',
+    tag: 'EXCLUSIVAS',
+    title: 'Fragancias únicas',
+    description: 'Piezas que no encontrarás en cualquier lugar. Ediciones y aromas exclusivos.',
+    ctaText: 'Descubrir exclusivos',
+    ctaHref: '/fragancias',
+    image: 'https://images.unsplash.com/photo-1615108395437-df128ad79e80?q=80&w=1920&auto=format&fit=crop',
+    position: 'bottom-left',
+  },
+];
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<section id="inicio" class="hero-carousel-section" aria-label="Carrusel principal">
+  <div class="hero-carousel-wrap">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        {slides.map((s, index) => (
+          <div class="swiper-slide hero-slide">
+            <div class="hero-slide-bg">
+              <img
+                src={s.image}
+                alt=""
+                class={`hero-slide-img ${s.imageRotate ? 'hero-slide-img--rotate' : ''}`}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                fetchpriority={index === 0 ? 'high' : 'low'}
+              />
+              <div class="hero-slide-overlay" aria-hidden="true"></div>
+            </div>
+            <div class={`hero-slide-content hero-slide-content--${s.position}`}>
+              <span class="hero-slide-tag">{s.tag}</span>
+              <h2 class="hero-slide-title">{s.title}</h2>
+              <p class="hero-slide-desc">{s.description}</p>
+              <a
+                href={s.ctaHref}
+                class="hero-cta"
+                {...(s.ctaExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              >
+                {s.ctaText}
+                <span class="hero-cta-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="swiper-button-prev hero-arrow" aria-label="Anterior"></div>
+      <div class="swiper-button-next hero-arrow" aria-label="Siguiente"></div>
+      <div class="hero-pagination-wrap">
+        <div class="swiper-pagination hero-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-carousel-section {
+    position: relative;
+    width: 100%;
+    /* Navbar fixed h-20 = 5rem; carousel fills viewport below it */
+    padding-top: 5rem;
+    min-height: calc(100vh - 5rem);
+    overflow: hidden;
+  }
+
+  .hero-carousel-wrap {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    min-height: 480px;
+  }
+
+  .hero-swiper {
+    width: 100%;
+    height: 100%;
+    background: var(--color-dark-teal-dark, #0f2626);
+  }
+
+  .hero-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .hero-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow: hidden;
+  }
+
+  .hero-slide-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .hero-slide-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Imagen vertical rotada 90° para aprovechar el largo de lado a lado (muestra personalizada) */
+  .hero-slide-img--rotate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    height: 100vw;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+
+  .hero-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(15, 38, 38, 0.45) 0%,
+      rgba(26, 58, 58, 0.3) 35%,
+      rgba(45, 79, 79, 0.2) 65%,
+      rgba(15, 38, 38, 0.25) 100%
+    );
+    pointer-events: none;
+  }
+
+  /* Content box - base */
+  .hero-slide-content {
+    position: absolute;
+    z-index: 10;
+    max-width: 520px;
+    padding: clamp(1rem, 4vw, 2rem);
+    pointer-events: auto;
+  }
+
+  /* Positions: distribute across the screen */
+  .hero-slide-content--left {
+    left: clamp(1.5rem, 5vw, 3rem);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero-slide-content--right {
+    right: clamp(1.5rem, 5vw, 3rem);
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+  }
+
+  .hero-slide-content--right .hero-slide-tag,
+  .hero-slide-content--right .hero-slide-title,
+  .hero-slide-content--right .hero-slide-desc,
+  .hero-slide-content--right .hero-cta {
+    margin-left: auto;
+  }
+
+  .hero-slide-content--top-left {
+    left: clamp(1.5rem, 5vw, 3rem);
+    top: clamp(15%, 12vh, 25%);
+    transform: none;
+  }
+
+  .hero-slide-content--bottom-right {
+    right: clamp(1.5rem, 5vw, 3rem);
+    left: auto;
+    bottom: clamp(5rem, 15vh, 8rem);
+    top: auto;
+    transform: none;
+    text-align: right;
+  }
+
+  .hero-slide-content--bottom-right .hero-slide-tag,
+  .hero-slide-content--bottom-right .hero-slide-title,
+  .hero-slide-content--bottom-right .hero-slide-desc,
+  .hero-slide-content--bottom-right .hero-cta {
+    margin-left: auto;
+  }
+
+  .hero-slide-content--bottom-left {
+    left: clamp(1.5rem, 5vw, 3rem);
+    bottom: clamp(5rem, 15vh, 8rem);
+    top: auto;
+    transform: none;
+  }
+
+  .hero-slide-tag {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #0f2626;
+    background: rgba(193, 154, 107, 0.95);
+    border-radius: 9999px;
+  }
+
+  .hero-slide-title {
+    font-size: clamp(1.75rem, 4.5vw, 3.25rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #f8fafc;
+    margin: 0 0 1rem 0;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-slide-desc {
+    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+    line-height: 1.55;
+    color: rgba(248, 250, 252, 0.95);
+    margin: 0 0 1.5rem 0;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45), 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f2626;
+    background: linear-gradient(to right, #d4af84, #c19a6b);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(193, 154, 107, 0.35);
+  }
+
+  .hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(193, 154, 107, 0.45);
+  }
+
+  .hero-cta-arrow {
+    transition: transform 0.2s ease;
+  }
+
+  .hero-cta:hover .hero-cta-arrow {
+    transform: translateX(4px);
+  }
+
+  /* Arrows */
+  .hero-arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 9999px;
+    background: rgba(15, 38, 38, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(193, 154, 107, 0.35);
+    color: #c19a6b;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .hero-arrow::after {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .hero-arrow:hover {
+    background: rgba(193, 154, 107, 0.25);
+    color: #f8fafc;
+  }
+
+  .swiper-button-next.hero-arrow { right: 1.5rem; }
+  .swiper-button-prev.hero-arrow { left: 1.5rem; }
+
+  /* Pagination */
+  .hero-pagination-wrap {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    width: 280px;
+    max-width: 90%;
+  }
+
+  .hero-pagination {
+    position: relative;
+    height: 4px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+  }
+
+  .hero-pagination :global(.swiper-pagination-progressbar-fill) {
+    background: linear-gradient(to right, #d4af84, #c19a6b);
+  }
+
+  /* Mobile: todos los textos abajo en el mismo lugar */
+  @media (max-width: 768px) {
+    .hero-slide-content--left,
+    .hero-slide-content--right,
+    .hero-slide-content--top-left,
+    .hero-slide-content--bottom-left,
+    .hero-slide-content--bottom-right {
+      top: auto !important;
+      bottom: clamp(4.5rem, 16vh, 6rem) !important;
+      left: clamp(1rem, 4vw, 1.5rem) !important;
+      right: clamp(1rem, 4vw, 1.5rem) !important;
+      transform: none !important;
+      max-width: none;
+      text-align: left;
+    }
+
+    .hero-slide-content--right .hero-slide-tag,
+    .hero-slide-content--right .hero-slide-title,
+    .hero-slide-content--right .hero-slide-desc,
+    .hero-slide-content--right .hero-cta,
+    .hero-slide-content--bottom-right .hero-slide-tag,
+    .hero-slide-content--bottom-right .hero-slide-title,
+    .hero-slide-content--bottom-right .hero-slide-desc,
+    .hero-slide-content--bottom-right .hero-cta {
+      margin-left: 0 !important;
+    }
+
+    .hero-arrow {
+      width: 44px;
+      height: 44px;
+    }
+
+    .swiper-button-next.hero-arrow { right: 0.75rem; }
+    .swiper-button-prev.hero-arrow { left: 0.75rem; }
+
+    .hero-pagination-wrap {
+      bottom: 1rem;
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-arrow {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const SWIPER_SRC = 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js';
+
+    function loadSwiper() {
+      return new Promise((resolve, reject) => {
+        if (window.Swiper) return resolve();
+        if (window.__heroLoadingSwiper) return window.__heroLoadingSwiper.then(resolve).catch(reject);
+        const s = document.createElement('script');
+        s.src = SWIPER_SRC;
+        s.async = true;
+        s.onload = () => resolve();
+        s.onerror = (e) => reject(e);
+        document.head.appendChild(s);
+        window.__heroLoadingSwiper = new Promise((res, rej) => {
+          s.addEventListener('load', res);
+          s.addEventListener('error', rej);
+        });
+      });
+    }
+
+    function init() {
+      const el = document.querySelector('.hero-swiper');
+      if (!el || el.dataset.heroInit === 'true') return;
+      el.dataset.heroInit = 'true';
+
+      const swiper = new window.Swiper(el, {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        speed: 800,
+        autoplay: { delay: 5500, disableOnInteraction: false },
+        allowTouchMove: true,
+        grabCursor: true,
+        keyboard: { enabled: true, onlyInViewport: true },
+        navigation: {
+          nextEl: '.swiper-button-next.hero-arrow',
+          prevEl: '.swiper-button-prev.hero-arrow',
+        },
+        pagination: {
+          el: '.hero-pagination',
+          type: 'progressbar',
+        },
+        observer: true,
+        observeParents: true,
+      });
+
+      window.__heroSwiper = swiper;
+    }
+
+    function start() {
+      loadSwiper().then(init).catch(() => {});
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', start);
+    } else {
+      start();
+    }
+  })();
+</script>
